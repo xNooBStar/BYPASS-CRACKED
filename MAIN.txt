@@ -1,0 +1,2374 @@
+using Memory;
+using Microsoft.VisualBasic;
+using Microsoft.Win32;
+using Zombie_BYPASS.Properties;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Drawing;
+using System.IO;
+using System.IO.Compression;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Zombie_BPS
+{
+    public partial class Main : Form
+    {
+        int mov;
+        int movX;
+        int movY;
+
+        #region Structs
+        public struct ProcessEntry32
+        {
+            public uint dwSize;
+            public uint cntUsage;
+            public uint th32ProcessID;
+            public IntPtr th32DefaultHeapID;
+            public uint th32ModuleID;
+            public uint cntThreads;
+            public uint th32ParentProcessID;
+            public int pcPriClassBase;
+            public uint dwFlags;
+            [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 260)]
+            public string szExeFile;
+        }
+        #endregion
+        #region Dlls
+        [DllImport("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+        [DllImport("KERNEL32.DLL")]
+        public static extern IntPtr CreateToolhelp32Snapshot(uint flags, uint processid);
+        [DllImport("KERNEL32.DLL")]
+        public static extern int Process32First(IntPtr handle, ref ProcessEntry32 pe);
+        [DllImport("KERNEL32.DLL")]
+        public static extern int Process32Next(IntPtr handle, ref ProcessEntry32 pe);
+        #endregion
+        public string userName = Environment.UserName;
+        public long enumerable = new long();
+        private int x;
+        private string sr;
+        public string GagaPath = null;
+        public Mem MemLib = new Mem();
+        private static string string_0;
+        private IContainer icontainer_0;
+        public string GameVersion = "";
+        public int bypassed = 0;
+
+        private static string MokkaAdress;
+        private async Task PutTaskDelay(int Time)
+        {
+            await Task.Delay(Time);
+        }
+
+        public Main()
+        {
+            InitializeComponent();
+
+            if (!ProgramVariables.Freemode)
+            {
+                Security.ChallengeCheck(); //Checks if the user has logged in, passed the initialize method and hasn't triggered any security alarms
+            }
+
+
+        }
+        protected override void WndProc(ref Message m)
+        {
+            base.WndProc(ref m);
+            if (m.Msg == WM_NCHITTEST)
+                m.Result = (IntPtr)(HT_CAPTION);
+        }
+
+        private const int WM_NCHITTEST = 0x84;
+        private const int HT_CLIENT = 0x1;
+        private const int HT_CAPTION = 0x2;
+
+        private async void Form2_Load(object sender, EventArgs e)
+        {
+            Protect.Start();
+
+            //Taskmgr
+            //if (Process.GetProcessesByName("Taskmgr").Length > 0)
+            //{
+
+            //    try
+            //    {
+            //        Directory.Delete(@"C:\Windows\tennp", true);
+            //    }
+            //    catch { }
+
+            //    Process process = new Process();
+            //    ProcessStartInfo startInfo = new ProcessStartInfo();
+            //    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //    startInfo.FileName = "cmd.exe";
+            //    startInfo.Arguments = "/c netsh advfirewall reset";
+            //    process.StartInfo = startInfo;
+            //    process.Start();
+            //    process.WaitForExit();
+
+            //    await PutTaskDelay(2000);
+
+            //    MessageBox.Show("Do not use any other program!", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+
+            //    Environment.Exit(-1);
+            //}
+
+            ////ProcessHacker
+            //if (Process.GetProcessesByName("ProcessHacker").Length > 0)
+            //{
+
+            //    try
+            //    {
+            //        Directory.Delete(@"C:\Windows\tennp", true);
+            //    }
+            //    catch { }
+
+            //    Process process = new Process();
+            //    ProcessStartInfo startInfo = new ProcessStartInfo();
+            //    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //    startInfo.FileName = "cmd.exe";
+            //    startInfo.Arguments = "/c netsh advfirewall reset";
+            //    process.StartInfo = startInfo;
+            //    process.Start();
+            //    process.WaitForExit();
+
+            //    await PutTaskDelay(2000);
+
+            //    MessageBox.Show("Do not use any other program!", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+
+            //    Environment.Exit(-1);
+            //}
+
+            ////MegaDumper
+            //if (Process.GetProcessesByName("MegaDumper").Length > 0)
+            //{
+
+            //    try
+            //    {
+            //        Directory.Delete(@"C:\Windows\tennp", true);
+            //    }
+            //    catch { }
+
+            //    Process process = new Process();
+            //    ProcessStartInfo startInfo = new ProcessStartInfo();
+            //    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //    startInfo.FileName = "cmd.exe";
+            //    startInfo.Arguments = "/c netsh advfirewall reset";
+            //    process.StartInfo = startInfo;
+            //    process.Start();
+            //    process.WaitForExit();
+
+            //    await PutTaskDelay(2000);
+
+            //    MessageBox.Show("Cracking program detected!", ":joy:", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+
+            //    Environment.Exit(-1);
+            //}
+
+            //if (Process.GetProcessesByName("mmc").Length > 0)
+            //{
+
+            //    try
+            //    {
+            //        Directory.Delete(@"C:\Windows\tennp", true);
+            //    }
+            //    catch { }
+
+            //    Process process = new Process();
+            //    ProcessStartInfo startInfo = new ProcessStartInfo();
+            //    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //    startInfo.FileName = "cmd.exe";
+            //    startInfo.Arguments = "/c netsh advfirewall reset";
+            //    process.StartInfo = startInfo;
+            //    process.Start();
+            //    process.WaitForExit();
+
+            //    await PutTaskDelay(2000);
+
+            //    MessageBox.Show("Do not use any other program!", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+
+            //    Environment.Exit(-1);
+            //}
+
+            //if (Process.GetProcessesByName("dnSpy").Length > 0)
+            //{
+
+            //    try
+            //    {
+            //        Directory.Delete(@"C:\Windows\tennp", true);
+            //    }
+            //    catch { }
+
+            //    Process process = new Process();
+            //    ProcessStartInfo startInfo = new ProcessStartInfo();
+            //    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //    startInfo.FileName = "cmd.exe";
+            //    startInfo.Arguments = "/c netsh advfirewall reset";
+            //    process.StartInfo = startInfo;
+            //    process.Start();
+            //    process.WaitForExit();
+
+            //    await PutTaskDelay(2000);
+
+            //    MessageBox.Show("Cracking program detected!", ":joy:", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+
+            //    Environment.Exit(-1);
+            //}
+
+            //if (Process.GetProcessesByName("WinRAR").Length > 0)
+            //{
+
+
+            //    try
+            //    {
+            //        Directory.Delete(@"C:\Windows\tennp", true);
+            //    }
+            //    catch { }
+
+
+            //    Process process = new Process();
+            //    ProcessStartInfo startInfo = new ProcessStartInfo();
+            //    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //    startInfo.FileName = "cmd.exe";
+            //    startInfo.Arguments = "/c netsh advfirewall reset";
+            //    process.StartInfo = startInfo;
+            //    process.Start();
+            //    process.WaitForExit();
+
+            //    await PutTaskDelay(2000);
+
+            //    MessageBox.Show("Do not use any other program!", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+
+            //    Environment.Exit(-1);
+            //}
+
+            //if (Directory.Exists(@"C:\Users\" + Environment.UserName + @"\AppData\Roaming\dnSpy"))
+            //{
+
+
+            //    try
+            //    {
+            //        Directory.Delete(@"C:\Windows\tennp", true);
+            //    }
+            //    catch { }
+
+
+            //    Process process = new Process();
+            //    ProcessStartInfo startInfo = new ProcessStartInfo();
+            //    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //    startInfo.FileName = "cmd.exe";
+            //    startInfo.Arguments = "/c netsh advfirewall reset";
+            //    process.StartInfo = startInfo;
+            //    process.Start();
+            //    process.WaitForExit();
+
+            //    await PutTaskDelay(2000);
+
+            //    MessageBox.Show("Cracking program detected!", ":joy:", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+
+            //    Environment.Exit(-1);
+            //}
+
+
+            EMU.Text = "-- Select Emulator --";
+            Game.Text = "-- Select Game --";
+
+            try
+            {
+                Directory.Delete(@"C:\Windows\tennp", true);
+            }
+            catch { }
+
+            if (File.Exists("adb.exe"))
+            {
+                try
+                {
+                    File.Delete("adb.exe");
+                    File.WriteAllBytes("adb.exe", Resources.adb);
+                }
+                catch { }
+            }
+            else
+            {
+                try
+                {
+                    File.WriteAllBytes("adb.exe", Resources.adb);
+                }
+                catch { }
+            }
+
+            if (File.Exists("AdbWinApi.dll"))
+            {
+                try
+                {
+                    File.Delete("AdbWinApi.dll");
+                    File.WriteAllBytes("AdbWinApi.dll", Resources.AdbWinApi);
+                }
+                catch { }
+            }
+            else
+            {
+                try
+                {
+                    File.WriteAllBytes("AdbWinApi.dll", Resources.AdbWinApi);
+                }
+                catch { }
+            }
+
+            try
+            {
+                Directory.Delete(@"C:\Windows\temp", true);
+            }
+            catch { }
+
+            //ticklobby.Enabled = false;
+            //tickisland.Enabled = false;
+            //iPAD.Enabled = false;
+            //HEADSHOT.Enabled = false;
+            //GUSTRESET.Enabled = false;
+
+
+
+            label4.Text = Convert.ToString(UserInfo.Expires);
+        }
+
+
+
+
+        #region Gameloop BP
+
+        public async void GameloopBP()
+        {
+            string TempPath = @"C:\Users\" + userName + @"\AppData\Local\Temp\";
+            string validchars = "abcdefghijklmnopqrstuvwxyz";
+            var sb = new StringBuilder();
+            var rand = new Random();
+            for (int i = 1; i <= 10; i++)
+            {
+                int idx = rand.Next(0, validchars.Length);
+                char randomChar = validchars[idx];
+                sb.Append(randomChar);
+            }
+
+            sr = sb.ToString();
+            if (File.Exists(TempPath + sr + ".sys"))
+            {
+            }
+            else
+            {
+                File.WriteAllBytes(TempPath + sr + ".sys", Resources.RNG);
+                var p1 = new Process();
+                p1.StartInfo.FileName = "cmd.exe"; // jioUN0XmYd
+                p1.StartInfo.Arguments = "/c sc create " + sr + @" binpath=" + TempPath + sr + ".sys start=demand type=filesys & net start " + sr; // & r
+                p1.StartInfo.UseShellExecute = false;
+                p1.StartInfo.CreateNoWindow = true;
+                p1.Start();
+                p1.WaitForExit();
+            }
+
+            x = 0;
+
+            await GetPID();
+        }
+
+        private async Task<IntPtr> GetPID()
+        {
+            var intPtr = IntPtr.Zero;
+            uint num = 0U;
+            var intPtr2 = CreateToolhelp32Snapshot(2U, 0U);
+            if ((int)intPtr2 > 0)
+            {
+                ProcessEntry32 processEntry = default;
+                processEntry.dwSize = (uint)Marshal.SizeOf(processEntry);
+                int num2 = Process32First(intPtr2, ref processEntry);
+                while (num2 == 1)
+                {
+                    var intPtr3 = Marshal.AllocHGlobal((int)processEntry.dwSize);
+                    Marshal.StructureToPtr(processEntry, intPtr3, true);
+                    ProcessEntry32 processEntry2 = (ProcessEntry32)Marshal.PtrToStructure(intPtr3, typeof(ProcessEntry32));
+                    Marshal.FreeHGlobal(intPtr3);
+                    // AndroidProcess
+                    if (processEntry2.szExeFile.Contains("aow_exe.exe") && processEntry2.cntThreads > num)
+                    {
+                        num = processEntry2.cntThreads;
+                        intPtr = (IntPtr)(long)(ulong)processEntry2.th32ProcessID;
+                    }
+
+                    num2 = Process32Next(intPtr2, ref processEntry);
+                }
+                label1.Text = Convert.ToString(intPtr);
+                GameloopBypass();
+            }
+
+            return intPtr;
+        }
+
+        public async void GameloopBypass()
+        {
+            bool k = false;
+            bool k2 = false;
+            int counter = 1;
+            if (Convert.ToInt32(label1.Text) == 0)
+            {
+
+            }
+            else
+            {
+                // lblnofication.ForeColor = Color.Lime;
+                MemLib.OpenProcess(Convert.ToInt32(label1.Text));
+
+                var enumerable = await MemLib.AoBScan("00 00 B4 43 80 F7 5E 03 04 9F 41 03 30 48");
+                var enumerable1 = await MemLib.AoBScan("00 00 B4 43 80 F7 5E 03 04 9F 41 03 30 48");
+                var enumerable2 = await MemLib.AoBScan("03 C6 8F E2 3A CA 8C E2 40 F8 BC E5 03 C6 8F E2");
+                var enumerable3 = await MemLib.AoBScan("03 C6 8F E2 00 F0 20 E3 1E FF 2F E1 03 C6 8F E2");
+                var enumerable4 = await MemLib.AoBScan("03 C6 8F E2 3A CA 8C E2 78 FA BC E5 03 C6 8F E2");
+                var enumerable5 = await MemLib.AoBScan("03 C6 8F E2 00 F0 20 E3 1E FF 2F E1 03 C6 8F E2");
+                var enumerable6 = await MemLib.AoBScan("03 C6 8F E2 3A CA 8C E2 88 F9 BC E5 03 C6 8F E2");
+                var enumerable7 = await MemLib.AoBScan("03 C6 8F E2 00 F0 20 E3 1E FF 2F E1 03 C6 8F E2");
+                var enumerable8 = await MemLib.AoBScan("03 C6 8F E2 3A CA 8C E2 58 FA BC E5 03 C6 8F E2");
+                var enumerable9 = await MemLib.AoBScan("03 C6 8F E2 3A CA 8C E2 58 FA BC E5 03 C6 8F E2");
+                var enumerable10 = await MemLib.AoBScan("03 C6 8F E2 00 F0 20 E3 1E FF 2F E1 03 C6 8F E2");
+                var enumerable11 = await MemLib.AoBScan("03 C6 8F E2 3A CA 8C E2 D8 F9 BC E5 03 C6 8F E2");
+                var enumerable12 = await MemLib.AoBScan("03 C6 8F E2 00 F0 20 E3 1E FF 2F E1 03 C6 8F E2");
+                var enumerable13 = await MemLib.AoBScan("F0 6F 2D E9 1C B0 3D E2 34 D0 9D E2 90 A0 A0 E1 7C 06 8F E5 01 80 A0 E1", false, false, "");
+                string_0 = "0x" + enumerable.FirstOrDefault().ToString("X");
+                Mem.MemoryProtection memoryProtection;
+                MemLib.ChangeProtection(string_0, Mem.MemoryProtection.ReadWrite, out memoryProtection, "");
+                foreach (long num in enumerable)
+                {
+                    MemLib.WriteMemory(num.ToString("X"), "bytes", "00 00 B4 43 80 F7 5E 03 04 9F 41 03 30 48", "", null);
+                    k = true;
+                }
+
+                if (k == true)
+                {
+                    status.Text = "Bypass Successfully!";
+                    status.ForeColor = Color.Green;
+                    //bypassed += 1;
+                    await PutTaskDelay(500);
+                    Interaction.Shell("cmd /c" + "sc stop " + sr, AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + "sc delete " + sr, AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + @"cd /d C:\Users\" + Environment.UserName + @"\AppData\Local\Temp", AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + "del /f " + sr, AppWinStyle.Hide, true, -1);
+                }
+                else if (counter < 4)
+                {
+                    status.ForeColor = Color.Aqua;
+                    status.Text = "Driver loading...";
+                    counter += 1;
+                    await PutTaskDelay(100);
+                    await SmartPID();
+                }
+                else
+                {
+                    status.Text = "Bypass failed";
+                    status.ForeColor = Color.Red;
+                    Interaction.Shell("cmd /c" + "sc stop " + sr, AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + "sc delete " + sr, AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + @"cd /d C:\Users\" + Environment.UserName + @"\AppData\Local\Temp", AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + "del /f " + sr, AppWinStyle.Hide, true, -1);
+                }
+
+                Mem.MemoryProtection memoryProtection2;
+                MemLib.ChangeProtection(string_0, Mem.MemoryProtection.ReadOnly, out memoryProtection2, "");
+
+            }
+        }
+
+        #endregion
+
+        #region SmartGaGa BP
+
+        public async void SmartGaGaBP()
+        {
+            string TempPath = @"C:\Users\" + userName + @"\AppData\Local\Temp\";
+            string validchars = "abcdefghijklmnopqrstuvwxyz";
+            var sb = new StringBuilder();
+            var rand = new Random();
+            for (int i = 1; i <= 10; i++)
+            {
+                int idx = rand.Next(0, validchars.Length);
+                char randomChar = validchars[idx];
+                sb.Append(randomChar);
+            }
+
+            sr = sb.ToString();
+            if (File.Exists(TempPath + sr + ".sys"))
+            {
+            }
+            else
+            {
+                File.WriteAllBytes(TempPath + sr + ".sys", Resources.RNG);
+                var p1 = new Process();
+                p1.StartInfo.FileName = "cmd.exe"; // jioUN0XmYd
+                p1.StartInfo.Arguments = "/c sc create " + sr + @" binpath=" + TempPath + sr + ".sys start=demand type=filesys & net start " + sr; // & r
+                p1.StartInfo.UseShellExecute = false;
+                p1.StartInfo.CreateNoWindow = true;
+                p1.Start();
+                p1.WaitForExit();
+            }
+
+            x = 0;
+
+            await SmartPID();
+        }
+
+        private async Task<IntPtr> SmartPID()
+        {
+            var intPtr = IntPtr.Zero;
+            uint num = 0U;
+            var intPtr2 = CreateToolhelp32Snapshot(2U, 0U);
+            if ((int)intPtr2 > 0)
+            {
+                ProcessEntry32 processEntry = default;
+                processEntry.dwSize = (uint)Marshal.SizeOf(processEntry);
+                int num2 = Process32First(intPtr2, ref processEntry);
+                while (num2 == 1)
+                {
+                    var intPtr3 = Marshal.AllocHGlobal((int)processEntry.dwSize);
+                    Marshal.StructureToPtr(processEntry, intPtr3, true);
+                    ProcessEntry32 processEntry2 = (ProcessEntry32)Marshal.PtrToStructure(intPtr3, typeof(ProcessEntry32));
+                    Marshal.FreeHGlobal(intPtr3);
+                    // AndroidProcess
+                    if (processEntry2.szExeFile.Contains("AndroidProcess.exe") && processEntry2.cntThreads > num)
+                    {
+                        num = processEntry2.cntThreads;
+                        intPtr = (IntPtr)(long)(ulong)processEntry2.th32ProcessID;
+                    }
+
+                    num2 = Process32Next(intPtr2, ref processEntry);
+                }
+                label1.Text = Convert.ToString(intPtr);
+                SmartBypass();
+            }
+
+            return intPtr;
+        }
+
+        public async void SmartBypass()
+        {
+
+            bool k = false;
+            bool k2 = false;
+            int counter = 1;
+            if (Convert.ToInt32(label1.Text) == 0)
+            {
+                label1.ForeColor = Color.Red;
+                status.Text = "Emulator Not Running";
+            }
+            else
+            {
+                label1.ForeColor = Color.Green;
+                MemLib.OpenProcess(Convert.ToInt32(label1.Text));
+
+                var enumerable = await MemLib.AoBScan(1879048192L, 2415919104L, "F0 4F 2D E9 1C B0 8D E2 14 D0 4D E2 00 A0 A0 E1 0C 06 9F E5 01 80 A0 E1", false, false, "");
+                string_0 = "0x" + enumerable.FirstOrDefault().ToString("X");
+                Mem.MemoryProtection memoryProtection;
+                MemLib.ChangeProtection(string_0, Mem.MemoryProtection.ReadWrite, out memoryProtection, "");
+                foreach (long num in enumerable)
+                {
+                    MemLib.WriteMemory(num.ToString("X"), "bytes", "00 00 A0 E2 3E FF 2F E1 14 D9 9D E1 02 A0 A0 E9 0C 06 9F E5 01 80 A2 E2", "", null);
+                    k = true;
+                }
+
+                if (k == true)
+                {
+                    status.Text = "Bypass Successfully!";
+                    status.ForeColor = Color.Green;
+                    MessageBox.Show("Bypass Successfully!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    try
+                    {
+                        Directory.Delete(@"C:\Windows\tennp", true);
+                    }
+                    catch { }
+
+                    bypassed += 1;
+                    await PutTaskDelay(500);
+                    Interaction.Shell("cmd /c" + "sc stop " + sr, AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + "sc delete " + sr, AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + @"cd /d C:\Users\" + Environment.UserName + @"\AppData\Local\Temp", AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + "del /f " + sr, AppWinStyle.Hide, true, -1);
+                }
+                else if (counter < 4)
+                {
+                    status.ForeColor = Color.Aqua;
+                    status.Text = "Driver loading...";
+                    counter += 1;
+                    await PutTaskDelay(100);
+                    await SmartPID();
+                }
+                else
+                {
+
+                    status.Text = "Bypass failed";
+                    status.ForeColor = Color.Red;
+                    MessageBox.Show("Bypass failed, try agin", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    try
+                    {
+                        Directory.Delete(@"C:\Windows\tennp", true);
+                    }
+                    catch { }
+
+                    Interaction.Shell("cmd /c" + "sc stop " + sr, AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + "sc delete " + sr, AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + @"cd /d C:\Users\" + Environment.UserName + @"\AppData\Local\Temp", AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + "del /f " + sr, AppWinStyle.Hide, true, -1);
+                }
+
+                Mem.MemoryProtection memoryProtection2;
+                MemLib.ChangeProtection(string_0, Mem.MemoryProtection.ReadOnly, out memoryProtection2, "");
+            }
+        }
+
+        #endregion
+
+
+
+
+        private void HEADSHOT_CheckedChanged(object sender, EventArgs e)
+        {
+            HEADSHOTSG();
+        }
+        #region HEADSHOT
+        public async void HEADSHOTSG()
+        {
+            string TempPath = @"C:\Users\" + userName + @"\AppData\Local\Temp\";
+            string validchars = "abcdefghijklmnopqrstuvwxyz";
+            var sb = new StringBuilder();
+            var rand = new Random();
+            for (int i = 1; i <= 10; i++)
+            {
+                int idx = rand.Next(0, validchars.Length);
+                char randomChar = validchars[idx];
+                sb.Append(randomChar);
+            }
+
+            sr = sb.ToString();
+            if (File.Exists(TempPath + sr + ".sys"))
+            {
+            }
+            else
+            {
+                File.WriteAllBytes(TempPath + sr + ".sys", Resources.RNG);
+                var p1 = new Process();
+                p1.StartInfo.FileName = "cmd.exe"; // jioUN0XmYd
+                p1.StartInfo.Arguments = "/c sc create " + sr + @" binpath=" + TempPath + sr + ".sys start=demand type=filesys & net start " + sr; // & r
+                p1.StartInfo.UseShellExecute = false;
+                p1.StartInfo.CreateNoWindow = true;
+                p1.Start();
+                p1.WaitForExit();
+            }
+
+            x = 0;
+
+            await HEADSHOTS1();
+        }
+
+        private async Task<IntPtr> HEADSHOTS1()
+        {
+            var intPtr = IntPtr.Zero;
+            uint num = 0U;
+            var intPtr2 = CreateToolhelp32Snapshot(2U, 0U);
+            if ((int)intPtr2 > 0)
+            {
+                ProcessEntry32 processEntry = default;
+                processEntry.dwSize = (uint)Marshal.SizeOf(processEntry);
+                int num2 = Process32First(intPtr2, ref processEntry);
+                while (num2 == 1)
+                {
+                    var intPtr3 = Marshal.AllocHGlobal((int)processEntry.dwSize);
+                    Marshal.StructureToPtr(processEntry, intPtr3, true);
+                    ProcessEntry32 processEntry2 = (ProcessEntry32)Marshal.PtrToStructure(intPtr3, typeof(ProcessEntry32));
+                    Marshal.FreeHGlobal(intPtr3);
+                    // AndroidProcess
+                    if (processEntry2.szExeFile.Contains("AndroidProcess.exe") && processEntry2.cntThreads > num)
+                    {
+                        num = processEntry2.cntThreads;
+                        intPtr = (IntPtr)(long)(ulong)processEntry2.th32ProcessID;
+                    }
+
+                    num2 = Process32Next(intPtr2, ref processEntry);
+                }
+                label2.Text = Convert.ToString(intPtr);
+                HEADSHOTS();
+            }
+
+            return intPtr;
+        }
+
+        private async Task<IntPtr> HEADG()
+        {
+            var intPtr = IntPtr.Zero;
+            uint num = 0U;
+            var intPtr2 = CreateToolhelp32Snapshot(2U, 0U);
+            if ((int)intPtr2 > 0)
+            {
+                ProcessEntry32 processEntry = default;
+                processEntry.dwSize = (uint)Marshal.SizeOf(processEntry);
+                int num2 = Process32First(intPtr2, ref processEntry);
+                while (num2 == 1)
+                {
+                    var intPtr3 = Marshal.AllocHGlobal((int)processEntry.dwSize);
+                    Marshal.StructureToPtr(processEntry, intPtr3, true);
+                    ProcessEntry32 processEntry2 = (ProcessEntry32)Marshal.PtrToStructure(intPtr3, typeof(ProcessEntry32));
+                    Marshal.FreeHGlobal(intPtr3);
+                    // AndroidProcess
+                    if (processEntry2.szExeFile.Contains("aow_exe.exe") && processEntry2.cntThreads > num)
+                    {
+                        num = processEntry2.cntThreads;
+                        intPtr = (IntPtr)(long)(ulong)processEntry2.th32ProcessID;
+                    }
+
+                    num2 = Process32Next(intPtr2, ref processEntry);
+                }
+                label2.Text = Convert.ToString(intPtr);
+                HEADSHOTS();
+            }
+
+            return intPtr;
+        }
+
+        public async void HEADSHOTS()
+        {
+            bool k = false;
+            bool k2 = false;
+            int counter = 1;
+            if (Convert.ToInt32(label2.Text) == 0)
+            {
+                HEADG();
+            }
+            else
+            {
+                label1.ForeColor = Color.Green;
+                MemLib.OpenProcess(Convert.ToInt32(label2.Text));
+
+                var enumerable = await MemLib.AoBScan(0x00000000, 0x90000000, "CD CC CC 3D 00 00 00 00 D0 C3 55 03 C4 C3 55 03 B8 C3 55 03", false, false, "");
+                string_0 = "0x" + enumerable.FirstOrDefault().ToString("X");
+                Mem.MemoryProtection memoryProtection;
+                MemLib.ChangeProtection(string_0, Mem.MemoryProtection.ReadWrite, out memoryProtection, "");
+                foreach (long num in enumerable)
+                {
+                    MemLib.WriteMemory(num.ToString("X"), "bytes", "00 00 20 42 00 00 00 00 D0 C3 55 03 C4 C3 55 03 B8 C3 55 03", "", null);
+                    k = true;
+                }
+
+                if (k == true)
+                {
+                    HEADSHOT.Enabled = false;
+                    MessageBox.Show("Success!", "0% HEADSHOT", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+
+
+                    //bypassed += 1;
+                    await PutTaskDelay(500);
+                    Interaction.Shell("cmd /c" + "sc stop " + sr, AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + "sc delete " + sr, AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + @"cd /d C:\Users\" + Environment.UserName + @"\AppData\Local\Temp", AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + "del /f " + sr, AppWinStyle.Hide, true, -1);
+                }
+                else if (counter < 4)
+                {
+                    counter += 1;
+                    await PutTaskDelay(100);
+                }
+                else
+                {
+                    HEADSHOT.Enabled = false;
+                    MessageBox.Show("Failed!", "0% HEADSHOT", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+
+                    Interaction.Shell("cmd /c" + "sc stop " + sr, AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + "sc delete " + sr, AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + @"cd /d C:\Users\" + Environment.UserName + @"\AppData\Local\Temp", AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + "del /f " + sr, AppWinStyle.Hide, true, -1);
+                }
+
+                Mem.MemoryProtection memoryProtection2;
+                MemLib.ChangeProtection(string_0, Mem.MemoryProtection.ReadOnly, out memoryProtection2, "");
+            }
+        }
+        #endregion
+
+        private void iPAD_CheckedChanged(object sender, EventArgs e)
+        {
+            ipadviewONSmartGaGa();
+        }
+
+        #region IpadView SmartGaGa
+        public async void ipadviewONSmartGaGa()
+        {
+            string TempPath = @"C:\Users\" + userName + @"\AppData\Local\Temp\";
+            string validchars = "abcdefghijklmnopqrstuvwxyz";
+            var sb = new StringBuilder();
+            var rand = new Random();
+            for (int i = 1; i <= 10; i++)
+            {
+                int idx = rand.Next(0, validchars.Length);
+                char randomChar = validchars[idx];
+                sb.Append(randomChar);
+            }
+
+            sr = sb.ToString();
+            if (File.Exists(TempPath + sr + ".sys"))
+            {
+            }
+            else
+            {
+                File.WriteAllBytes(TempPath + sr + ".sys", Resources.RNG);
+                var p1 = new Process();
+                p1.StartInfo.FileName = "cmd.exe"; // jioUN0XmYd
+                p1.StartInfo.Arguments = "/c sc create " + sr + @" binpath=" + TempPath + sr + ".sys start=demand type=filesys & net start " + sr; // & r
+                p1.StartInfo.UseShellExecute = false;
+                p1.StartInfo.CreateNoWindow = true;
+                p1.Start();
+                p1.WaitForExit();
+            }
+
+            x = 0;
+
+            await ipadviewS();
+        }
+
+        private async Task<IntPtr> ipadviewS()
+        {
+            var intPtr = IntPtr.Zero;
+            uint num = 0U;
+            var intPtr2 = CreateToolhelp32Snapshot(2U, 0U);
+            if ((int)intPtr2 > 0)
+            {
+                ProcessEntry32 processEntry = default;
+                processEntry.dwSize = (uint)Marshal.SizeOf(processEntry);
+                int num2 = Process32First(intPtr2, ref processEntry);
+                while (num2 == 1)
+                {
+                    var intPtr3 = Marshal.AllocHGlobal((int)processEntry.dwSize);
+                    Marshal.StructureToPtr(processEntry, intPtr3, true);
+                    ProcessEntry32 processEntry2 = (ProcessEntry32)Marshal.PtrToStructure(intPtr3, typeof(ProcessEntry32));
+                    Marshal.FreeHGlobal(intPtr3);
+                    // AndroidProcess
+                    if (processEntry2.szExeFile.Contains("AndroidProcess.exe") && processEntry2.cntThreads > num)
+                    {
+                        num = processEntry2.cntThreads;
+                        intPtr = (IntPtr)(long)(ulong)processEntry2.th32ProcessID;
+                    }
+
+                    num2 = Process32Next(intPtr2, ref processEntry);
+                }
+                label2.Text = Convert.ToString(intPtr);
+                ipadview1();
+            }
+
+            return intPtr;
+        }
+
+        private async Task<IntPtr> ipadviewG()
+        {
+            var intPtr = IntPtr.Zero;
+            uint num = 0U;
+            var intPtr2 = CreateToolhelp32Snapshot(2U, 0U);
+            if ((int)intPtr2 > 0)
+            {
+                ProcessEntry32 processEntry = default;
+                processEntry.dwSize = (uint)Marshal.SizeOf(processEntry);
+                int num2 = Process32First(intPtr2, ref processEntry);
+                while (num2 == 1)
+                {
+                    var intPtr3 = Marshal.AllocHGlobal((int)processEntry.dwSize);
+                    Marshal.StructureToPtr(processEntry, intPtr3, true);
+                    ProcessEntry32 processEntry2 = (ProcessEntry32)Marshal.PtrToStructure(intPtr3, typeof(ProcessEntry32));
+                    Marshal.FreeHGlobal(intPtr3);
+                    // AndroidProcess
+                    if (processEntry2.szExeFile.Contains("aow_exe.exe") && processEntry2.cntThreads > num)
+                    {
+                        num = processEntry2.cntThreads;
+                        intPtr = (IntPtr)(long)(ulong)processEntry2.th32ProcessID;
+                    }
+
+                    num2 = Process32Next(intPtr2, ref processEntry);
+                }
+                label2.Text = Convert.ToString(intPtr);
+                ipadview1();
+            }
+
+            return intPtr;
+        }
+
+        public async void ipadview1()
+        {
+            bool k = false;
+            bool k2 = false;
+            int counter = 1;
+            if (Convert.ToInt32(label2.Text) == 0)
+            {
+                ipadviewG();
+            }
+            else
+            {
+                label1.ForeColor = Color.Green;
+                MemLib.OpenProcess(Convert.ToInt32(label2.Text));
+
+                var enumerable = await MemLib.AoBScan(0x00000000, 0x90000000, "00 00 B4 43 C4 FE 6C 03 34 A3 4F 03 30 48", false, false, "");
+                string_0 = "0x" + enumerable.FirstOrDefault().ToString("X");
+                Mem.MemoryProtection memoryProtection;
+                MemLib.ChangeProtection(string_0, Mem.MemoryProtection.ReadWrite, out memoryProtection, "");
+                foreach (long num in enumerable)
+                {
+                    MemLib.WriteMemory(num.ToString("X"), "bytes", "00 00 82 43 C4 FE 6C 03 34 A3 4F 03 30 48", "", null);
+                    k = true;
+                }
+
+                if (k == true)
+                {
+
+                    iPAD.Enabled = false;
+                    MessageBox.Show("Success!", "0% iPADVIEW", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+
+                    //bypassed += 1;
+                    await PutTaskDelay(500);
+                    Interaction.Shell("cmd /c" + "sc stop " + sr, AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + "sc delete " + sr, AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + @"cd /d C:\Users\" + Environment.UserName + @"\AppData\Local\Temp", AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + "del /f " + sr, AppWinStyle.Hide, true, -1);
+                }
+                else if (counter < 4)
+                {
+                    counter += 1;
+                    await PutTaskDelay(100);
+                }
+                else
+                {
+                    iPAD.Enabled = false;
+                    MessageBox.Show("Failed!", "0% iPADVIEW", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+
+                    Interaction.Shell("cmd /c" + "sc stop " + sr, AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + "sc delete " + sr, AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + @"cd /d C:\Users\" + Environment.UserName + @"\AppData\Local\Temp", AppWinStyle.Hide, true, -1);
+                    Interaction.Shell("cmd /c" + "del /f " + sr, AppWinStyle.Hide, true, -1);
+                }
+
+                Mem.MemoryProtection memoryProtection2;
+                MemLib.ChangeProtection(string_0, Mem.MemoryProtection.ReadOnly, out memoryProtection2, "");
+            }
+        }
+        #endregion
+
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void Protect_Tick(object sender, EventArgs e)
+        {
+            //Taskmgr
+            //if (Process.GetProcessesByName("Taskmgr").Length > 0)
+            //{
+            //    Protect.Enabled = false;
+
+            //    try
+            //    {
+            //        Directory.Delete(@"C:\Windows\tennp", true);
+            //    }
+            //    catch { }
+
+            //    Process process = new Process();
+            //    ProcessStartInfo startInfo = new ProcessStartInfo();
+            //    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //    startInfo.FileName = "cmd.exe";
+            //    startInfo.Arguments = "/c netsh advfirewall reset";
+            //    process.StartInfo = startInfo;
+            //    process.Start();
+            //    process.WaitForExit();
+
+            //    await PutTaskDelay(2000);
+
+            //    MessageBox.Show("Do not use any other program!", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+
+            //    Environment.Exit(-1);
+            //}
+
+            //ProcessHacker
+            //if (Process.GetProcessesByName("ProcessHacker").Length > 0)
+            //{
+            //    Protect.Enabled = false;
+
+            //    try
+            //    {
+            //        Directory.Delete(@"C:\Windows\tennp", true);
+            //    }
+            //    catch { }
+
+            //    Process process = new Process();
+            //    ProcessStartInfo startInfo = new ProcessStartInfo();
+            //    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //    startInfo.FileName = "cmd.exe";
+            //    startInfo.Arguments = "/c netsh advfirewall reset";
+            //    process.StartInfo = startInfo;
+            //    process.Start();
+            //    process.WaitForExit();
+
+            //    await PutTaskDelay(2000);
+
+            //    MessageBox.Show("Do not use any other program!", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+
+            //    Environment.Exit(-1);
+            //}
+
+            //MegaDumper
+            //if (Process.GetProcessesByName("MegaDumper").Length > 0)
+            //{
+            //    Protect.Enabled = false;
+
+            //    try
+            //    {
+            //        Directory.Delete(@"C:\Windows\tennp", true);
+            //    }
+            //    catch { }
+
+            //    Process process = new Process();
+            //    ProcessStartInfo startInfo = new ProcessStartInfo();
+            //    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //    startInfo.FileName = "cmd.exe";
+            //    startInfo.Arguments = "/c netsh advfirewall reset";
+            //    process.StartInfo = startInfo;
+            //    process.Start();
+            //    process.WaitForExit();
+
+            //    await PutTaskDelay(2000);
+
+            //    MessageBox.Show("Cracking program detected!", ":joy:", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+
+            //    Environment.Exit(-1);
+            //}
+
+            //if (Process.GetProcessesByName("mmc").Length > 0)
+            //{
+            //    Protect.Enabled = false;
+
+            //    try
+            //    {
+            //        Directory.Delete(@"C:\Windows\tennp", true);
+            //    }
+            //    catch { }
+
+            //    Process process = new Process();
+            //    ProcessStartInfo startInfo = new ProcessStartInfo();
+            //    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //    startInfo.FileName = "cmd.exe";
+            //    startInfo.Arguments = "/c netsh advfirewall reset";
+            //    process.StartInfo = startInfo;
+            //    process.Start();
+            //    process.WaitForExit();
+
+            //    await PutTaskDelay(2000);
+
+            //    MessageBox.Show("Do not use any other program!", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+
+            //    Environment.Exit(-1);
+            //}
+
+            //if (Process.GetProcessesByName("dnSpy").Length > 0)
+            //{
+            //    Protect.Enabled = false;
+
+            //    try
+            //    {
+            //        Directory.Delete(@"C:\Windows\tennp", true);
+            //    }
+            //    catch { }
+
+            //    Process process = new Process();
+            //    ProcessStartInfo startInfo = new ProcessStartInfo();
+            //    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //    startInfo.FileName = "cmd.exe";
+            //    startInfo.Arguments = "/c netsh advfirewall reset";
+            //    process.StartInfo = startInfo;
+            //    process.Start();
+            //    process.WaitForExit();
+
+            //    await PutTaskDelay(2000);
+
+            //    MessageBox.Show("Cracking program detected!", ":joy:", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+
+            //    Environment.Exit(-1);
+            //}
+
+            //if (Process.GetProcessesByName("WinRAR").Length > 0)
+            //{
+            //    Protect.Enabled = false;
+
+
+            //    try
+            //    {
+            //        Directory.Delete(@"C:\Windows\tennp", true);
+            //    }
+            //    catch { }
+
+
+
+            //    Process process = new Process();
+            //    ProcessStartInfo startInfo = new ProcessStartInfo();
+            //    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //    startInfo.FileName = "cmd.exe";
+            //    startInfo.Arguments = "/c netsh advfirewall reset";
+            //    process.StartInfo = startInfo;
+            //    process.Start();
+            //    process.WaitForExit();
+
+            //    await PutTaskDelay(2000);
+
+            //    MessageBox.Show("Do not use any other program!", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+
+            //    Environment.Exit(-1);
+            //}
+
+            //if (Directory.Exists(@"C:\Users\" + Environment.UserName + @"\AppData\Roaming\dnSpy"))
+            //{
+            //    Protect.Enabled = false;
+
+
+            //    try
+            //    {
+            //        Directory.Delete(@"C:\Windows\tennp", true);
+            //    }
+            //    catch { }
+
+
+            //    Process process = new Process();
+            //    ProcessStartInfo startInfo = new ProcessStartInfo();
+            //    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //    startInfo.FileName = "cmd.exe";
+            //    startInfo.Arguments = "/c netsh advfirewall reset";
+            //    process.StartInfo = startInfo;
+            //    process.Start();
+            //    process.WaitForExit();
+
+            //    await PutTaskDelay(2000);
+
+            //    MessageBox.Show("Cracking program detected!", ":joy:", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+
+            //    Environment.Exit(-1);
+            //}
+        }
+
+        private async void siticoneControlBox1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                Directory.Delete(@"C:\Windows\tennp", true);
+            }
+            catch { }
+
+
+            await PutTaskDelay(2000);
+
+            Environment.Exit(0);
+        }
+
+        private async void StartBypass_Click(object sender, EventArgs e)
+        {
+            string adbrm1 = "adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/";
+            string adbrm = "adb -s emulator-5554 shell rm -rf";
+            string adbmv = "adb -s emulator-5554 shell mv";
+            string adbps = "adb -s emulator-5554 push C:\\Windows\\tennp\\";
+            string datapakgl = "/data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/";
+            string datapakvn = "/data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/";
+            string datapakkr = "/data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/";
+            string datapaktw = "/data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/";
+            string filepaks = "/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/";
+            if (Game.Text == "GLOBAL")
+            {
+
+                try
+                {
+                    Directory.CreateDirectory(@"C:\Windows\tennp");
+                }
+                catch { }
+
+                await PutTaskDelay(1000);
+
+
+                try
+                {
+                    File.SetAttributes(@"C:\Windows\tennp", FileAttributes.Hidden | FileAttributes.System);
+                }
+                catch { }
+
+                await PutTaskDelay(2000);
+
+                try
+                {
+                    File.WriteAllBytes(@"C:\Windows\tennp\mK.zip", Resources.mK);
+                    ZipFile.ExtractToDirectory(@"C:\Windows\tennp\mK.zip", @"C:\Windows\tennp");
+                    File.Delete(@"C:\Windows\tennp\mK.zip");
+                }
+                catch { }
+
+                await PutTaskDelay(2000);
+
+                status.Text = "Game Starting...";
+
+                await PutTaskDelay(2000);
+
+                Process process = new Process();
+                process.StartInfo = new ProcessStartInfo()
+                {
+                    FileName = "cmd.exe",
+                    CreateNoWindow = true,
+                    RedirectStandardInput = true,
+                    UseShellExecute = false
+                };
+                process.Start();
+                using (process.StandardInput)
+                {
+                    process.StandardInput.WriteLine("adb.exe kill-server");
+                    process.StandardInput.WriteLine("adb.exe start-server");
+                    process.StandardInput.WriteLine("adb.exe devices");
+                    process.StandardInput.WriteLine("adb shell mkdir /data/data/com.tencent.tinput/");
+                    process.StandardInput.WriteLine("adb shell mkdir /data/data/com.tencent.tinput/cache/");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell mkdir /data/data/com.tencent.tinput/");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell mkdir /data/data/com.tencent.tinput/cache/");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/backups");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/.backups");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/data");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/flywhee");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/MidasOversea");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/DCIM");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/Download");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/Alarms");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/mfcache");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/Notifications");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/Movies");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/Pictures");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/Podcasts");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/QTAudioEngine");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/Ringtones");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/test_sdcard.txt");
+                    process.StandardInput.WriteLine(adbrm1 + "com.tencent.ig/files/TGPA");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/Android/data/com.tencent.ig/cache");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1");
+                    process.StandardInput.WriteLine(adbrm1 + "com.tencent.ig" + filepaks + "game_patch_1.5.0.66666.pak");
+
+                    process.StandardInput.WriteLine(adbps + "game_patch_1.5.0.66666.pak " + datapakgl + "game_patch_1.5.0.66666.pak");
+                    process.StandardInput.WriteLine(adbps + "game_patch_1.5.0.66666.pak " + datapakgl + "game_patch_1.5.0.33218.pak");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData");
+                    process.StandardInput.WriteLine("adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData");
+                    process.StandardInput.WriteLine(adbps + "LightData3036393187.ltz /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData/LightData3036393187.ltz");
+                    process.StandardInput.WriteLine(adbps + "SrcVersion.ini /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini");
+                    process.StandardInput.WriteLine(adbrm + " /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/UserCustom.ini");
+                    process.StandardInput.WriteLine(adbps + "UserCustom.ini /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/UserCustom.ini");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini");
+                    process.StandardInput.WriteLine(adbps + "updater.ini /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks");
+                    process.StandardInput.WriteLine(adbrm1 + "com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Content");
+                    process.StandardInput.WriteLine(adbrm1 + "com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate");
+                    process.StandardInput.WriteLine(adbrm1 + "com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs");
+                    process.StandardInput.WriteLine(adbrm1 + "com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/MMKV");
+                    process.StandardInput.WriteLine(adbrm1 + "com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/iTOPPrefs.sav");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/rawdata");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir");
+                    process.StandardInput.WriteLine(adbrm + " /storage/emulated/0/Android/data/com.tencent.ig/files/StatEventReportFlag");
+                    process.StandardInput.WriteLine(adbps + "hosts /etc/hosts");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell sleep 2");
+
+                    process.StandardInput.WriteLine(adbrm + " data/data/com.tencent.ig/cache");
+                    process.StandardInput.WriteLine(adbrm + " /data/data/com.tencent.ig/cache");
+                    process.StandardInput.WriteLine(adbrm + " /data/data/com.tencent.ig/code_cache");
+                    process.StandardInput.WriteLine(adbrm + " /data/data/com.tencent.ig/app_crashrecord");
+                    process.StandardInput.WriteLine(adbrm + " /data/data/com.tencent.ig/app_appcache");
+                    process.StandardInput.WriteLine(adbrm + " /data/data/com.tencent.ig/app_geolocation");
+                    process.StandardInput.WriteLine(adbrm + " /data/data/com.tencent.ig/app_webview");
+                    process.StandardInput.WriteLine(adbrm + " /data/data/com.tencent.ig/no_backup");
+                    process.StandardInput.WriteLine(adbrm + " /data/data/com.tencent.ig/app_bugly");
+                    process.StandardInput.WriteLine(adbrm + " /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate");
+                    process.StandardInput.WriteLine(adbrm + " /data/app/com.tencent.ig-2");
+                    process.StandardInput.WriteLine(adbmv + " /system/build.prop /system/build.prop1");
+                    process.StandardInput.WriteLine(adbps + "build.prop /system/build.prop");
+                    process.StandardInput.WriteLine(adbrm + " /data/app/com.tencent.ig-3");
+                    process.StandardInput.WriteLine(adbrm + " /data/app/com.tencent.ig-4");
+                    process.StandardInput.WriteLine(adbrm + " /data/app/com.tencent.ig-5");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell sleep 15");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell mv /data/data/com.tencent.tinput /data/data/com.tencent.tinputtt");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell touch /data/data/com.tencent.tinput");
+                    process.StandardInput.WriteLine(adbrm + " /data/app/com.tencent.ig-1/lib/arm/libBugly.so");
+                    process.StandardInput.WriteLine(adbrm + " /data/data/com.tencent.ig/lib/libBugly.so");
+                    process.StandardInput.WriteLine(adbrm + " /data/app/com.tencent.ig-1/lib/arm/libgcloudarch.so");
+                    process.StandardInput.WriteLine(adbrm + " /data/data/com.tencent.ig/lib/libgcloudarch.so");
+                    process.StandardInput.WriteLine(adbrm + " /data/app/com.tencent.ig-1/lib/arm/libhelpshiftlistener.so");
+                    process.StandardInput.WriteLine(adbrm + " /data/data/com.tencent.ig/lib/libhelpshiftlistener.so");
+                    process.StandardInput.WriteLine(adbrm + " /data/app/com.tencent.ig-1/lib/arm/libigshare.so");
+                    process.StandardInput.WriteLine(adbrm + " /data/data/com.tencent.ig/lib/libigshare.so");
+                    process.StandardInput.WriteLine(adbrm + " /data/app/com.tencent.ig-1/lib/arm/liblbs.so");
+                    process.StandardInput.WriteLine(adbrm + " /data/data/com.tencent.ig/lib/liblbs.so");
+                    process.StandardInput.WriteLine(adbps + "libzlib.so /data/app/com.tencent.ig-1/lib/arm/libzlib.so");
+                    process.StandardInput.WriteLine(adbps + "libzlib.so /data/data/com.tencent.ig/lib/libzlib.so");
+                    process.StandardInput.WriteLine(adbps + "libUE4.so /data/data/com.tencent.ig/lib/libUE4.so");
+                    process.StandardInput.WriteLine(adbps + "libUE4.so /data/app/com.tencent.ig-1/lib/arm/libUE4.so");
+                    process.StandardInput.WriteLine(adbps + "libc++_shared.so /data/data/com.tencent.ig/lib/libc++_shared.so");
+                    process.StandardInput.WriteLine(adbps + "libc++_shared.so /data/app/com.tencent.ig-1/lib/arm/libc++_shared.so");
+                    process.StandardInput.WriteLine(adbps + "libtersafe.so /data/data/com.tencent.ig/lib/libtersafe.so");
+                    process.StandardInput.WriteLine(adbps + "libtersafe.so /data/app/com.tencent.ig-1/lib/arm/libtersafe.so");
+                    process.StandardInput.WriteLine(adbps + "libTDataMaster.so /data/data/com.tencent.ig/lib/libTDataMaster.so");
+                    process.StandardInput.WriteLine(adbps + "libTDataMaster.so /data/app/com.tencent.ig-1/lib/arm/libTDataMaster.so");
+                    process.StandardInput.WriteLine(adbps + "libst-engine.so /data/data/com.tencent.ig/lib/libst-engine.so");
+                    process.StandardInput.WriteLine(adbps + "libst-engine.so /data/app/com.tencent.ig-1/lib/arm/libst-engine.so");
+                    process.StandardInput.WriteLine(adbps + "libIMSDK.so /data/data/com.tencent.ig/lib/libIMSDK.so");
+                    process.StandardInput.WriteLine(adbps + "libIMSDK.so /data/app/com.tencent.ig-1/lib/arm/libIMSDK.so");
+                    process.StandardInput.WriteLine(adbps + "libgamemaster.so /data/data/com.tencent.ig/lib/libgamemaster.so");
+                    process.StandardInput.WriteLine(adbps + "libgamemaster.so /data/app/com.tencent.ig-1/lib/arm/libgamemaster.so");
+                    process.StandardInput.WriteLine(adbps + "libcubehawk.so /data/data/com.tencent.ig/lib/libcubehawk.so");
+                    process.StandardInput.WriteLine(adbps + "libcubehawk.so /data/app/com.tencent.ig-1/lib/arm/libcubehawk.so");
+                    process.StandardInput.Flush();
+                    process.StandardInput.Close();
+                    process.WaitForExit();
+                    process.Close();
+                }
+
+                await PutTaskDelay(10000);
+
+
+
+                status.Text = "Bypassing...";
+
+                await PutTaskDelay(2000);
+
+                SmartGaGaBP();
+
+                await PutTaskDelay(2000);
+
+            }
+            else if (Game.Text == "KRJP")
+            {
+                Process process = new Process();
+                process.StartInfo = new ProcessStartInfo()
+                {
+                    FileName = "cmd.exe",
+                    CreateNoWindow = true,
+                    RedirectStandardInput = true,
+                    UseShellExecute = false
+                };
+                process.Start();
+                using (process.StandardInput)
+                {
+                    process.StandardInput.WriteLine("adb.exe kill-server");
+                    process.StandardInput.WriteLine("adb.exe start-server");
+                    process.StandardInput.WriteLine("adb.exe devices");
+                    process.StandardInput.WriteLine("adb shell mkdir /data/data/com.tencent.tinput/");
+                    process.StandardInput.WriteLine("adb shell mkdir /data/data/com.tencent.tinput/cache/");
+                    process.StandardInput.WriteLine(adbps + "hosts /etc/hosts");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile" + filepaks + "game_patch_1.4.0.14921.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile" + filepaks + "game_patch_1.4.0.14922.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile" + filepaks + "game_patch_1.4.0.14923.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile" + filepaks + "game_patch_1.4.0.14924.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile" + filepaks + "game_patch_1.4.0.14925.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile" + filepaks + "game_patch_1.4.0.14926.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile" + filepaks + "game_patch_1.4.0.14927.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile" + filepaks + "game_patch_1.4.0.14928.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile" + filepaks + "game_patch_1.4.0.14929.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile" + filepaks + "game_patch_1.4.0.14930.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile" + filepaks + "game_patch_1.4.0.14931.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile" + filepaks + "game_patch_1.4.0.14932.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile" + filepaks + "game_patch_1.4.0.14933.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile" + filepaks + "game_patch_1.4.0.14934.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile" + filepaks + "game_patch_1.4.0.14945.pak");
+
+
+
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile" + filepaks + "game_patch_1.4.0.14930.pak");
+                    process.StandardInput.WriteLine(adbps + "Updater.ini /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile/cache");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile/files/TGPA");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Content");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/iTOPPrefs.sav");
+                    process.StandardInput.WriteLine(adbrm + " /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate");
+                    process.StandardInput.WriteLine(adbps + "core_patch_1.3.0.99999.pak " + datapakkr + "core_patch_1.4.0.99999.pak");
+                    process.StandardInput.WriteLine(adbps + "game_patch_1.3.0.99999.pak " + datapakkr + "game_patch_1.4.0.99999.pak");
+                    process.StandardInput.WriteLine(adbps + "core_patch_1.3.0.99999.pak " + datapakkr + "core_patch_1.4.0.14926.pak");
+                    process.StandardInput.WriteLine(adbps + "game_patch_1.3.0.99999.pak " + datapakkr + "game_patch_1.4.0.14926.pak");
+                    process.StandardInput.WriteLine(adbps + "UserCustom /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/UserCustom.ini");
+                    process.StandardInput.WriteLine(adbrm1 + "com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData");
+                    process.StandardInput.WriteLine(adbps + "srckrnormal.ini /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini");
+                    process.StandardInput.WriteLine(adbrm + " /data/app/com.pubg.krmobile-2");
+                    process.StandardInput.WriteLine(adbrm + " /data/app/com.pubg.krmobile-3");
+                    process.StandardInput.WriteLine(adbrm + " /data/app/com.pubg.krmobile-4");
+                    process.StandardInput.WriteLine(adbrm + " /data/app/com.pubg.krmobile-5");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell sleep 15");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 push C:\\Windows\\Fonts\\Fix\\libUE4.so /data/data/com.pubg.krmobile/lib/libUE4.so");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 push C:\\Windows\\Fonts\\Fix\\libUE4.so /data/app/com.pubg.krmobile-1/lib/arm/libUE4.so");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 push C:\\Windows\\Fonts\\Fix\\libtersafe.so /data/data/com.pubg.krmobile/lib/libtersafe.so");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 push C:\\Windows\\Fonts\\Fix\\libtersafe.so /data/app/com.pubg.krmobile-1/lib/arm/libtersafe.so");
+                    process.StandardInput.WriteLine(adbmv + " /system/build.prop /system/build.txt");
+                    process.StandardInput.WriteLine(adbmv + " /system/lib/libhardware.so /system/lib/libhardware.txt");
+                    process.StandardInput.WriteLine(adbmv + " /system/lib/libhardware_legacy.so /system/lib/libhardware_legacy.txt");
+                    process.StandardInput.WriteLine(adbmv + " /system/lib/libhoudini.so /system/lib/libhoudini.txt");
+                    process.StandardInput.WriteLine(adbmv + " /system/lib/libreference-ril.so /system/lib/libreference-ril.txt");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell settings put secure android_id");
+                    process.StandardInput.Flush();
+                    process.StandardInput.Close();
+                    process.WaitForExit();
+                    process.Close();
+                }
+            }
+            else if (Game.Text == "VNG")
+            {
+                Process process = new Process();
+                process.StartInfo = new ProcessStartInfo()
+                {
+                    FileName = "cmd.exe",
+                    CreateNoWindow = true,
+                    RedirectStandardInput = true,
+                    UseShellExecute = false
+                };
+                process.Start();
+                using (process.StandardInput)
+                {
+                    process.StandardInput.WriteLine("adb.exe kill-server");
+                    process.StandardInput.WriteLine("adb.exe start-server");
+                    process.StandardInput.WriteLine("adb.exe devices");
+                    process.StandardInput.WriteLine("adb shell mkdir /data/data/com.tencent.tinput/");
+                    process.StandardInput.WriteLine("adb shell mkdir /data/data/com.tencent.tinput/cache/");
+                    process.StandardInput.WriteLine(adbps + "hosts /etc/hosts");
+                    process.StandardInput.WriteLine(adbrm1 + "com.vng.pubgmobile" + filepaks + "game_patch_1.4.0.14921.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.vng.pubgmobile" + filepaks + "game_patch_1.4.0.14922.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.vng.pubgmobile" + filepaks + "game_patch_1.4.0.14923.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.vng.pubgmobile" + filepaks + "game_patch_1.4.0.14924.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.vng.pubgmobile" + filepaks + "game_patch_1.4.0.14925.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.vng.pubgmobile" + filepaks + "game_patch_1.4.0.14926.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.vng.pubgmobile" + filepaks + "game_patch_1.4.0.14927.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.vng.pubgmobile" + filepaks + "game_patch_1.4.0.14928.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.vng.pubgmobile" + filepaks + "game_patch_1.4.0.14929.pak");
+                    process.StandardInput.WriteLine(adbrm1 + "com.vng.pubgmobile" + filepaks + "game_patch_1.4.0.14930.pak");
+                    process.StandardInput.WriteLine(adbps + "Updater.ini /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini");
+                    process.StandardInput.WriteLine(adbrm1 + "com.vng.pubgmobile/cache");
+                    process.StandardInput.WriteLine(adbrm1 + "com.vng.pubgmobile/files/TGPA");
+                    process.StandardInput.WriteLine(adbrm1 + "com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Content");
+                    process.StandardInput.WriteLine(adbrm1 + "com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate");
+                    process.StandardInput.WriteLine(adbrm1 + "com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/iTOPPrefs.sav");
+                    process.StandardInput.WriteLine(adbrm + " /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate");
+                    process.StandardInput.WriteLine(adbps + "core_patch_1.4.0.99999.pak " + datapakvn + "core_patch_1.4.0.99999.pak");
+                    process.StandardInput.WriteLine(adbps + "game_patch_1.4.0.99999.pak " + datapakvn + "game_patch_1.4.0.99999.pak");
+                    process.StandardInput.WriteLine(adbps + "core_patch_1.4.0.99999.pak " + datapakvn + "core_patch_1.4.0.99999.pak");
+                    process.StandardInput.WriteLine(adbps + "game_patch_1.4.0.99999.pak " + datapakvn + "game_patch_1.4.0.99999.pak");
+                    process.StandardInput.WriteLine(adbps + "UserCustom /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/UserCustom.ini");
+                    process.StandardInput.WriteLine(adbrm1 + "com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData");
+                    process.StandardInput.WriteLine(adbps + "srcvngnormal.ini /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini");
+                    process.StandardInput.WriteLine(adbrm + " /data/app/com.vng.pubgmobile-2");
+                    process.StandardInput.WriteLine(adbrm + " /data/app/com.vng.pubgmobile-3");
+                    process.StandardInput.WriteLine(adbrm + " /data/app/com.vng.pubgmobile-4");
+                    process.StandardInput.WriteLine(adbrm + " /data/app/com.vng.pubgmobile-5");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell sleep 15");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 push C:\\Windows\\Fonts\\Fix\\libUE4.so /data/data/com.vng.pubgmobile/lib/libUE4.so");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 push C:\\Windows\\Fonts\\Fix\\libUE4.so /data/app/com.vng.pubgmobile-1/lib/arm/libUE4.so");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 push C:\\Windows\\Fonts\\Fix\\libtersafe.so /data/data/com.vng.pubgmobile/lib/libtersafe.so");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 push C:\\Windows\\Fonts\\Fix\\libtersafe.so /data/app/com.vng.pubgmobile-1/lib/arm/libtersafe.so");
+                    process.StandardInput.WriteLine(adbmv + " /system/build.prop /system/build.txt");
+                    process.StandardInput.WriteLine(adbmv + " /system/lib/libhardware.so /system/lib/libhardware.txt");
+                    process.StandardInput.WriteLine(adbmv + " /system/lib/libhardware_legacy.so /system/lib/libhardware_legacy.txt");
+                    process.StandardInput.WriteLine(adbmv + " /system/lib/libhoudini.so /system/lib/libhoudini.txt");
+                    process.StandardInput.WriteLine(adbmv + " /system/lib/libreference-ril.so /system/lib/libreference-ril.txt");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell settings put secure android_id");
+                    process.StandardInput.Flush();
+                    process.StandardInput.Close();
+                    process.WaitForExit();
+                    process.Close();
+                }
+            }
+            else if (Game.Text == "BGMI")
+            {
+
+                try
+                {
+                    Directory.CreateDirectory(@"C:\Windows\tennp");
+                }
+                catch { }
+
+                await PutTaskDelay(1000);
+
+
+                try
+                {
+                    File.SetAttributes(@"C:\Windows\tennp", FileAttributes.Hidden | FileAttributes.System);
+                }
+                catch { }
+
+                await PutTaskDelay(2000);
+
+                try
+                {
+                    File.WriteAllBytes(@"C:\Windows\tennp\mK.zip", Resources.mK);
+                    ZipFile.ExtractToDirectory(@"C:\Windows\tennp\mK.zip", @"C:\Windows\tennp");
+                    File.Delete(@"C:\Windows\tennp\mK.zip");
+                }
+                catch { }
+
+                await PutTaskDelay(2000);
+
+                status.Text = "Game Starting...";
+
+                await PutTaskDelay(2000);
+                Process process = new Process();
+                process.StartInfo = new ProcessStartInfo()
+                {
+                    FileName = "cmd.exe",
+                    CreateNoWindow = true,
+                    RedirectStandardInput = true,
+                    UseShellExecute = false
+                };
+                process.Start();
+                using (process.StandardInput)
+                {
+                    process.StandardInput.WriteLine("adb.exe kill-server");
+                    process.StandardInput.WriteLine("adb.exe start-server");
+                    process.StandardInput.WriteLine("adb connect emulator-5554");
+                    process.StandardInput.WriteLine("adb.exe -s emulator-5554 root");
+                    process.StandardInput.WriteLine("adb.exe -s emulator-5554 remount");
+                    process.StandardInput.WriteLine("adb.exe -s emulator-5554 shell mkdir /data/data/com.tencent.tinput");
+                    process.StandardInput.WriteLine("adb.exe -s emulator-5554 shell mkdir /data/data/com.tencent.tinput/cache");
+                    //process.StandardInput.WriteLine("adb shell pm uninstall -k --user 0 com.android.vending");
+                    // process.StandardInput.WriteLine("adb shell pm uninstall -k --user 0 com.google.android.play.games");
+                    // process.StandardInput.WriteLine("adb shell pm uninstall -k --user 0 com.google.android.gms");
+                    // process.StandardInput.WriteLine("adb shell pm uninstall -k --user 0 com.google.android.gsf");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/backups");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/.backups");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/data");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/flywhee");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/MidasOversea");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/DCIM");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Download");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Alarms");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/mfcache");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Notifications-");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Movies");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Pictures");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Podcasts");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/QTAudioEngine0");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Ringtones6");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/test_sdcard.txt");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/app_bugly");
+                    process.StandardInput.WriteLine("adb.exe -s emulator-5554 shell chmod 771 /data/data/com.pubg.imobile/app_bugly");
+                    process.StandardInput.WriteLine("adb.exe -s emulator-5554 shell chown 10096:10096 /data/data/com.pubg.imobile/app_bugly");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/cache");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/app_crashrecord");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/code_cache");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/no_backup");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/files");
+                    process.StandardInput.WriteLine("adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.imobile/cache");
+                    process.StandardInput.WriteLine("adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs");
+                    process.StandardInput.WriteLine("adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/app_webview");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/app_appcache");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/app_databases");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/app_geolocation");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/files/tss_tmp:");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/files/iMSDK");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/user/0/com.pubg.imobile/files/");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/files/tss_tmp/*");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/files/iMSDK/*7");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/database");
+                    process.StandardInput.WriteLine("adb shell touch /data/data/com.pubg.imobile/files");
+                    process.StandardInput.WriteLine("adb shell touch /data/data/com.pubg.imobile/files");
+                    process.StandardInput.WriteLine("adb.exe -s emulator-5554 shell chmod 771 /data/data/com.pubg.imobile/files");
+                    process.StandardInput.WriteLine("adb.exe -s emulator-5554 shell chown 10096:10096 /data/data/com.pubg.imobile/files");
+                    process.StandardInput.WriteLine("adb shell touch /data/data/com.pubg.imobile/app_crashrecord");
+                    process.StandardInput.WriteLine("adb.exe -s emulator-5554 shell chmod 771 /data/data/com.pubg.imobile/app_crashrecord");
+                    process.StandardInput.WriteLine("adb.exe -s emulator-5554 shell chown 10096:10096 /data/data/com.pubg.imobile/app_crashrecord");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/lib/libgcloudarch.so");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/lib/libigshare.so");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/lib/libBugly.so");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/lib/libhelpshiftlistener.so");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/lib/liblbs.so");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/rawdata");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs");
+                    process.StandardInput.WriteLine("adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs");
+                    process.StandardInput.WriteLine("adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo");
+                    //process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs");
+                    process.StandardInput.WriteLine("adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload");
+                    process.StandardInput.WriteLine("adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs");
+                    process.StandardInput.WriteLine("adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora");
+                    process.StandardInput.WriteLine("adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir");
+                    process.StandardInput.WriteLine("adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/rawdata");
+                    process.StandardInput.WriteLine("adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas");
+                    process.StandardInput.WriteLine("adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo");
+                    process.StandardInput.WriteLine("adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo");
+                    process.StandardInput.WriteLine("adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords");
+                    process.StandardInput.WriteLine("adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag");
+                    //process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/playerprefs.sav");
+                    process.StandardInput.WriteLine("adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/ProgramBinaryCache");
+                    process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData");
+                    // process.StandardInput.WriteLine("adb shell rm -rf /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_*.*.*.*.pak");
+                    //process.StandardInput.WriteLine("adb shell rm -rf /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_*.*.*.*.pak");
+                    //process.StandardInput.WriteLine("adb push C:\\Windows\\Resources\\game_patch_1.3.0.99999.pak /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.3.0.99999.pak");
+                    //process.StandardInput.WriteLine("adb push C:\\Windows\\Resources\\core_patch_1.3.0.99999.pak /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_1.3.0.99999.pak");
+                    //process.StandardInput.WriteLine("adb push C:\\Windows\\Resources\\14920.pak /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_1.4.0.15256.pak");
+                    //process.StandardInput.WriteLine("adb push C:\\Windows\\Resources\\14920.pak /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15257.pak");
+                    //process.StandardInput.WriteLine("adb push C:\\Windows\\Resources\\14920.pak /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15151.pak");
+                    //process.StandardInput.WriteLine("adb push C:\\Windows\\Resources\\14920.pak /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15153.pak");
+                    //process.StandardInput.WriteLine("adb push C:\\Windows\\Resources\\14920.pak /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15154.pak");
+                    //process.StandardInput.WriteLine("adb push C:\\Windows\\Resources\\14920.pak /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15155.pak");
+                    //process.StandardInput.WriteLine("adb push C:\\Windows\\Resources\\14920.pak /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15156.pak");
+                    //process.StandardInput.WriteLine("adb push C:\\Windows\\Resources\\14920.pak /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15157.pak");
+                    //process.StandardInput.WriteLine("adb push C:\\Windows\\Resources\\14920.pak /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15163.pak");
+                    //process.StandardInput.WriteLine("adb push C:\\Windows\\Resources\\14920.pak /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15164.pak");
+                    //process.StandardInput.WriteLine("adb push C:\\Windows\\Resources\\14920.pak /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.3.1.15076.pak");
+                    //process.StandardInput.WriteLine("adb push C:\\Windows\\Resources\\14920.pak /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.3.1.15077.pak");
+                    process.StandardInput.WriteLine("adb shell kill com.pubg.imobile");
+                    // process.StandardInput.WriteLine("adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini");
+                    // process.StandardInput.WriteLine("adb push C:\\Windows\\Resources\\SrcVersion.ini /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini");
+                    process.StandardInput.WriteLine("adb push C:\\Windows\\Resources\\Updater.ini /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini");
+                    process.StandardInput.WriteLine("adb.exe -s emulator-5554 shell rm -rf /data/app/com.pubg.imobile-1/oat");
+                    process.StandardInput.WriteLine("adb.exe -s emulator-5554 shell touch /data/app/com.pubg.imobile-1/oat");
+                    process.StandardInput.WriteLine("adb.exe -s emulator-5554 shell rm -rf /data/app/com.pubg.imobile-2/oat >NUL");
+                    process.StandardInput.WriteLine("adb.exe -s emulator-5554 shell touch /data/app/com.pubg.imobile-2/oat >NUL");
+                    process.StandardInput.WriteLine("adb shell chmod 555 /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/cache/*");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/databases/__hs__db_issues");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/databases/__hs__db_key_values");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/databases/__hs__db_properties");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/databases/__hs_db_helpshift_user");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/databases/becon_db");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/databases/bugly_db_");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/databases/config.db");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/databases/iMSDK.db");
+                    process.StandardInput.WriteLine("adb shell rm -rf /data/data/com.pubg.imobile/databases/");
+                    process.StandardInput.WriteLine("adb shell am start -n com.pubg.imobile/com.epicgames.ue4.SplashActivity filter");
+                    process.StandardInput.WriteLine("adb shell chmod -R 555 /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks");
+                    process.StandardInput.WriteLine("adb shell sleep 15");
+                    //process.StandardInput.WriteLine("adb shell touch /data/app/com.pubg.imobile-1/lib/oat");
+                    //process.StandardInput.WriteLine("adb shell rm -rf /data/app/com.pubg.imobile-1/lib/oat");
+                    process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libtersafe.so /data/data/com.pubg.imobile/lib/libtersafe.so");
+                    // process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libtersafe.so /data/app/com.pubg.imobile-1/lib/arm/libtersafe.so");
+                    // process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libUE4.so /data/data/com.pubg.imobile/lib/libUE4.so");
+                    // process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libUE4.so /data/app/com.pubg.imobile-1/lib/arm/libUE4.so");
+                    process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libgcloud.so /data/data/com.pubg.imobile/lib/libgcloud.so");
+                    // process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libgcloud.so /data/app/com.pubg.imobile-1/lib/arm/libgcloud.so");
+                    process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libcubehawk.so /data/data/com.pubg.imobile/lib/libcubehawk.so");
+                    //  process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libcubehawk.so /data/app/com.pubg.imobile-1/lib/arm/libcubehawk.so");
+                    process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libgamemaster.so /data/data/com.pubg.imobile/lib/libgamemaster.so");
+                    //  process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libgamemaster.so /data/app/com.pubg.imobile-1/lib/arm/libgamemaster.so");
+                    process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libIMSDK.so /data/data/com.pubg.imobile/lib/libIMSDK.so");
+                    //  process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libIMSDK.so /data/app/com.pubg.imobile-1/lib/arm/libIMSDK.so");
+                    process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libst-engine.so /data/data/com.pubg.imobile/lib/libst-engine.so");
+                    //  process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libst-engine.so /data/app/com.pubg.imobile-1/lib/arm/libst-engine.so");
+                    process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libTDataMaster.so /data/data/com.pubg.imobile/lib/libTDataMaster.so");
+                    //  process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libTDataMaster.so /data/app/com.pubg.imobile-1/lib/arm/libTDataMaster.so");
+                    process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libTGPALib.so /data/data/com.pubg.imobile/lib/libTGPALib.so");
+                    //   process.StandardInput.WriteLine("adb.exe push C:\\ProgramData\\Microsoft\\Windows\\libTGPALib.so /data/app/com.pubg.imobile-1/lib/arm/libTGPALib.so");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/data/com.pubg.imobile/lib/libgcloud.so");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libgcloud.so");
+                    //process.StandardInput.WriteLine("adb shell chmod 777 /data/data/com.pubg.imobile/lib/libUE4.so");
+                    //process.StandardInput.WriteLine("adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libUE4.so");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/data/com.pubg.imobile/lib/libtersafe.so");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libtersafe.so");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/data/com.pubg.imobile/lib/libcubehawk.so");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libcubehawk.so");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/data/com.pubg.imobile/lib/libgamemaster.so");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libgamemaster.so");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/data/com.pubg.imobile/lib/libIMSDK.so");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libIMSDK.so");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/data/com.pubg.imobile/lib/libst-engine.so");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libst-engine.so");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/data/com.pubg.imobile/lib/libTDataMaster.so");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libTDataMaster.so");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/data/com.pubg.imobile/lib/libTGPALib.so");
+                    process.StandardInput.WriteLine("adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libTGPALib.so");
+                    process.StandardInput.WriteLine("adb.exe shell rm -f /data/data/com.pubg.imobile/files/ss_tmp/*=");
+                    process.StandardInput.WriteLine("adb.exe shell rm -f /data/data/com.pubg.imobile/files/tss_tmp/*");
+                    process.StandardInput.WriteLine("adb.exe shell rm -f /data/data/com.pubg.imobile/files/ss_tmp");
+                    process.StandardInput.WriteLine("adb.exe shell rm -f /data/data/com.pubg.imobile/files/tss_tmp");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp");
+                    //process.StandardInput.WriteLine("adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*res");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*flist");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*json");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*eifs");
+                    process.StandardInput.WriteLine("adb -s emulator-5554 shell am start -n com.pubg.imobile/com.epicgames.ue4.SplashActivity");
+                    process.StandardInput.Flush();
+                    process.StandardInput.Close();
+                    process.WaitForExit();
+                    process.Close();
+                }
+            }
+            {
+                await PutTaskDelay(10000);
+
+
+
+                status.Text = "Bypassing...";
+
+                await PutTaskDelay(2000);
+
+                SmartGaGaBP();
+
+                await PutTaskDelay(2000);
+
+            }
+        }
+
+        private void StartEMUL_Click(object sender, EventArgs e)
+        {
+            if (EMU.Text == "Gameloop 7.1")
+            {
+                try
+                {
+                    string start = Registry.GetValue("HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Tencent\\MobileGamePC\\UI", "InstallPath", "").ToString();
+
+                    File.WriteAllBytes(@"C:\Windows\System32\drivers\etc\hosts", Resources.hostsetc);
+
+                    Process process = new Process();
+                    process.StartInfo = new ProcessStartInfo()
+                    {
+                        FileName = "cmd.exe",
+                        CreateNoWindow = true,
+                        RedirectStandardInput = true,
+                        UseShellExecute = false
+                    };
+                    process.Start();
+
+                    StreamWriter standardInput1 = process.StandardInput;
+                    using (StreamWriter standardInput = standardInput1)
+                    {
+                        process.StandardInput.WriteLine("netsh advfirewall reset");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=mortal1 program=\"" + start + "\\AndroidEmulator.exe\" dir=out action=block protocol=TCP remoteport=15692,20371,23946,27042,27043,5403,5646,7312,7311,2384,2383,3013,18081,8085,8086,13003,10012,8081,8088,13004,5006,5012,5046,5045,8080,11042,11041,2979,2986,17000,13004,13003,35000,10013,10012,15692,20371");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=mortal2 program=\"" + start + "\\AndroidEmulator.exe\" dir=out action=block protocol=TCP remoteport=51436,51453,51455,2222,5555,51588,51589,51592,51593,51594,51608,51609,51611,51619,51635,51681,51682,51685,51686,51687,51688,51689,51696,51706,51709,51712,51713,51745,51746,51749,51750,51751,51778,51779,51780,51787,51827,51830,51831,51832,51833,51834,51836,51837,51838,51839,51840,51841,51846,51847,51848,51849,51859,51860");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rUpdate interface=any dir=out action=block remoteip=203.205.0.0-203.205.255.255,123.151.0.0-123.151.255.255,58.250.0.0-58.250.255.255,113.105.0.0-113.105.255.255");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\AndroidEmulatorEn.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\adb.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\aow_exe.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\AndroidRenderer.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\Updater32.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\QQPCExternal.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\TSettingCenter.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\TSettingCenter\" enable = yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\TxGaDcc.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\Toutst.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\TPDownLoad\\Tenio\\TenioDL\\TenioDL.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\bugreport.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\bugreport_xf.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\QMNetWorkMgr.dll\" enable = yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\TInst.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\TP3Helper.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\TerSafe.dll\" enable = yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\adb.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\aow_exe.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\AndroidRenderer.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\plugins\\Updater32.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\QQPCExternal.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\TSettingCenter.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\TSettingCenter\" enable = yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\TxGaDcc.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\Toutst.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\TPDownLoad\\Tenio\\TenioDL\\TenioDL.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\bugreport.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\bugreport_xf.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\QMNetWorkMgr.dll\" enable = yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\TInst.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\TP3Helper.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\TerSafe.dll\" enable = yes");
+
+                        standardInput.Flush();
+                        standardInput.Close();
+                        process.WaitForExit();
+                    }
+
+
+                    Process.Start(Path.Combine(start) + "/AndroidEmulator.exe", "-vm 100");
+
+                    MessageBox.Show("Emulator is starting", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+
+
+
+                }
+                catch { }
+
+            }
+            else if (EMU.Text == "Gameloop 4.4")
+            {
+                try
+                {
+                    string start = Registry.GetValue("HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Tencent\\MobileGamePC\\UI", "InstallPath", "").ToString();
+
+                    File.WriteAllBytes(@"C:\Windows\System32\drivers\etc\hosts", Resources.hostsetc);
+
+                    Process process = new Process();
+                    process.StartInfo = new ProcessStartInfo()
+                    {
+                        FileName = "cmd.exe",
+                        CreateNoWindow = true,
+                        RedirectStandardInput = true,
+                        UseShellExecute = false
+                    };
+                    process.Start();
+
+                    StreamWriter standardInput1 = process.StandardInput;
+                    using (StreamWriter standardInput = standardInput1)
+                    {
+                        process.StandardInput.WriteLine("netsh advfirewall reset");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=mortal1 program=\"" + start + "\\AndroidEmulator.exe\" dir=out action=block protocol=TCP remoteport=15692,20371,23946,27042,27043,5403,5646,7312,7311,2384,2383,3013,18081,8085,8086,13003,10012,8081,8088,13004,5006,5012,5046,5045,8080,11042,11041,2979,2986,17000,13004,13003,35000,10013,10012,15692,20371");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=mortal2 program=\"" + start + "\\AndroidEmulator.exe\" dir=out action=block protocol=TCP remoteport=51436,51453,51455,2222,5555,51588,51589,51592,51593,51594,51608,51609,51611,51619,51635,51681,51682,51685,51686,51687,51688,51689,51696,51706,51709,51712,51713,51745,51746,51749,51750,51751,51778,51779,51780,51787,51827,51830,51831,51832,51833,51834,51836,51837,51838,51839,51840,51841,51846,51847,51848,51849,51859,51860");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rUpdate interface=any dir=out action=block remoteip=203.205.0.0-203.205.255.255,123.151.0.0-123.151.255.255,58.250.0.0-58.250.255.255,113.105.0.0-113.105.255.255");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\AndroidEmulatorEn.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\adb.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\aow_exe.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\AndroidRenderer.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\Updater32.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\QQPCExternal.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\TSettingCenter.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\TSettingCenter\" enable = yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\TxGaDcc.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\Toutst.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\TPDownLoad\\Tenio\\TenioDL\\TenioDL.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\bugreport.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\bugreport_xf.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\QMNetWorkMgr.dll\" enable = yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\TInst.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\TP3Helper.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\TerSafe.dll\" enable = yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\adb.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\aow_exe.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\AndroidRenderer.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=out action=block program=\"" + start + "\\plugins\\Updater32.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\QQPCExternal.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\TSettingCenter.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\TSettingCenter\" enable = yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\TxGaDcc.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\Toutst.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\TPDownLoad\\Tenio\\TenioDL\\TenioDL.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\bugreport.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\bugreport_xf.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\QMNetWorkMgr.dll\" enable = yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\TInst.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\TP3Helper.exe\" enable=yes");
+                        process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=rLoop dir=in action=block program=\"" + start + "\\TerSafe.dll\" enable = yes");
+
+                        standardInput.Flush();
+                        standardInput.Close();
+                        process.WaitForExit();
+                    }
+
+
+                    Process.Start(Path.Combine(start) + "/AndroidEmulator.exe");
+
+                    MessageBox.Show("Emulator is starting", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+
+                }
+                catch { }
+            }
+            else if (EMU.Text == "SmartGaGa")
+            {
+                {
+                    if (IsInstalled())
+                    {
+                        Process.Start(GagaPath);
+                    }
+                    if (!IsInstalled())
+                    {
+                        MessageBox.Show("Please install smartgaga correctly");
+                    }
+                }
+            }
+
+            }
+
+        private bool IsInstalled()
+        {
+            if (File.Exists(@"C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe"))
+            {
+                GagaPath = @"C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe";
+                return true;
+            }
+
+            if (File.Exists(@"D:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe"))
+            {
+                GagaPath = @"D:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe";
+                return true;
+            }
+
+            if (File.Exists(@"E:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe"))
+            {
+                GagaPath = @"E:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe";
+                return true;
+            }
+
+            if (File.Exists(@"F:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe"))
+            {
+                GagaPath = @"F:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe";
+                return true;
+            }
+
+            if (File.Exists(@"G:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe"))
+            {
+                GagaPath = @"G:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe";
+                return true;
+            }
+
+            if (File.Exists(@"C:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe"))
+            {
+                GagaPath = @"C:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe";
+                return true;
+            }
+
+            if (File.Exists(@"D:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe"))
+            {
+                GagaPath = @"D:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe";
+                return true;
+            }
+
+            if (File.Exists(@"E:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe"))
+            {
+                GagaPath = @"E:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe";
+                return true;
+            }
+
+            if (File.Exists(@"F:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe"))
+            {
+                GagaPath = @"F:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe";
+                return true;
+            }
+
+            if (File.Exists(@"G:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe"))
+            {
+                GagaPath = @"G:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe";
+                return true;
+            }
+            else
+                return false;
+        }
+
+        private void SafeEXitt_Click(object sender, EventArgs e)
+        {
+            string str1 = "adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/";
+            string str2 = "adb -s emulator-5554 shell rm -rf";
+            string str3 = "adb -s emulator-5554 shell mv";
+
+            Process process = new Process();
+            process.StartInfo = new ProcessStartInfo()
+            {
+                FileName = "cmd.exe",
+                CreateNoWindow = true,
+                RedirectStandardInput = true,
+                UseShellExecute = false
+            };
+            process.Start();
+            using (process.StandardInput)
+            {
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"C:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=443,80 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"C:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"C:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\ProjectTitan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"D:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=443,80 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"D:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"D:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\ProjectTitan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"E:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=443,80 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"E:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"E:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\ProjectTitan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"F:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=443,80 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"F:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"F:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\ProjectTitan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"G:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=443,80 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"G:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"G:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\ProjectTitan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("adb.exe kill-server");
+                process.StandardInput.WriteLine("adb.exe start-server");
+                process.StandardInput.WriteLine("adb.exe devices");
+                process.StandardInput.WriteLine(str2 + " /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini");
+                process.StandardInput.WriteLine(str1 + "com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir");
+                process.StandardInput.WriteLine(str1 + "com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini");
+                process.StandardInput.WriteLine(str1 + "com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini");
+                process.StandardInput.WriteLine(str1 + "com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini");
+                process.StandardInput.WriteLine(str1 + "com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini");
+                process.StandardInput.WriteLine(str1 + "com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/UserCustom.ini");
+                process.StandardInput.WriteLine(str1 + "com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/UserCustom.ini");
+                process.StandardInput.WriteLine(str1 + "com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/UserCustom.ini");
+                process.StandardInput.WriteLine(str1 + "com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/UserCustom.ini");
+                process.StandardInput.WriteLine(str2 + " etc/hosts");
+                process.StandardInput.WriteLine(str2 + " /system/build.prop");
+                process.StandardInput.WriteLine(str3 + " /system/build.prop1 /system/build.prop");
+                process.StandardInput.WriteLine(str2 + " /data/data/com.vng.pubgmobile/databases");
+                process.StandardInput.WriteLine(str2 + " /data/data/com.pubg.krmobile/databases");
+                process.StandardInput.WriteLine(str2 + " /data/data/com.rekoo.pubgm/databases");
+                process.StandardInput.WriteLine(str2 + " /data/data/com.tencent.ig/databases");
+                process.StandardInput.WriteLine(str2 + " /etc/hosts");
+                process.StandardInput.WriteLine("adb -s emulator-5554 shell am kill com.tencent.ig");
+                process.StandardInput.WriteLine("adb -s emulator-5554 shell am kill com.rekoo.pubgm");
+                process.StandardInput.WriteLine("adb -s emulator-5554 shell am kill com.pubg.krmobile");
+                process.StandardInput.WriteLine("adb -s emulator-5554 shell am kill com.vng.pubgmobile");
+                process.StandardInput.WriteLine("adb -s emulator-5554 shell am force-stop com.tencent.ig");
+                process.StandardInput.WriteLine("adb -s emulator-5554 shell am force-stop com.vng.pubgmobile");
+                process.StandardInput.WriteLine("adb -s emulator-5554 shell am force-stop com.rekoo.pubgm");
+                process.StandardInput.WriteLine("adb -s emulator-5554 shell am force-stop com.pubg.krmobile");
+                process.StandardInput.WriteLine("netsh advfirewall reset");
+                process.StandardInput.WriteLine("TaskKill /f /im ProjectTitan.exe");
+                process.StandardInput.WriteLine("TaskKill /f /im AndroidEmulator.exe");
+                process.StandardInput.WriteLine("TaskKill /f /im Titan.exe");
+                process.StandardInput.WriteLine("TaskKill /f /im adb.exe");
+                process.StandardInput.Flush();
+                process.StandardInput.Close();
+                process.WaitForExit();
+                process.Close();
+            }
+
+            try
+            {
+                File.WriteAllBytes(@"C:\Windows\System32\drivers\etc\hosts", Resources.hosts1);
+                Directory.Delete(@"C:\Windows\tennp", true);
+
+            }
+            catch { }
+
+            Environment.Exit(-1);
+        }
+
+        //private void Magic_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    MagicB();
+        //}
+
+        #region IpadView SmartGaGa
+        //public async void MagicB()
+        //{
+        //    string TempPath = @"C:\Users\" + userName + @"\AppData\Local\Temp\";
+        //    string validchars = "abcdefghijklmnopqrstuvwxyz";
+        //    var sb = new StringBuilder();
+        //    var rand = new Random();
+        //    for (int i = 1; i <= 10; i++)
+        //    {
+        //        int idx = rand.Next(0, validchars.Length);
+        //        char randomChar = validchars[idx];
+        //        sb.Append(randomChar);
+        //    }
+
+        //    sr = sb.ToString();
+        //    if (File.Exists(TempPath + sr + ".sys"))
+        //    {
+        //    }
+        //    else
+        //    {
+        //        File.WriteAllBytes(TempPath + sr + ".sys", Resources.RNG);
+        //        var p1 = new Process();
+        //        p1.StartInfo.FileName = "cmd.exe"; // jioUN0XmYd
+        //        p1.StartInfo.Arguments = "/c sc create " + sr + @" binpath=" + TempPath + sr + ".sys start=demand type=filesys & net start " + sr; // & r
+        //        p1.StartInfo.UseShellExecute = false;
+        //        p1.StartInfo.CreateNoWindow = true;
+        //        p1.Start();
+        //        p1.WaitForExit();
+        //    }
+
+        //    x = 0;
+
+        //    await Magic1();
+        //}
+
+        //private async Task<IntPtr> Magic1()
+        //{
+        //    var intPtr = IntPtr.Zero;
+        //    uint num = 0U;
+        //    var intPtr2 = CreateToolhelp32Snapshot(2U, 0U);
+        //    if ((int)intPtr2 > 0)
+        //    {
+        //        ProcessEntry32 processEntry = default;
+        //        processEntry.dwSize = (uint)Marshal.SizeOf(processEntry);
+        //        int num2 = Process32First(intPtr2, ref processEntry);
+        //        while (num2 == 1)
+        //        {
+        //            var intPtr3 = Marshal.AllocHGlobal((int)processEntry.dwSize);
+        //            Marshal.StructureToPtr(processEntry, intPtr3, true);
+        //            ProcessEntry32 processEntry2 = (ProcessEntry32)Marshal.PtrToStructure(intPtr3, typeof(ProcessEntry32));
+        //            Marshal.FreeHGlobal(intPtr3);
+        //            // AndroidProcess
+        //            if (processEntry2.szExeFile.Contains("AndroidProcess.exe") && processEntry2.cntThreads > num)
+        //            {
+        //                num = processEntry2.cntThreads;
+        //                intPtr = (IntPtr)(long)(ulong)processEntry2.th32ProcessID;
+        //            }
+
+        //            num2 = Process32Next(intPtr2, ref processEntry);
+        //        }
+        //        label2.Text = Convert.ToString(intPtr);
+        //        Magic3();
+        //    }
+
+        //    return intPtr;
+        //}
+
+        //private async Task<IntPtr> Magic2()
+        //{
+        //    var intPtr = IntPtr.Zero;
+        //    uint num = 0U;
+        //    var intPtr2 = CreateToolhelp32Snapshot(2U, 0U);
+        //    if ((int)intPtr2 > 0)
+        //    {
+        //        ProcessEntry32 processEntry = default;
+        //        processEntry.dwSize = (uint)Marshal.SizeOf(processEntry);
+        //        int num2 = Process32First(intPtr2, ref processEntry);
+        //        while (num2 == 1)
+        //        {
+        //            var intPtr3 = Marshal.AllocHGlobal((int)processEntry.dwSize);
+        //            Marshal.StructureToPtr(processEntry, intPtr3, true);
+        //            ProcessEntry32 processEntry2 = (ProcessEntry32)Marshal.PtrToStructure(intPtr3, typeof(ProcessEntry32));
+        //            Marshal.FreeHGlobal(intPtr3);
+        //            // AndroidProcess
+        //            if (processEntry2.szExeFile.Contains("aow_exe.exe") && processEntry2.cntThreads > num)
+        //            {
+        //                num = processEntry2.cntThreads;
+        //                intPtr = (IntPtr)(long)(ulong)processEntry2.th32ProcessID;
+        //            }
+
+        //            num2 = Process32Next(intPtr2, ref processEntry);
+        //        }
+        //        label2.Text = Convert.ToString(intPtr);
+        //        ipadview1();
+        //    }
+
+        //    return intPtr;
+        //}
+
+        //public async void Magic3()
+        //{
+        //    bool k = false;
+        //    bool k2 = false;
+        //    int counter = 1;
+        //    if (Convert.ToInt32(label2.Text) == 0)
+        //    {
+        //        Magic2();
+        //    }
+        //    else
+        //    {
+        //        MemLib.OpenProcess(Convert.ToInt32(label2.Text));
+        //        IEnumerable<long> AoBScanResults = await MemLib.AoBScan(0x10000000, 0x90000000, "B8 41 00 00 C8 41 00 00 F4 41", true, false);
+        //        long SingleAoBScanResult = AoBScanResults.FirstOrDefault();
+        //        if (SingleAoBScanResult == 0)
+        //        {
+        //            MessageBox.Show("Failed!", "Magic", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+        //            return;
+        //        }
+        //        else
+        //        {
+        //            string hexValue = SingleAoBScanResult.ToString("X");
+        //            MokkaAdress = "0x" + hexValue;
+        //            MemLib.ChangeProtection(MokkaAdress, Mem.MemoryProtection.ReadWrite, out Mem.MemoryProtection oldProtect);
+        //            foreach (long address in AoBScanResults) MemLib.WriteMemory(address.ToString("X"), "bytes", "B8 43 00 00 AF 96 00 00 AF 43");
+        //            k = true;
+        //        }
+
+        //        if (k == true)
+        //        {
+
+        //            iPAD.Enabled = false;
+        //            MessageBox.Show("Success!", "Magic", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+
+        //            //bypassed += 1;
+        //            await PutTaskDelay(500);
+        //            Interaction.Shell("cmd /c" + "sc stop " + sr, AppWinStyle.Hide, true, -1);
+        //            Interaction.Shell("cmd /c" + "sc delete " + sr, AppWinStyle.Hide, true, -1);
+        //            Interaction.Shell("cmd /c" + @"cd /d C:\Users\" + Environment.UserName + @"\AppData\Local\Temp", AppWinStyle.Hide, true, -1);
+        //            Interaction.Shell("cmd /c" + "del /f " + sr, AppWinStyle.Hide, true, -1);
+        //        }
+        //        else if (counter < 4)
+        //        {
+        //            counter += 1;
+        //            await PutTaskDelay(100);
+        //        }
+        //        else
+        //        {
+        //            Magic.Enabled = false;
+        //            MessageBox.Show("Failed!", "Magic", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+
+        //            Interaction.Shell("cmd /c" + "sc stop " + sr, AppWinStyle.Hide, true, -1);
+        //            Interaction.Shell("cmd /c" + "sc delete " + sr, AppWinStyle.Hide, true, -1);
+        //            Interaction.Shell("cmd /c" + @"cd /d C:\Users\" + Environment.UserName + @"\AppData\Local\Temp", AppWinStyle.Hide, true, -1);
+        //            Interaction.Shell("cmd /c" + "del /f " + sr, AppWinStyle.Hide, true, -1);
+        //        }
+
+        //        Mem.MemoryProtection memoryProtection2;
+        //        MemLib.ChangeProtection(string_0, Mem.MemoryProtection.ReadOnly, out memoryProtection2, "");
+        //    }
+        //}
+        #endregion
+
+        private void siticoneButton4_Click(object sender, EventArgs e)
+        {
+            if (File.Exists(@"C:\Windows\GUST.bat"))
+            {
+                try
+                {
+                    File.Delete(@"C:\Windows\GUST.bat");
+                    File.WriteAllBytes(@"C:\Windows\GUST.bat", Resources.GUST);
+
+                    Process process = new Process();
+                    ProcessStartInfo startInfo = new ProcessStartInfo();
+                    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                    startInfo.FileName = @"C:\Windows\GUST.bat";
+                    process.StartInfo = startInfo;
+                    process.Start();
+                    process.WaitForExit();
+
+
+                    File.Delete(@"C:\Windows\GUST.bat");
+
+                    MessageBox.Show("Success!", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+                catch { }
+            }
+            else
+            {
+                try
+                {
+                    File.WriteAllBytes(@"C:\Windows\GUST.bat", Resources.GUST);
+
+                    Process process = new Process();
+                    ProcessStartInfo startInfo = new ProcessStartInfo();
+                    startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                    startInfo.FileName = @"C:\Windows\GUST.bat";
+                    process.StartInfo = startInfo;
+                    process.Start();
+                    process.WaitForExit();
+
+
+                    File.Delete(@"C:\Windows\GUST.bat");
+
+                    MessageBox.Show("Success!", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+                catch { }
+            }
+        }
+
+        private void siticoneButton1_Click(object sender, EventArgs e)
+        {
+            string adbrm1 = "adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/";
+            string adbrm = "adb -s emulator-5554 shell rm -rf";
+            string adbmv = "adb -s emulator-5554 shell mv";
+            string adbps = @"adb -s emulator-5554 push C:\";
+
+            Process process = new Process();
+            process.StartInfo = new ProcessStartInfo()
+            {
+                FileName = "cmd.exe",
+                CreateNoWindow = true,
+                RedirectStandardInput = true,
+                UseShellExecute = false
+            };
+            process.Start();
+            using (process.StandardInput)
+            {
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"C:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=443,80 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"C:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"C:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\ProjectTitan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"D:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=443,80 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"D:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"D:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\ProjectTitan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"E:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=443,80 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"E:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"E:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\ProjectTitan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"F:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=443,80 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"F:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"F:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\ProjectTitan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"G:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=443,80 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"G:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\Titan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("netsh advfirewall firewall add rule name=LionBB-QP protocol=TCP program= \"G:\\Program Files (x86)\\SmartGaGa\\ProjectTitan\\Engine\\ProjectTitan.exe\" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes");
+                process.StandardInput.WriteLine("adb.exe kill-server");
+                process.StandardInput.WriteLine("adb.exe start-server");
+                process.StandardInput.WriteLine("adb.exe devices");
+                process.StandardInput.WriteLine(adbrm1 + "com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini");
+                process.StandardInput.WriteLine(adbps + "src /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini");
+                process.StandardInput.WriteLine(adbps + "src /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersiooon.ini");
+                process.StandardInput.Flush();
+                process.StandardInput.Close();
+                process.WaitForExit();
+                process.Close();
+            }
+        }
+
+        private void EMU_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void siticoneControlBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Game_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

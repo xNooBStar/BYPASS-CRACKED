@@ -1,0 +1,219 @@
+netsh advfirewall firewall add rule name=update1 interface=any dir=out action=block remoteip=203.205.0.0-203.205.255.255,123.151.0.0-123.151.255.255,58.250.0.0-58.250.255.255,113.105.0.0-113.105.255.255
+netsh advfirewall firewall add rule name=update1 interface=any dir=in action=block remoteip=203.205.0.0-203.205.255.255,123.151.0.0-123.151.255.255,58.250.0.0-58.250.255.255,113.105.0.0-113.105.255.255
+netsh advfirewall firewall add rule name=update_error protocol=ANY dir=out remoteip=123.151.71.34 action=block enable=yes
+netsh advfirewall firewall add rule name=update_error protocol=ANY dir=in remoteip=123.151.71.34 action=block enable=yes
+netsh advfirewall firewall add rule name=update_error protocol=ANY dir=out remoteip=203.205.239.243 action=block enable=yes
+netsh advfirewall firewall add rule name=update_error protocol=ANY dir=in remoteip=203.205.239.243 action=block enable=yes
+netsh advfirewall firewall add rule name=private protocol=TCP dir=out action=block enable=yes remoteport=20371,3013,18081,8085,8013,13003,10012,8081,8088,13004,5012,8080,11042,11041,17000,10013
+adb kill-server
+adb start-server
+adb devices
+db root
+adb.exe shell rm -rf /data/data/com.tencent.ig/files
+adb.exe shell rm -rf /data/user/0/com.tencent.ig/files
+adb shell rm -rf /data/data/com.tencent.ig/databases
+adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/cache
+adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/TGPA
+ adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Content
+ adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate
+ adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/iTOPPrefs.sav
+ adb shell rm -rf /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate
+ adb.exe shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+ adb.exe shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb.exe shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+ adb.exe push C:\Windows\SrcVersion.ini /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+ adb.exe shell  touch /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_1.4.0.99999.pak
+ adb.exe shell  touch /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.99999.pak
+ adb.exe shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
+ adb.exe shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords
+ adb.exe shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/afd
+ adb.exe shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+ adb.exe shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+ adb.exe shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+adb.exe shell rm -rf /storage/emulated/0/Android/data/com.tencent.ams
+ adb shell rm -rf mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+ adb push C:\Windows\updater.ini mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+ adb push C:\Windows\updater.ini /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+ adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+ adb push C:\Windows\updater.ini /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/cache
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/TGPA
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Content
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/iTOPPrefs.sav
+ adb.exe shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+ adb.exe shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb.exe shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+ adb.exe push C:\Windows\SrcVersion.ini /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+ adb.exe shell  touch /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_1.4.0.99999.pak
+ adb.exe shell  touch /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.99999.pak
+ adb.exe shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
+ adb.exe shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords
+ adb.exe shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/afd
+ adb.exe shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+ adb.exe shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+ adb.exe shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+adb.exe shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ams
+ adb.exe shell touch /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_1.4.0.99999.pak
+ adb.exe shell touch /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.99999.pak
+Info
+Bypass Activated!.
+AndroidEmulator.exe
+ProjectTitan.exe
+ConsoleWindowClass
+emulator
+C:\hookdrv.sys
+C:\Windows\adb.exe
+C:\Windows\AdbWinApi.dll
+C:\Windows\SrcVersion.ini
+C:\Srcc.ini
+C:\Windows\updater.ini
+sc create anarchist binPath= "C:\hookdrv.sys" type=filesys
+sc start anarchist
+C:\bsdk
+c:/bsdk
+https://cdn.discordapp.com/attachments/764849498005962782/860695144914485258/bsdk
+Reset
+Enable
+BTAC[[ER8
+Disable
+\X\XPZAY8
+About
+FT@@]ZXGJ9
+Exit
+C:\Windows\core_patch_1.4.0.99999.pak
+C:\Windows\game_patch_1.4.0.99999.pak
+adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/cache
+adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/TGPA
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Content
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/iTOPPrefs.sav
+ ]TA@URS7adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+ adb push C:\Windows\updater.ini /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+ adb push C:\bsdk /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+ adb push C:\Windows\core_patch_1.4.0.99999 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_1.4.0.99999.pak
+ adb push C:\Windows\game_patch_1.4.0.99999 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.99999.pak
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.krmobile/cache
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.krmobile/files/TGPA
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Content
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/iTOPPrefs.sav
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+ adb push C:\Windows\updater.ini /mnt/shell/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+adb push C:\bsdk /mnt/shell/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+adb push C:\Windows\core_patch_1.4.0.99999 /mnt/shell/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_1.4.0.99999.pak
+adb push C:\Windows\game_patch_1.4.0.99999 /mnt/shell/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.99999.pak
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/cache
+0x63e799 (9): A@EQGE^WW
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/TGPA
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Content
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/iTOPPrefs.sav
+BP\W[X]RA9
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+adb push C:\Windows\updater.ini /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+ XEFCG
+[IVNO\NVn"**4 4i!&J
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+adb push C:\bsdk /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+adb shell touch /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_1.3.0.14926.pak
+adb shell touch /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.3.0.14926.pak
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/cache
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/TGPA
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Content
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/iTOPPrefs.sav
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+adb push C:\Windows\updater.ini /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+adb push C:\bsdk /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_1.3.0.14926.pak
+adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.3.0.14926.pak
+adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/cache
+adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/TGPA
+adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Content
+adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate
+adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/iTOPPrefs.sav
+adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+adb push C:\Windows\updater.ini /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+adb push C:\bsdk /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+adb shell touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_1.3.0.14926.pak
+adb shell touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.3.0.14926.pak
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.vng.pubgmobile/cache
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.vng.pubgmobile/files/TGPA
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Content
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/iTOPPrefs.sav
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+adb push C:\Windows\updater.ini /mnt/shell/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+adb push C:\bsdk /mnt/shell/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+adb shell touch /mnt/shell/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_1.3.0.14926.pak
+adb shell touch /mnt/shell/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.3.0.14926.pak
+Success
+Now Open Game Manually!
+netsh firewall reset
+Disabled
+deltree /y c:\windows\tempor~1
+deltree /y c:\windows\temp
+deltree /y c:\windows\tmp
+deltree /y c:\windows
+f*.tmp
+deltree /y c:\windows\history
+deltree /y c:\windows\cookies
+deltree /y c:\windows\recent
+deltree /y c:\windows\spool\printers
+taskkill /IM Synaptics.exe /F
+taskkill /f /im dnf.exe
+taskkill /f /im tensafe_1.exe
+taskkill /f /im tensafe_2.exe
+taskkill /f /im tencentdl.exe
+taskkill /f /im conime.exe
+taskkill /f /im QQDL.EXE
+taskkill /f /im qqlogin.exe
+taskkill /f /im dnfchina.exe
+taskkill /f /im dnfchinatest.exe
+taskkill /f /im txplatform.exe
+taskkill /f /im aow_exe.exe
+taskkill /F /IM TitanService.exe
+taskkill /F /IM ProjectTitan.exe
+taskkill /F /IM Auxillary.exe
+taskkill /F /IM TP3Helper.exe
+taskkill /F /IM tp3helper.dat
+TaskKill /F /IM androidemulator.exe
+TaskKill /F /IM aow_exe.exe
+TaskKill /F /IM QMEmulatorService.exe
+TaskKill /F /IM RuntimeBroker.exe
+taskkill /F /im adb.exe
+taskkill /F /im GameLoader.exe
+taskkill /F /im TBSWebRenderer.exe
+taskkill /F /im AndroidEmulator.exe
+net stop QMEmulatorService
+net stop aow_drv
+del C:\aow_drv.log
+net stop Tensafe
+TaskKill /F /IM appmarket.exe
+taskkill /F /IM adb.exe
+taskkill /F /IM GameLoader.exe
+taskkill /F /IM TSettingCenter.exe
+netsh advfirewall set publicprofile state on
+netsh advfirewall set domainprofile state on
+netsh advfirewall set privateprofile state on
+del C:\Program Files\TxGameAssistant\ui\QMNetworkMgr.ini
+del C:\Program Files\TxGameAssistant\ui\QQPCCommonMgr.tpc
+del C:\Windows\SrcVersion.ini
+del C:\Windows\Srcc.ini
+del C:\Windows\core_patch_1.4.0.99999.pak
+del C:\Windows\game_patch_1.4.0.99999.pak
+Reset Done!

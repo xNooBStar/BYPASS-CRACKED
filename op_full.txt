@@ -1,0 +1,317 @@
+﻿ adb kill-server
+ adb start-server
+ \game_patch_1.5.0.89999.pak
+ cannot download required file will exit ...
+ /files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini 
+adb -s 
+ does not exist
+ Open the game manually first, wait for updates to finish, then close and re-run bypass
+
+ \SrcVersion.ini
+\n.ini
+\u.ini
+ 1.4.0.15100
+[version]
+ firstversion=
+ lastversion=
+bootnum=1
+ appversion=1.5.0.15335
+ srcversion=1.5.0.89999
+bootnum=2
+ [/Script/Client.GDolphinUpdater]
+ Disable=true
+ \libst-engine.so
+ https://docs.google.com/uc?export=download&id=1qrZ4kIa-dAGszxa6TRTcRXcE8x0LI8La
+ https://docs.google.com/uc?export=download&id=1ZV2PEp450Aii5HzGC-u2j-_QwxEPHSlc
+ https://docs.google.com/uc?export=download&id=1fbiJP1b3Qb0rHKqaA9sSoh8yC1DCErXw
+ https://docs.google.com/uc?export=download&id=1PAPLLuSAuDa2kveowe1pwb-gcaOB43Sj
+ https://docs.google.com/uc?export=download&id=13eAOKhd3B4vIqAIaLROlTMuIsGGWmboD
+ \off_e.dat
+ https://docs.google.com/uc?export=download&id=1RUSnh1iUFcRhKM9yzX1kP_PpVJ6eR2P7
+ https://docs.google.com/uc?export=download&id=1-SHz65sbESd3lRGSf8R7VW60p0xYiXE_
+ https://docs.google.com/uc?export=download&id=1asWEsetZ1liKYdk5VC2FXi55dkdcgaKx
+ https://docs.google.com/uc?export=download&id=1yeRWGzvLayNbmMA9Jak0GuO-TRVD0yF9
+ https://docs.google.com/uc?export=download&id=1T5pjzz6Iu8ij1CBkNqPEPlzU98RYPmiF
+ https://docs.google.com/uc?export=download&id=1SgI1Hhn4x88aA8EA207glwRsJdZux-Zz
+ https://docs.google.com/uc?export=download&id=1gOpoPgef2Iy77dWlAGpqbpkx7YWohrZw
+ https://docs.google.com/uc?export=download&id=1y33Ui15z3aNLVkgiLPuRs0QYd6BfbydA
+ https://docs.google.com/uc?export=download&id=1Ym_ARPsnODsX7ekJKOwyokB-RJD4b9_I
+ https://docs.google.com/uc?export=download&id=13aL9pzPJvRyTsj6FsyVHegDXF-9Dk0XP
+ https://docs.google.com/uc?export=download&id=1du3Sm42xVn7CCZXgON9o2M1y-C1KeUoh
+ Version outdated, please ask developer for updated version
+
+ https://docs.google.com/uc?export=download&id=1tUWWAEySJuPkzCURRSesKHgpPuGGDpXP
+ device_id.xml
+ device_id1.xml
+ https://cdn.discordapp.com/attachments/780477703496138762/826518909104291920/adb.exe
+adb.exe
+ https://docs.google.com/uc?export=download&id=16ct_D2HlGDOIoFMa5EeGdGTl-J6OU_8u
+ AdbWinUsbApi.dll
+ https://docs.google.com/uc?export=download&id=1zlPOreo_QJJzC-Tv1UFA9_7Vz8TeQkzW
+ AdbWinApi.dll
+\d.sys
+ AndroidEmulator.exe
+path.txt
+ SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MobileGamePC
+ C:\Program Files\TxGameAssistant\ui\AndroidEmulator.exe
+ C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe
+ C:\ChangZhi\LDPlayer\dnplayer.exe
+ ProjectTitan.exe
+  shell mv /system/lib/libldutils.txt /system/lib/libldutils.so
+  shell mv /system/lib/libhoudini.txt /system/lib/libhoudini.so
+  shell mv /system/lib/libdvm.txt /system/lib/libdvm.so
+  shell mv /system/lib/libhardware.txt /system/lib/libhardware.so
+  shell mv /system/lib/libhardware_legacy.txt /system/lib/libhardware_legacy.so
+  shell mv /system/lib/libreference-ril.txt /system/lib/libreference-ril.so
+  shell mv /system/lib/libhoudini_415c.txt /system/lib/libhoudini_415c.so
+  shell mv /data/data/com.tencent.tinpux /data/data/com.tencent.tinput
+ /files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+  shell rm -rf /sdcard/Android/data/
+  shell touch /sdcard/Android/data/
+  shell mv /system/lib/libldutils.so /system/lib/libldutils.txt
+  shell mv /system/lib/libhoudini.so /system/lib/libhoudini.txt
+  shell mv /system/lib/libdvm.so /system/lib/libdvm.txt
+  shell mv /system/lib/libhardware.so /system/lib/libhardware.txt
+  shell mv /system/lib/libhardware_legacy.so /system/lib/libhardware_legacy.txt
+  shell mv /system/lib/libreference-ril.so /system/lib/libreference-ril.txt
+  shell mv /system/lib/libhoudini_415c.so /system/lib/libhoudini_415c.txt
+  shell mv /data/data/com.tencent.tinput /data/data/com.tencent.tinpux
+ https://cdn.discordapp.com/attachments/801693758860689418/814909200223830066/add.bat
+ netsh winsock reset
+ netsh int ip reset
+ ipconfig /renew
+ ipconfig /flushdns
+ https://cdn.discordapp.com/attachments/801693758860689418/814909248151617586/delete.bat
+ Program Manager
+ Closing ...
+ Please run program as Admin
+
+ https://vnchack.com
+ https://113hax.com
+ https://discord.gg/HxZGGQXEaQ
+ CurrentBuildNumber
+ SOFTWARE\Microsoft\Windows NT\CurrentVersion
+ Your Windows Build is too low, please update to build 1803+
+ Connecting to Auth server...
+
+ Please wait...
+
+ Wrong Choice! 
+
+ Select Gameloop version: 1- 4.4 , 2- 7.1
+
+ Select Version: 1-Global , 2-VN , 3-KR , 4-TW
+
+ com.vng.pubgmobile
+ com.pubg.krmobile
+ com.rekoo.pubgm
+ This option doesn't affect headshots in game, it is just for stats
+
+ Headshots stats: 1- No stats , 2- Normal
+
+ iPad View: 1- Yes , 2- No
+
+ Change src version?: 1- Yes , 2- No
+
+ Connecting to driver.. 
+
+ Connecting...
+
+\k.exe 
+ Can't load driver, will exit ...
+
+ INVALID SOCKET
+
+ Connected to driver 
+
+ Outdated driver, please restart PC, then try again.
+
+ GAMEMODE=PLAYERUNKNOWNSBATTLEGROUNDS
+ Gameloop emulator is not running, will run it please wait...
+
+open
+ -engine aow -vm 100 -sequenceid 7EC04E22-E8B6-49C4-AACF-24C39AA95D0E -from TipUnknown
+ Can't get AndroidEmulator.exe, please move bypass program to same folder usually under:
+
+ C:\Program Files\TxGameAssistant\ui 
+
+ Starting emulator please wait... 
+
+ Gameloop process found waiting to load...
+
+connected
+ Gameloop loaded, Please wait...
+
+ Gameloop emulator is running, Make sure pubgm is not running, will run pubgm...
+
+ Smartgaga emulator is not running, will run it please wait...
+
+ Can't get ProjectTitan.exe, please install emulator under default location:
+
+ C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine 
+
+ SmartGaGa process found waiting to load...
+
+ adb devices
+ emulator-5554
+ SmartGaGa loaded, Please wait...
+
+ SmartGaGa emulator is running, Make sure pubgm is not running, will run pubgm...
+
+ dnplayer.exe
+ LD emulator is not running, will run it please wait...
+
+ Can't get dnplayer.exe, please move bypass program to same folder usually under:
+
+ C:\ChangZhi\LDPlayer\ 
+
+ LD process found waiting to load...
+
+ LD loaded, Please wait...
+
+ LD emulator is running, Make sure pubgm is not running, will run pubgm...
+
+ 127.0.0.1:5555
+ ADB cannot connect to emulator
+
+ Exiting...
+
+  shell rm -rf /data/data/com.tencent.tinput
+  shell rm -rf /data/data/com.pubg.krmobile.tinput
+  shell cp /stdin /data/data/
+  shell rename /data/data/stdin /data/data/com.tencent.tinput
+  shell rename /data/data/stdin /data/data/com.pubg.krmobile.tinput
+  shell rm -rf /data/app-lib/com.tencent.ig-1/libmemoryrecord.py.so
+  shell rm -rf /data/app-lib/com.tencent.ig-1/libsubstrate.so
+  shell rm -rf /data/app/com.tencent.ig-1/lib/arm/libmemoryrecord.py.so
+  shell rm -rf /data/app/com.tencent.ig-1/lib/arm/libsubstrate.so
+  shell rm -rf /data/share1/hardware_info.txt
+/files/*
+  shell rm -rf data/data/
+ /databases/*
+ /files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate/*
+  shell rm -rf sdcard/Android/data/
+ /app_bugly/*
+/cache/*
+ /app_crashrecord/*
+ /code_cache/*
+ /no_backup/*
+  shell rm -rf /system/build.prop
+  shell chmod 000 /proc/cpuinfo
+  shell chmod 000 /proc/meminfo
+  shell chmod 000 /system/build.prop
+  shell chmod 000 /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq
+  shell chmod 000 /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq
+  shell chmod 000 /sys/class/power_supply/battery/capacity
+  shell mount -o rw,remount
+  shell mount -o rw,remount /system
+  shell chmod 500 /proc
+  shell rm -rf /mnt/shell/emulated/0/Android/data/
+ /files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs/*
+ /files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir/*
+:  shell content insert --uri content://settings/secure --bind name:s:android_id --bind value:s:%random%6b1a77f674510efbe5216b1b1b41%random%
+ /shared_prefs
+  push device_id.xml /data/data/
+ Setting required files..
+
+  shell ls /data/app-lib/
+ No such file
+ /data/app-lib/
+ \libcubehawk.so 
+ push 
+ \libgamemaster.so 
+ \libIMSDK.so 
+ \libTDataMaster.so 
+ \libst-engine.so 
+ \libgcloud.so 
+  shell ls /data/app/
+ C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\dinput8.dll
+lib/arm/
+ /data/app/
+ /files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch*.pak
+ /files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.5.0.89999.pak
+ /files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+ /files/TGPA
+ /files/ProgramBinaryCache
+/cache
+ /files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+ /sdcard/Android/data/
+\n.ini 
+\u.ini 
+ /files/tss_tmp
+  shell chmod -R 600 /data/data/
+ /files/tss_tmp/*
+ /files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
+  shell chmod 555 /sdcard/Android/data/
+ Launching pubgm ..
+
+ /com.epicgames.ue4.SplashActivity filter
+  shell am start 
+  shell setprop ro.product.board universal7870
+  shell setprop ro.board.platform exynos5
+  shell setprop ro.build.version.release 8
+  shell setprop ro.product.brand samsung
+  shell setprop ro.build.version.sdk 28
+  shell setprop ro.build.fingerprint samsung
+  shell setprop ro.build.manufacturer samsung
+  shell setprop ro.product.model SM-J701F
+  shell setprop ro.build.product j7velte
+  shell setprop ro.product.device j7velte
+  shell setprop ro.build.host SWDH4614
+ Getting game process...
+
+  | grep -v -e networkDetector"
+  shell "ps | grep 
+  shell "ps -A | grep 
+    
+ Waiting for game to initialize...
+
+ Game initialized, please wait...
+
+ Getting base addr...
+
+ /maps | grep libtersafe"
+  shell "cat /proc/
+aow_exe
+ aow_exe.exe
+ AndroidProcess.exe
+ LdBoxHeadless.exe
+ Reading values...
+
+ Can't read, will exit ...
+
+ Trying to read from PID:%d, expecting:0x10, getting:0x%02x
+
+ Stage 1...
+
+ Libs 1 mismatch, will exit ...
+
+ Stage 1 completed!
+
+ Stage 2...
+
+ /maps | grep libUE4.so"
+ /maps | grep libUE4"
+ Stage 2 completed!
+
+ Stage 3...
+
+ /maps | grep libTDataMaster.so"
+ Stage 3 completed!
+
+ /files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+ /files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+  shell rm -rf storage/sdcard0/0/Android/data/
+ Bypass Success
+
+ KEEP THIS WINDOW OPENED UNTIL YOU FINISH PLAYING!!
+
+ DON'T CLOSE EMULATOR WITHOUT SAFE EXIT!!
+
+ Press: 1-for safe exit
+
+Success!
+
+ Wrong choice!
+
+ Closing Emulator...

@@ -1,0 +1,251 @@
+
+https://cdn.discordapp.com/attachments/720718150047629452/824737990710132736/adb.exe
+https://cdn.discordapp.com/attachments/719798172636938270/768873466036092968/AdbWinApi.dll
+https://cdn.discordapp.com/attachments/719798172636938270/771400088354160680/com-intplus-hijackid-16_1.apk
+https://cdn.discordapp.com/attachments/719798172636938270/771400108662456360/AppS_NEW_200.apk
+https://cdn.discordapp.com/attachments/719798172636938270/771400075599282186/Xposed_1.apk
+https://cdn.discordapp.com/attachments/719798172636938270/771434206600626227/AppEnv.apk
+https://cdn.discordapp.com/attachments/719798172636938270/771434224481206312/Xposed_Installer.apk
+https://cdn.discordapp.com/attachments/719798172636938270/773735919723216926/info.json
+C:\adb\adb.exe
+C:\adb\AdbWinApi.dll
+C:\adb\com-intplus.apk
+C:\adb\AppS.apk
+C:\adb\Xposed.apk
+C:\adb\AppEnv_LD.apk
+C:\adb\Xposed_LD.apk
+\info.json
+adb not  exist 
+
+Error
+unable to downlaod files ! 
+
+adb  exist 
+
+Started !
+Bypass Success ! 	 enjoy..
+C:\Windows\Preventer.exe
+/C taskkill /f /im HTTPDebuggerUI.exe >nul 2>&1
+/C taskkill /f /im HTTPDebuggerSvc.exe >nul 2>&1
+/C sc stop HTTPDebuggerPro >nul 2>&1
+/C sc stop CEDRIVER60 >nul 2>&1
+/C sc delete CEDRIVER60 >nul 2>&1
+/C taskkill /FI "IMAGENAME eq httpdebugger*" /IM * /F /T >nul 2>&1
+/C taskkill /FI "IMAGENAME eq processhacker*" /IM * /F /T >nul 2>&1
+/C taskkill /FI "IMAGENAME eq fiddler*" /IM * /F /T >nul 2>&1
+/C taskkill /FI "IMAGENAME eq wireshark*" /IM * /F /T >nul 2>&1
+/C taskkill /FI "IMAGENAME eq rawshark*" /IM * /F /T >nul 2>&1
+/C taskkill /FI "IMAGENAME eq charles*" /IM * /F /T >nul 2>&1
+/C taskkill /FI "IMAGENAME eq cheatengine*" /IM * /F /T >nul 2>&1
+/C taskkill /FI "IMAGENAME eq cheat*" /IM * /F /T >nul 2>&1
+/C taskkill /FI "IMAGENAME eq dump*" /IM * /F /T >nul 2>&1
+/C sc stop KProcessHacker3 >nul 2>&1
+/C sc stop KProcessHacker2 >nul 2>&1
+/C sc stop KProcessHacker1 >nul 2>&1
+/C sc stop wireshark >nul 2>&1
+/C sc stop npf >nul 2>&1
+/C powershell Disable-NetAdapterBinding -Name * -ComponentID ms_tcpip6
+Disable-NetAdapterBinding -Name * -ComponentID ms_tcpip6
+/C netsh interface teredo set state disabled
+/C netsh interface ipv6 6to4 set state state=disabled undoonstop=disabled
+/C netsh interface ipv6 isatap set state state=disabled
+/C taskkill /t /f /im adb.exe
+/C taskkill /t /f /im adb2.exe
+kill-server
+open
+shell rm -rf /data/data/com.tencent.tinput 
+shell touch /data/data/com.tencent.tinput 
+shell rm -rf /data/data/com.tencent.ig/shared_prefs/* 
+shell settings put secure android_id 
+shell rm -rf /data/data/com.tencent.ig/databases
+shell rm -rf /sdcard/Android/data/com.tencent.ig/files/TGPA
+shell rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/afd
+shell rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+shell rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+shell rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+shell rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+shell touch /sdcard/Android/data/com.tencent.ig/files/TGPA
+shell touch /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/afd
+shell touch /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+shell touch /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+shell touch /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+shell touch /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+shell mkdir /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/loginInfoFile.json
+shell mkdir /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/MailPhoneLogin.json
+shell rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate
+shell touch /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate
+pushing  
+
+push C:\adb\SrcVersion.ini /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.99999.pak
+C:\adb\SrcVersion.ini
+shell rm -rf /data/data/com.vng.pubgmobile/shared_prefs/* 
+shell rm -rf /data/data/com.vng.pubgmobile/databases
+shell rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/TGPA
+shell rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/afd
+shell rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+shell rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+shell rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+shell rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+shell touch /sdcard/Android/data/com.vng.pubgmobile/files/TGPA
+shell touch /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/afd
+shell touch /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+shell touch /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+shell touch /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+shell touch /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+shell mkdir /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/loginInfoFile.json
+shell mkdir /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/MailPhoneLogin.json
+shell rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate
+shell touch /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate
+push C:\adb\SrcVersion.ini /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+push C:\adb\SrcVersion.ini /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.99999.pak
+shell rm -rf /data/data/com.rekoo.pubgm/shared_prefs/* 
+shell rm -rf /data/data/com.rekoo.pubgm/databases
+shell rm -rf /sdcard/Android/data/com.rekoo.pubgm/files/TGPA
+shell rm -rf /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/afd
+shell rm -rf /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+shell rm -rf /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+shell rm -rf /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+shell rm -rf /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+shell touch /sdcard/Android/data/com.rekoo.pubgm/files/TGPA
+shell touch /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/afd
+shell touch /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+shell touch /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+shell touch /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+shell touch /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+shell mkdir /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/loginInfoFile.json
+shell mkdir /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/MailPhoneLogin.json
+shell rm -rf /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate
+shell touch /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate
+push C:\adb\SrcVersion.ini /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+push C:\adb\SrcVersion.ini /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.99999.pak
+shell rm -rf /data/data/com.pubg.krmobile/shared_prefs/* 
+shell rm -rf /data/data/com.pubg.krmobile/databases
+shell rm -rf /sdcard/Android/data/com.pubg.krmobile/files/TGPA
+shell rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/afd
+shell rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+shell rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+shell rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+shell rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+shell touch /sdcard/Android/data/com.pubg.krmobile/files/TGPA
+shell touch /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/afd
+shell touch /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+shell touch /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+shell touch /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+shell touch /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+shell mkdir /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/loginInfoFile.json
+shell mkdir /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/MailPhoneLogin.json
+shell rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate
+shell touch /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate
+push C:\adb\SrcVersion.ini /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+push C:\adb\SrcVersion.ini /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.99999.pak
+injecting ! 
+
+shell setprop ro.product.model GM1917 
+shell rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/afd 
+shell rm -rf /data/data/com.tencent.ig/code_cache
+shell rm -rf /data/data/com.tencent.ig/files
+ shell rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+ shell touch /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+fork-server
+push C:\adb\SrcVersion.ini ./sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini 
+shell rm -rf /data/data/com.rekoo.pubgm/code_cache
+shell rm -rf /data/data/com.rekoo.pubgm/files
+shell rm -rf /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+shell touch /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+shell rm -rf /data/data/com.pubg.krmobile/code_cache
+shell rm -rf /data/data/com.pubg.krmobile/files
+shell rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+shell touch /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+ C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\Launcher.exe
+ D:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\Launcher.exe
+ E:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\Launcher.exe
+ F:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\Launcher.exe
+ G:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\Launcher.exe
+:  /C taskkill /f /im aow_exe.exe & taskkill /f /im adb.exe & taskkill /f /im AndroidEmulator.exe & taskkill /f /im TSettingCenter.exe & taskkill /f /im QMEmulatorService.exe
+:  /C taskkill /f /im AndroidProcess.exe & taskkill /f /im adb.exe & taskkill /f /im ProjectTitan.exe & taskkill /f /im Launcher.exe & taskkill /f /im TitanService.exe
+:  /C taskkill /f /im aow_exe.exe & taskkill /f /im adb.exe & taskkill /f /im AndroidEmulator.exe & taskkill /f /im AndroidEmulatorEn.exe & taskkill /f /im TSettingCenter.exe & taskkill /f /im QMEmulatorService.exe
+ InstallPath
+ SOFTWARE\WOW6432Node\Tencent\MobileGamePC\UI
+ gm start : %d
+
+ runing gameloop 4.4
+
+ \AndroidEmulator.exe
+ runing gameloop 7.1
+
+ \AndroidEmulatorEn.exe
+ Game Closed
+ Start Emulator
+ Start Game
+C:\Windows\System32\drivers\etc\old_hosts
+          chose emualtor type
+ Emualtor Type :
+Gm - 4.4
+Gm - 7.1
+ Chose Which Gameloop You Want to Start
+ Waiting to log in...
+[ Super ]
+            ProBear Pro Log in
+KEY:
+Log in
+ Logging in......
+
+
+
+  Please login again
+ Login error: 
+ If you want to quit press
+ Join Our Telegram
+ https://t.me/MATRIXHAX
+ https://discord.gg/rxJG5V95DN
+ Join Our Discord 
+      ProBear Pro
+DANGER
+ Start SmartGaGa
+ Starting...
+  Open Game 
+ Open Emulator First ! 
+ Bro ...
+SAFE EXIT
+  shell rm -rf /data/data/com.rekoo.pubg/databases
+  b -P 5037 fork-server server
+  /C taskkill /t /f /im ProjectTitan.exe
+  /C taskkill /t /f /im AndroidProcess.exe
+  /t /f /im AndroidProcess.exe
+ C:\Windows\System32\taskkill.exe
+  /C taskkill /t /f /im AndroidEmulator.exe
+  /t /f /im AndroidEmulator.exe
+  /C taskkill /t /f /im aow_exe.exe
+  /t /f /im aow_exe.exe
+Done 
+ Expaire Time : %s
+           
+ Stop service successfully
+
+ Service deleted
+
+ C:\Windows\Fonts\tahomabd.ttf
+ Fonts\fa-solid-900.ttf
+ Unable to load 
+Error!
+ matrix hax
+ Unable to create main window!
+  Liptersafe found : %02X  
+
+  Libswappy found : %02X  
+
+  Libgcloud found : %02X  
+
+  LibUE4 found : %02X  
+
+ 
+%s = welcome admin 
+
+Admin
+PID:%2X
+
+shell am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity filter
+shell am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity filter
+shell am force-stop com.tencent.ig
+shell am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity filter
+shell am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity filter

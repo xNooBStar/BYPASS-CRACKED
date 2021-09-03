@@ -1,0 +1,235 @@
+﻿
+
+TaskKill /F /IM adb.exe
+adb kill-server
+adb shell rm -rf /mnt/shell/emulated/0/.backups
+adb shell rm -rf /mnt/shell/emulated/0/tencent
+adb shell rm -rf /mnt/shell/emulated/0/MidasOversea
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs/*
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir/*R
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/tbslog/*
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp/*
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/*
+adb shell rm -rf /mnt/shell/emulated/0/tencent/*k
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/Engine
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/Epic
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo
+ adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+ adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/rawdata
+ adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/rawdata
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+ adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config
+ adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo
+ adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+ adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora/*
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo/*[
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/tbslog/tbslog.txt
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs/ShadowTrackerExtra.log
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+adb shell rm -rf /mnt/shell/emulated/0/.cloudagent
+adb shell rm -rf /mnt/shell/emulated/0/.estrongs,
+adb shell rm -rf /mnt/shell/emulated/0/.face4
+adb shell rm -rf /mnt/shell/emulated/0/QTAudioEngineW
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/ca-bundle.pem
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp
+adb shell rm -r /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/cacheFile.txt 
+ adb shell rm -rf mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload  
+ adb shell rm -rf mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config 
+ adb shell rm -rf mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData  
+ adb shell chmod 000 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* 
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/TGPA 
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData 
+ adb push C:/ProgramData/Fix/Src/SrcVersion.ini                sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini 
+ adb shell rm -rf /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* 
+ adb shell rm -rf /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+ adb shell touch /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+ adb shell chmod 444 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+ adb shell rm -rf /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+ adb shell touch /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+ adb shell chmod 444 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1(
+adb shell rm /data/media/0/QTAudioEngine.
+adb shell mkdir /data/data/com.tencent.tinput/
+adb shell mkdir /data/data/com.tencent.tinput/cache/:
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_appcache/*
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_bugly/*
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_crashrecord/*
+adb shell rm -rf /data/data/com.rekoo.pubgm/cache/*
+adb shell rm -rf /data/data/com.rekoo.pubgm/code_cache/*7
+adb shell rm -rf /data/data/com.rekoo.pubgm/no_backup/*
+adb shell rm -rf /data/data/com.rekoo.pubgm/databases
+adb shell rm -rf /data/data/com.rekoo.pubgm/shared_prefs/* 
+adb shell settings put secure android_id %random%6b1a77f674510efbe5216b1b1b41%random% 
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_textures7
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_webview
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_geolocation
+adb shell rm -rf /data/data/com.rekoo.pubgm/cache
+adb shell rm -rf /data/data/com.rekoo.pubgm/no_backup
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_crashrecord
+adb shell rm -rf /data/media/0/.backups
+adb shell rm -rf /data/media/0/tencent
+adb shell rm -rf /data/media/0/MidasOversea
+adb shell touch /data/media/0/.backups
+adb shell chmod 444 /data/media/0/.backups
+adb shell rm -rf /data/data/com.rekoo.pubgm/files
+adb shell touch /data/data/com.rekoo.pubgm/files4
+adb shell chmod 444 /data/data/com.rekoo.pubgm/files
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/* 
+ adb shell mkdir /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/ 
+ adb shell mkdir /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/ 
+ adb push C:/ProgramData/Fix/UpdateSkip/Updater.ini /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini 
+adb shell am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity filterd
+adb shell rm -rf /data/data/com.rekoo.pubgm/lib/*
+adb shell rm -rf /data/app/com.rekoo.pubgm-1/lib/arm/* 
+adb start-server
+adb devices
+adb remount
+adb shell am kill com.tencent.ig&
+adb shell am force-stop com.tencent.ig
+adb shell mv /data/databasesGL/* /data/data/com.tencent.ig/databases"
+adb shell rm -rf /data/databasesGL
+adb shell rm -rf /etc/hosts
+TaskKill /f /im adb
+TaskKill /f /im adb1.exe
+TaskKill /f /im adb2.exe
+TaskKill /f /im adb3.exe
+adb shell am kill com.pubg.krmobile
+adb shell am force-stop com.pubg.krmobile
+adb shell mv /data/databasesKR/* /data/data/com.pubg.krmobile/databases
+adb shell rm -rf /data/databasesKR
+adb shell am kill com.rekoo.pubgm
+adb shell am force-stop com.rekoo.pubgm
+adb shell mv /data/databasesTW/* /data/data/com.rekoo.pubgm/databases
+adb shell rm -rf /data/databasesTW
+adb shell am kill com.vng.pubgmobile*
+adb shell am force-stop com.vng.pubgmobile
+adb shell mv /data/databasesVN/* /data/data/com.vng.pubgmobile/databases"
+adb shell rm -rf /data/databasesVN
+adb shell rm -rf  /data/data/com.rekoo.pubgm/files
+adb shell touch /data/data/com.rekoo.pubgm/app_crashrecord
+adb shell rm -rf /data/user/0/com.rekoo.pubgm/files/;
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/tss_tmp/*
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/iMSDK/*
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/app
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/*.*.dat
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/*.*.*.dat
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/.system_android_l2G
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/AdjustloActivityState
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/AdjustloPackageQueue
+adb shell rm -r /data/user/0/com.rekoo.pubgm/lib/
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_buglyb
+adb shell rm -rf /mnt/emulated/0/Android/data/com.rekoo.pubgm/cache/*
+adb shell rm -rf /mnt/emulated/0/Android/data/com.rekoo.pubgm/files/ProgramBinaryCache/*V
+adb shell rm -rf /mnt/emulated/0/Android/data/com.rekoo.pubgm/files/.system_android_l2
+adb shell rm -rf /mnt/emulated/0/Android/data/com.rekoo.pubgm/files/vmpcloudconfig.json
+adb shell rm -rf /mnt/emulated/0/Android/data/com.rekoo.pubgm/files/spadevice.json
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/logs/*
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/*
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords/*
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist
+ adb shell rm -rf /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/statEventReportedFlag
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs*
+adb shell rm -rf /mnt/emulated/0/.backupsJ
+adb shell rm -rf /mnt/emulated/0/backups(
+adb shell rm -rf /mnt/emulated/0/mfcache-
+adb shell rm -rf /mnt/emulated/0/MidasOversea
+adb shell rm -rf /mnt/emulated/0/tencent.
+adb shell rm -rf /mnt/emulated/0/QTAudioEngine
+adb shell rm -rf /share/action_rulese
+ adb shell rm -rf /data/data/com.rekoo.pubgm/shared_prefs/com.google.android.gms.measurement.prefs.xml
+adb shell rm -rf /share/action_rules.xmlI
+adb shell rm -rf /data/data/com.rekoo.pubgm/shared_prefs/beacon_cover.xml
+adb shell touch /data/data/com.rekoo.pubgm/app_bugly/
+adb shell touch /data/data/com.rekoo.pubgm/app_webview/
+adb shell touch /data/data/com.rekoo.pubgm/cache/
+adb shell touch /data/data/com.rekoo.pubgm/code_cache/
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_crashrecord/1004U
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/cacheFile.txt
+adb shell rm -rf /sdcard/Tencent/MobileQQ/log
+adb shell rm -rf /data/data/com.rekoo.pubgm/databases/xg_message.db-journal
+adb shell rm -rf /data/data/com.rekoo.pubgm/databases/pri_tencent_analysis.db
+adb shell rm -rf /data/data/com.rekoo.pubgm/databases/__hs__db_issues-journal
+adb shell rm -rf /data/data/com.rekoo.pubgm/databases/__hs__db_key_values-journal
+adb shell rm -rf /data/data/com.rekoo.pubgm/databases/bugly_db_-journal
+adb shell rm -rf /data/data/com.rekoo.pubgm/databases/__hs_log_store-journal7
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/iMSDK
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/tpnlcache.data;
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/mycpuinfo
+adb shell rm -rf /data/data/com.rekoo.pubgm/shared_prefs/gsdk_prefs.xml
+adb shell rm -rf /data/data/com.rekoo.pubgm/shared_prefs/DENGTA_META.xmlX
+adb shell rm -rf /data/data/com.rekoo.pubgm/shared_prefs/com.rekoo.pubgm_preferences.xmlQ
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/AppEventsLogger.persistedevents
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/cache/GCloud
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/cache/GCloud.ini
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/tbslog/tbslog.txt
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/cache/GCloud/*
+adb shell rm -rf /mnt/shell/0/emulated/Android/data/com.tencent.tmgp.pubgmhd/cache/GCloud.ini
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs/ShadowTrackerExtra-backup-2019.04.15-05.04.17.log
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/loginInfoFile.json+
+adb shell rm -rf /mnt/shell/emulated/0/data
+adb shell chmod -R 000 /data/data/com.rekoo.pubgm/databases/__hs__db_issues
+adb shell chmod -R 000 /data/data/com.rekoo.pubgm/databases/__hs__db_key_values
+adb shell chmod -R 000 /data/data/com.rekoo.pubgm/databases/__hs__db_properties
+adb shell chmod -R 000 /data/data/com.rekoo.pubgm/databases/__hs_db_helpshift_user
+adb shell chmod -R 000 /data/data/com.rekoo.pubgm/databases/becon_dbE
+adb shell chmod -R 000 /data/data/com.rekoo.pubgm/databases/bugly_db_
+adb shell chmod -R 000 /data/data/com.rekoo.pubgm/databases/config.db
+adb shell chmod -R 000 /data/data/com.rekoo.pubgm/databases/iMSDK.db]
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/vmpcloudconfig.json
+taskkill /f /im adb.exe  
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/TGPA 
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData 
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/login-identifier.txt 
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/cacheFile.txt 
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload 
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0 
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1 
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir 
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/Epic Games 
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/coverversion.ini  
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate  6
+adb shell rm -rf /data/data/com.rekoo.pubgm/code_cache
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_bugly
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/* 
+ adb shell mkdir sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/ 
+ adb push C:/ProgramData/Fix/UpdateSkip/Updater.ini sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini 
+ adb shell chmod 000 /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* 
+adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/TGPA 
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData 
+ adb shell rm -rf /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* ^
+adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/login-identifier.txt 
+adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/cacheFile.txt 
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload 
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0 
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1 
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir 
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/Epic Games 
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/coverversion.ini  
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate  
+adb shell rm -rf /data/data/com.pubg.imobile/shared_prefs/* 6
+adb shell rm -rf /data/data/com.pubg.imobile/no_backup
+adb shell rm -rf /data/data/com.pubg.imobile/files
+adb shell rm -rf /data/data/com.pubg.imobile/databases
+adb shell rm -rf /data/data/com.pubg.imobile/code_cache
+adb shell rm -rf /data/data/com.pubg.imobile/cache
+adb shell rm -rf /data/data/com.pubg.imobile/app_webview9
+adb shell rm -rf /data/data/com.pubg.imobile/app_textures
+adb shell rm -rf /data/data/com.pubg.imobile/app_geolocation<
+adb shell rm -rf /data/data/com.pubg.imobile/app_crashrecord6
+adb shell rm -rf /data/data/com.pubg.imobile/app_bugly
+adb shell rm -rf /data/data/com.pubg.imobile/app_appcache/*
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/* 
+ adb shell mkdir sdcard/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/ 
+ adb push C:/ProgramData/Fix/UpdateSkip/Updater.ini sdcard/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini 
+adb shell am start -n com.pubg.imobile/com.epicgames.ue4.SplashActivity filterd
+adb shell rm -rf /data/data/com.pubg.imobile/lib/*
+adb shell rm -rf /data/app/com.pubg.imobile-1/lib/arm/* !

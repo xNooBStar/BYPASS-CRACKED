@@ -1,0 +1,578 @@
+superman
+C:\ProgramData\Fix\UpdateSkip
+C:\ProgramData\Fix\Sound
+C:\ProgramData\Fix\Src
+C:\ProgramData\Fix\Src\IND
+C:\ProgramData\Fix\pak
+Superman_BP
+UpdateSkip
+Updater.ini
+core_patch_1.3.1.89999.pak
+game_patch_1.3.0.99999.pak
+SrcVersion.ini
+INDSRC
+cmd.exe
+netsh advfirewall firewall delete rule name=poku/
+netsh advfirewall firewall delete rule name=lol
+taskkill /f /im Wireshark.exe
+taskkill /f /im ResourceHacker.exe
+taskkill /f /im CheatEngine.exe
+taskkill /f /im zenmap.exe
+taskkill /f /im ProcessHacker.exe
+taskkill /f /im windbg.exe
+taskkill /f /im x32dbg.exe
+taskkill /f /im x64dbg.exe
+taskkill /f /im Proxifier.exe
+taskkill /f /im notepad.exe
+taskkill /f /im NLClientApp.exe
+taskkill /f /im HTTPDebuggerUI.exe
+taskkill /f /im Charles.exe
+taskkill /f /im fiddler.exe
+TaskKill /F /IM appmarket.exe
+TaskKill /F /IM resmon.exe
+TaskKill /F /IM ProcessMonitor.exe
+TaskKill /F /IM Procmon.exe
+ netsh advfirewall firewall add rule name=modui protocol=ANY dir=out remoteip=123.151.71.34 action=block enable=yes
+ netsh advfirewall firewall add rule name=modui protocol=ANY dir=in remoteip=123.151.71.34 action=block enable=yes
+ netsh advfirewall firewall add rule name=modui protocol=ANY dir=out remoteip=203.205.239.243 action=block enable=yess
+ netsh advfirewall firewall add rule name=modui protocol=ANY dir=in remoteip=203.205.239.243 action=block enable=yes
+STARTING GAMELOOP
+GAMELOOP STARTED
+GAMELOOP NOT FOUND
+INSTALL GAMELOOP FIRST
+C:\Program Files\TxGameAssistant\ui\AndroidEmulator.exe
+D:\Program Files\TxGameAssistant\ui\AndroidEmulator.exe
+E:\Program Files\TxGameAssistant\ui\AndroidEmulator.exe
+F:\Program Files\TxGameAssistant\ui\AndroidEmulator.exe
+G:\Program Files\TxGameAssistant\ui\AndroidEmulator.exe
+C:\Program Files (x86)\TxGameAssistant\ui\AndroidEmulator.exe
+D:\Program Files (x86)\TxGameAssistant\ui\AndroidEmulator.exe
+E:\Program Files (x86)\TxGameAssistant\ui\AndroidEmulator.exe
+F:\Program Files (x86)\TxGameAssistant\ui\AndroidEmulator.exe
+G:\Program Files (x86)\TxGameAssistant\ui\AndroidEmulator.exe
+D:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe
+C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe
+E:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe
+F:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe
+G:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe
+C:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe
+D:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe
+E:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe
+F:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe
+G:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe
+EROR 404 PLEASE TRY AGAIN       /
+PLEASE SELECT GAME VERSION FIRST               
+Please Select Game Version First
+
+NOOB DETECTED
+TaskKill /F /IM adb.exe
+C:\ProgramData\Fix
+STARTING TAIWAN                                                  
+STARTING GAME IN FEW SECONDS  
+adb kill-server
+adb shell rm -rf /mnt/shell/emulated/0/.backups
+adb shell rm -rf /mnt/shell/emulated/0/tencent
+adb shell rm -rf /mnt/shell/emulated/0/MidasOversea
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs/*
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir/*R
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/tbslog/*
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp/*
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/*
+adb shell rm -rf /mnt/shell/emulated/0/tencent/*k
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/Engine
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/Epic
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo
+ adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+ adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/rawdata
+ adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/rawdata
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+ adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config
+ adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo
+ adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+ adb shell touch /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora/*
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo/*[
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/tbslog/tbslog.txt
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs/ShadowTrackerExtra.log
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+adb shell rm -rf /mnt/shell/emulated/0/.cloudagent
+adb shell rm -rf /mnt/shell/emulated/0/.estrongs,
+adb shell rm -rf /mnt/shell/emulated/0/.face4
+adb shell rm -rf /mnt/shell/emulated/0/QTAudioEngineW
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/ca-bundle.pem
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp
+adb shell rm -r /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/cacheFile.txt 
+ adb shell rm -rf mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload  
+ adb shell rm -rf mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config 
+ adb shell rm -rf mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData  
+ adb shell chmod 000 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* 
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/TGPA 
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData 
+ adb push C:/ProgramData/Fix/Src/SrcVersion.ini                sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini 
+ adb shell rm -rf /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* 
+ adb shell rm -rf /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+ adb shell touch /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+ adb shell chmod 444 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+ adb shell rm -rf /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+ adb shell touch /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+ adb shell chmod 444 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1(
+adb shell rm /data/media/0/QTAudioEngine.
+adb shell mkdir /data/data/com.tencent.tinput/
+adb shell mkdir /data/data/com.tencent.tinput/cache/:
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_appcache/*
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_bugly/*
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_crashrecord/*
+adb shell rm -rf /data/data/com.rekoo.pubgm/cache/*
+adb shell rm -rf /data/data/com.rekoo.pubgm/code_cache/*7
+adb shell rm -rf /data/data/com.rekoo.pubgm/no_backup/*
+adb shell rm -rf /data/data/com.rekoo.pubgm/databases
+adb shell rm -rf /data/data/com.rekoo.pubgm/shared_prefs/* 
+adb shell settings put secure android_id %random%6b1a77f674510efbe5216b1b1b41%random% 
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_textures7
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_webview
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_geolocation
+adb shell rm -rf /data/data/com.rekoo.pubgm/cache
+adb shell rm -rf /data/data/com.rekoo.pubgm/no_backup
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_crashrecord
+adb shell rm -rf /data/media/0/.backups
+adb shell rm -rf /data/media/0/tencent
+adb shell rm -rf /data/media/0/MidasOversea
+adb shell touch /data/media/0/.backups
+adb shell chmod 444 /data/media/0/.backups
+adb shell rm -rf /data/data/com.rekoo.pubgm/files
+adb shell touch /data/data/com.rekoo.pubgm/files4
+adb shell chmod 444 /data/data/com.rekoo.pubgm/files
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/* 
+ adb shell mkdir /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/ 
+ adb shell mkdir /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/ 
+ adb push C:/ProgramData/Fix/UpdateSkip/Updater.ini /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini 
+adb shell am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity filterd
+TAIWAN STARTED                                           
+BEFORE LOGIN YOUR ACCOUNT CLICK ON OK
+LOGIN PAGE
+SUPERMAN VIP SUPPORT THIS VERSION
+SUPERMAN VIP 
+PLEASE SELECT GAME VERSION FIRST
+
+CHECKING GAME
+adb shell rm -rf /data/data/com.rekoo.pubgm/lib/*
+adb shell rm -rf /data/app/com.rekoo.pubgm-1/lib/arm/* 
+NOW BYPASSING...!                                             
+PROCESSING...                                                                                   
+adb start-server
+adb devices
+adb remount
+adb shell am kill com.tencent.ig&
+adb shell am force-stop com.tencent.ig
+adb shell mv /data/databasesGL/* /data/data/com.tencent.ig/databases"
+adb shell rm -rf /data/databasesGL
+adb shell rm -rf /etc/hosts
+netsh firewall reset1
+netsh advfirewall firewall delete rule name=Oasis
+netsh advfirewall firewall delete rule name=modui
+TaskKill /F /IM androidemulator.exe
+TaskKill /F /IM Androidemulator.exe
+TaskKill /F /IM GAMELOOP.exe
+TaskKill /F /IM aow_exe.exe
+TaskKill /F /IM QMEmulatorService.exe
+TaskKill /F /IM RuntimeBroker.exe
+TaskKill /f /im adb
+TaskKill /f /im adb1.exe
+TaskKill /f /im adb2.exe
+TaskKill /f /im adb3.exe
+TaskKill /f /im GameLoader.exe
+TaskKill /f /im Gameloop.exe"
+TaskKill /f /im TSettingCenter.exe
+net stop aow_drv
+net stop Tensafe#
+adb shell am kill com.pubg.krmobile
+adb shell am force-stop com.pubg.krmobile
+adb shell mv /data/databasesKR/* /data/data/com.pubg.krmobile/databases
+adb shell rm -rf /data/databasesKR
+adb shell am kill com.rekoo.pubgm
+adb shell am force-stop com.rekoo.pubgm
+adb shell mv /data/databasesTW/* /data/data/com.rekoo.pubgm/databases
+adb shell rm -rf /data/databasesTW
+adb shell am kill com.vng.pubgmobile*
+adb shell am force-stop com.vng.pubgmobile
+adb shell mv /data/databasesVN/* /data/data/com.vng.pubgmobile/databases"
+adb shell rm -rf /data/databasesVN
+C:\Windows\System32\drivers\etc
+Resources
+lmhosts.sam
+SAFE EXIT DONE
+del /f C:\Windows\System32\drivers\etc\hosts2
+del /f C:\Windows\System32\drivers\etc\lmhosts.sam
+del /s /f /q C:\Windows\temp\*.* 
+del /s /f /q %USERPROFILE%
+ppdata\local\temp\*.* 
+del /s /f /q C:\Windows\Prefetch\*.* 
+del /f /q /S C: \Users\% username %\Documents\*.exe  
+del /f /q /S C: \Users\% username %\Documents\*.exe 
+ netsh advfirewall firewall add rule name=poku program="C:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=out remoteport=0-10000,11500-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="C:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=in remoteport=0-10000,11500-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="C:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=out remoteport=0-17499,17501-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="C:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=in remoteport=0-17499,17501-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="D:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=out remoteport=0-10000,11500-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="D:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=in remoteport=0-10000,11500-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="D:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=out remoteport=0-17499,17501-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="D:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=in remoteport=0-17499,17501-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="E:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=out remoteport=0-10000,11500-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="E:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=in remoteport=0-10000,11500-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="E:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=out remoteport=0-17499,17501-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="E:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=in remoteport=0-17499,17501-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="F:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=out remoteport=0-10000,11500-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="F:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=in remoteport=0-10000,11500-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="F:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=out remoteport=0-17499,17501-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="F:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=in remoteport=0-17499,17501-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="G:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=out remoteport=0-10000,11500-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="G:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=in remoteport=0-10000,11500-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="G:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=out remoteport=0-17499,17501-65535 action=block enable=yes
+ netsh advfirewall firewall add rule name=poku program="G:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=in remoteport=0-17499,17501-65535 action=block enable=yes
+Lobby Anti DONE                                                                          
+ netsh advfirewall reset 
+netsh advfirewall firewall delete rule name=lobby
+Lobby Anti OFF                                                      
+SPAWN ISLAND CHECKED
+SPAWN ISLAND2
+adb shell rm -rf  /data/data/com.rekoo.pubgm/files
+adb shell touch /data/data/com.rekoo.pubgm/app_crashrecord
+adb shell rm -rf /data/user/0/com.rekoo.pubgm/files/;
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/tss_tmp/*
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/iMSDK/*
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/app
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/*.*.dat
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/*.*.*.dat
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/.system_android_l2G
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/AdjustloActivityState
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/AdjustloPackageQueue
+adb shell rm -r /data/user/0/com.rekoo.pubgm/lib/
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_buglyb
+adb shell rm -rf /mnt/emulated/0/Android/data/com.rekoo.pubgm/cache/*
+adb shell rm -rf /mnt/emulated/0/Android/data/com.rekoo.pubgm/files/ProgramBinaryCache/*V
+adb shell rm -rf /mnt/emulated/0/Android/data/com.rekoo.pubgm/files/.system_android_l2
+adb shell rm -rf /mnt/emulated/0/Android/data/com.rekoo.pubgm/files/vmpcloudconfig.json
+adb shell rm -rf /mnt/emulated/0/Android/data/com.rekoo.pubgm/files/spadevice.json
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/logs/*
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/*
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords/*
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist
+ adb shell rm -rf /sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/statEventReportedFlag
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs*
+adb shell rm -rf /mnt/emulated/0/.backupsJ
+adb shell rm -rf /mnt/emulated/0/backups(
+adb shell rm -rf /mnt/emulated/0/mfcache-
+adb shell rm -rf /mnt/emulated/0/MidasOversea
+adb shell rm -rf /mnt/emulated/0/tencent.
+adb shell rm -rf /mnt/emulated/0/QTAudioEngine
+adb shell rm -rf /share/action_rulese
+ adb shell rm -rf /data/data/com.rekoo.pubgm/shared_prefs/com.google.android.gms.measurement.prefs.xml
+adb shell rm -rf /share/action_rules.xmlI
+adb shell rm -rf /data/data/com.rekoo.pubgm/shared_prefs/beacon_cover.xml
+adb shell touch /data/data/com.rekoo.pubgm/app_bugly/
+adb shell touch /data/data/com.rekoo.pubgm/app_webview/
+adb shell touch /data/data/com.rekoo.pubgm/cache/
+adb shell touch /data/data/com.rekoo.pubgm/code_cache/
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_crashrecord/1004U
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/cacheFile.txt
+adb shell rm -rf /sdcard/Tencent/MobileQQ/log
+adb shell rm -rf /data/data/com.rekoo.pubgm/databases/xg_message.db-journal
+adb shell rm -rf /data/data/com.rekoo.pubgm/databases/pri_tencent_analysis.db
+adb shell rm -rf /data/data/com.rekoo.pubgm/databases/__hs__db_issues-journal
+adb shell rm -rf /data/data/com.rekoo.pubgm/databases/__hs__db_key_values-journal
+adb shell rm -rf /data/data/com.rekoo.pubgm/databases/bugly_db_-journal
+adb shell rm -rf /data/data/com.rekoo.pubgm/databases/__hs_log_store-journal7
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/iMSDK
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/tpnlcache.data;
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/mycpuinfo
+adb shell rm -rf /data/data/com.rekoo.pubgm/shared_prefs/gsdk_prefs.xml
+adb shell rm -rf /data/data/com.rekoo.pubgm/shared_prefs/DENGTA_META.xmlX
+adb shell rm -rf /data/data/com.rekoo.pubgm/shared_prefs/com.rekoo.pubgm_preferences.xmlQ
+adb shell rm -rf /data/data/com.rekoo.pubgm/files/AppEventsLogger.persistedevents
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/cache/GCloud
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/cache/GCloud.ini
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/tbslog/tbslog.txt
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/cache/GCloud/*
+adb shell rm -rf /mnt/shell/0/emulated/Android/data/com.tencent.tmgp.pubgmhd/cache/GCloud.ini
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs/ShadowTrackerExtra-backup-2019.04.15-05.04.17.log
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/loginInfoFile.json+
+adb shell rm -rf /mnt/shell/emulated/0/data
+adb shell chmod -R 000 /data/data/com.rekoo.pubgm/databases/__hs__db_issues
+adb shell chmod -R 000 /data/data/com.rekoo.pubgm/databases/__hs__db_key_values
+adb shell chmod -R 000 /data/data/com.rekoo.pubgm/databases/__hs__db_properties
+adb shell chmod -R 000 /data/data/com.rekoo.pubgm/databases/__hs_db_helpshift_user
+adb shell chmod -R 000 /data/data/com.rekoo.pubgm/databases/becon_dbE
+adb shell chmod -R 000 /data/data/com.rekoo.pubgm/databases/bugly_db_
+adb shell chmod -R 000 /data/data/com.rekoo.pubgm/databases/config.db
+adb shell chmod -R 000 /data/data/com.rekoo.pubgm/databases/iMSDK.db]
+adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/vmpcloudconfig.json
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=50475,50481,50477,50125,50128,50184,50470,50468,50277,50385,50386
+ netsh advfirewall firewall add rule name=Superman dir=out action=allow enable=yes remoteip=170.106.159.3g
+ netsh advfirewall firewall add rule name=Superman dir=out action=allow enable=yes remoteip=49.51.177.92
+ netsh advfirewall firewall add rule name=Superman dir=out action=allow enable=yes remoteip=49.51.66.91
+ netsh advfirewall firewall add rule name=Superman dir=out action=allow enable=yes remoteip=93.186.227.142
+ netsh advfirewall firewall add rule name=Superman dir=out action=block enable=yes remoteip=150.109.27.214 remoteport=3013
+ netsh advfirewall firewall add rule name=Superman dir=out action=block enable=yes remoteip=49.51.66.225 remoteport=15692r
+ netsh advfirewall firewall add rule name=Superman dir=out action=block enable=yes remoteip=58.0.0.0-79.255.255.255
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=10012
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=10054
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=11443
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=15692
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=17000-18000,30000-35000,547,3013,10000-10050,17500,35000,62448,14000,18018,7889,8000-8099
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=17500
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=18081
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=20000
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=20001
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=3013
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37391
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37441
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37920
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37921
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37928
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37930
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37934
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37944
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37948
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37952
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37954
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37960
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37964
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37970
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37972
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37984
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37988
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37996
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37998
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38000
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38002
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38004
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38256
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38546
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38650
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38730
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38796
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38855
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=39066
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=39189
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=39346
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=39495
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=39565
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=39696
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=40072
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=40480
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=40499
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=40520
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=40645
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=40833
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=40849
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=40985
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=41233
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=41380
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=41605
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=41633
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=41655
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=41803
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=41931
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=41982
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=42052
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=42295
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=42338
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=42583
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=43097
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=43135
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=43480
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=43905
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=44092
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=44397
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=44585
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=45389
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=45566
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=45614
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=45690
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=45708
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=45906
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46278
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46527
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46740
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46768
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46801
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46806
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46808
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46810
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46812
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46816
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46820
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46830
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46832
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46986
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=47357
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=47383
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=47456
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=47666
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=47722
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=47849
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=47940
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=49228
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=49349
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=49436
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=49444
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=49863
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=60000-65000
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=8080
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=8081
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=8085
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=8086
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=8088
+ netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=8089
+ netsh advfirewall firewall add rule name=Superman dir=out interface=any action=block remoteip="203.0.0.0-224.255.255.255" enable=yes program="C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe" 
+ netsh advfirewall firewall add rule name=Superman dir=out interface=any action=block remoteip="58.0.0.0-79.255.255.255" enable=yes program="C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe" 
+ netsh advfirewall firewall add rule name=Superman dir=out interface=any action=block remoteip="203.0.0.0-224.255.255.255" enable=yes program="C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\TitanService.exe" 
+ netsh advfirewall firewall add rule name=Superman dir=out interface=any action=block remoteip="58.0.0.0-79.255.255.255" enable=yes program="C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\TitanService.exe" 
+ netsh advfirewall firewall add rule name=Ind dir=out action=block protocol=TCP enable=yes remoteport=2222
+ REG DELETE "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" /f
+netsh winsock reset 
+netsh int ip reset 
+ipconfig /release 
+ipconfig /renew 
+ipconfig /flushdns 
+del /s /f /q C:\Windows\System32\temp\*.* 
+del /s /f /q %USERPROFILE%\appdata\local\temp\*.* 
+SPAWN ISLAND DONE
+netsh advfirewall firewall delete rule name=SupermanG
+YOU'll BE REDIRECTED TO LOBBY                                          
+C:\ProgramData\Cursor\ArrowCursor.ico
+https://mega.nz/folder/114khQ4S#LkE9pAYr3_TjRz_TwwhJBQ
+https://apkplz.net/app/com.tencent.ig
+https://apkplz.net/app/com.pubg.krmobile&
+https://apkplz.net/app/com.rekoo.pubgm
+https://apkplz.net/app/com.vng.pubgmobile
+
+SUPERMAN
+Superman BP
+Time Over Again Login Please
+taskkill /f /im SmartGaGa.exe
+taskkill /f /im ProjectTitan.exe
+taskkill /f /im smartgaga.exe
+ taskkill /f /im anubischeats.SG.vmp.exe  
+taskkill /f /im adb.exe  
+AndroidProcess
+C:\ProgramData\SUPERMAN
+C:\ProgramData\SUPERMAN\
+sys
+
+/c sc create 
+binpath=
+.sys start=demand type=filesys & net start 
+SmartGaGa Not Running
+SMARTGAGA NOT FOUND
+F0 4F 2D E9 1C B0 8D E2 14 D0 4D E2 00 A0 A0 E1 0C 06 9F E5 01 80 A0 E1
+ytes
+00 00 A0 E3 1E FF 2F E1 14 D0 4D E2 00 A0 A0 E1 0C 06 9F E5 01 80 A0 E1
+cmd /csc stop 
+cmd /csc delete )
+cmd /ccd /d C:\ProgramData\SUPERMAN\S.sys
+cmd /cdel /f 
+C:\ProgramData\SUPERMAN\S.sys
+BYPASS DONE NOW LOGIN                   
+BYPASSING COMPLETED
+ONE
+
+BYPASS FAILED
+aow_exe.exe
+GaGa Not Running
+GAGA NOT FOUND
+00 00 A0 E3 1E FF 2F E1
+BYPASS DONE NOW LOGIN
+BYPASSISNG
+C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\titan.pak
+STARTING EMULATOR                     
+SMARTGAGA STARTED                                                          
+INSTALL GAGA FIRST
+STARTING GAME IN FEW SECONDS     
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/TGPA 
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData 
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/login-identifier.txt 
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/cacheFile.txt 
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload 
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0 
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1 
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir 
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/Epic Games 
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/coverversion.ini  
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate  6
+adb shell rm -rf /data/data/com.rekoo.pubgm/code_cache
+adb shell rm -rf /data/data/com.rekoo.pubgm/app_bugly
+adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/* 
+adb shell mkdir sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/ 
+adb push C:/ProgramData/Fix/UpdateSkip/Updater.ini sdcard/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini 
+adb shell chmod 000 /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* 
+adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/TGPA 
+adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData 
+adb shell rm -rf /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* ^
+adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/login-identifier.txt 
+adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/cacheFile.txt 
+adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload 
+adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0 
+adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1 
+adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir 
+adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/Epic Games 
+adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/coverversion.ini  
+adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate  
+adb shell rm -rf /data/data/com.pubg.imobile/shared_prefs/* 6
+adb shell rm -rf /data/data/com.pubg.imobile/no_backup
+adb shell rm -rf /data/data/com.pubg.imobile/files
+adb shell rm -rf /data/data/com.pubg.imobile/databases
+adb shell rm -rf /data/data/com.pubg.imobile/code_cache
+adb shell rm -rf /data/data/com.pubg.imobile/cache
+adb shell rm -rf /data/data/com.pubg.imobile/app_webview9
+adb shell rm -rf /data/data/com.pubg.imobile/app_textures
+adb shell rm -rf /data/data/com.pubg.imobile/app_geolocation<
+adb shell rm -rf /data/data/com.pubg.imobile/app_crashrecord6
+adb shell rm -rf /data/data/com.pubg.imobile/app_bugly
+adb shell rm -rf /data/data/com.pubg.imobile/app_appcache/*
+adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/* 
+adb shell mkdir sdcard/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/ 
+adb push C:/ProgramData/Fix/UpdateSkip/Updater.ini sdcard/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini 
+adb shell am start -n com.pubg.imobile/com.epicgames.ue4.SplashActivity filterd
+BGMI STARTED                                           
+CHECKING GAME                                                                
+adb shell rm -rf /data/data/com.pubg.imobile/lib/*
+adb shell rm -rf /data/app/com.pubg.imobile-1/lib/arm/* !
+LOBBY ANTI START...              
+netsh advfirewall firewall add rule name=LOBBY protocol=TCP dir=in remoteport=14500,18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=TCP dir=in remoteport=5038,5228,5555,10085,10086,18081,20371,23946,27042,27043,17000,10012,13004,13003,35000,59881,59906,59907,59920,60136,60156,60158,60159,60160,60164,60165,60166,60168,60169,60171,60172,60180,60215,60482,60859,60860,60861,60978,10009,20000,10061,10446,10447,20002,10013,10242 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=TCP dir=in remoteport=1500-17499,17501-36500 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=TCP dir=in remoteport=15692,20371,23946,27042,27043,5403,5646,7312,7311,2384,2383,3013,18081,8085,8086,13003,10012,8081,8088,13004,5006,5012,5046,5045,8080,11042,11041,2979,2986,17000,13004,13003,35000,10013,10012,15692,20371 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=TCP dir=out remoteport=14500,18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=TCP dir=out remoteport=5038,5228,5555,10085,10086,18081,20371,23946,27042,27043,17000,10012,13004,13003,35000,59881,59906,59907,59920,60136,60156,60158,60159,60160,60164,60165,60166,60168,60169,60171,60172,60180,60215,60482,60859,60860,60861,60978,10009,20000,10061,10446,10447,20002,10013,10242 action=blockr
+netsh advfirewall firewall add rule name=LOBBY protocol=TCP dir=out remoteport=1500-17499,17501-36500 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=TCP dir=out remoteport=15692,20371,23946,27042,27043,5403,5646,7312,7311,2384,2383,3013,18081,8085,8086,13003,10012,8081,8088,13004,5006,5012,5046,5045,8080,11042,11041,2979,2986,17000,13004,13003,35000,10013,10012,15692,20371 action=block
+netsh advfirewall firewall add rule name="LOBBY" dir=out action=block program="C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe" protocol=TCP enable=yes remoteport=80,443 
+netsh advfirewall firewall add rule name=LOBBY protocol=UDP dir=in remoteport=14500,18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=UDP dir=in remoteport=5038,5228,5555,10085,10086,18081,20371,23946,27042,27043,17000,10012,13004,13003,35000,59881,59906,59907,59920,60136,60156,60158,60159,60160,60164,60165,60166,60168,60169,60171,60172,60180,60215,60482,60859,60860,60861,60978,10009,20000,10061,10446,10447,20002,10013,10242 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=UDP dir=in remoteport=1500-17499,17501-36500 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=UDP dir=in remoteport=15692,20371,23946,27042,27043,5403,5646,7312,7311,2384,2383,3013,18081,8085,8086,13003,10012,8081,8088,13004,5006,5012,5046,5045,8080,11042,11041,2979,2986,17000,13004,13003,35000,10013,10012,15692,20371 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=UDP dir=out remoteport=14500,18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=UDP dir=out remoteport=5038,5228,5555,10085,10086,18081,20371,23946,27042,27043,17000,10012,13004,13003,35000,59881,59906,59907,59920,60136,60156,60158,60159,60160,60164,60165,60166,60168,60169,60171,60172,60180,60215,60482,60859,60860,60861,60978,10009,20000,10061,10446,10447,20002,10013,10242 action=block'
+netsh advfirewall firewall add rule name=LOBBY protocol=UDP dir=out remoteport=15692,20371,23946,27042,27043,5403,5646,7312,7311,2384,2383,3013,18081,8085,8086,13003,10012,8081,8088,13004,5006,5012,5046,5045,8080,11042,11041,2979,2986,17000,13004,13003,35000,10013,10012,15692,20371 action=block
+netsh advfirewall firewall add rule name="LOBBY" dir=out action=block program="C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe" protocol=UDP enable=yes remoteport=80,443 
+LOBBY ANTI DONE              
+netsh advfirewall firewall delete rule name=LOBBY
+SPAWN ANTI START...              
+netsh advfirewall firewall add rule name="Superman" dir=out action=block program="C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe" protocol=TCP enable=yes remoteport=17500 
+netsh advfirewall firewall add rule name="Superman" dir=out action=block program="C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe" protocol=TCP enable=yes remoteport=0-8084,8087-17499,17501-65535 
+SPAWN ISLAND DONE                                                              https://t.me/SUPERMANHAX
+username(
+Login Done, Your Key Will be expire on: 
+Info?
+https://www.youtube.com/channel/UCvXTINzNOiS-T7ePKRHitvQ/videos
+https://www.youtube.com/channel/UCOW-ZchlxHHLz5TpPjC41_A

@@ -1,0 +1,857 @@
+C:\Windows\System32\drivers\etc\hostsD
+Please install smartgaga correctly
+ C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe
+ D:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe
+ E:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe
+ F:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe
+ G:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe~
+ C:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe~
+ D:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe~
+ E:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe~
+ F:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe~
+ G:\Program Files\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe
+cmd.exe
+adb kill-server 
+adb start-server
+adb devices@
+adb shell am kill com.tencent.igL
+adb shell am force-stop com.tencent.igB
+adb shell am kill com.rekoo.pubgmN
+adb shell am force-stop com.rekoo.pubgmF
+adb shell am kill com.pubg.krmobileR
+adb shell am force-stop com.pubg.krmobileH
+adb shell am kill com.vng.pubgmobileT
+adb shell am force-stop com.vng.pubgmobileD
+adb shell am kill com.pubg.imobileP
+adb shell am force-stop com.pubg.imobile.
+taskkill /f /im adb.exe@
+taskkill /f /im ProjectTitan.exe.
+netsh advfirewall resetV
+del /s /f /q C:\Windows\Resources\14920.pak`
+del /s /f /q C:\Windows\Resources\SrcVersion.iniZ
+del /s /f /q C:\Windows\Resources\Updater.iniv
+ del /s /f /q C:\ProgramData\Microsoft\Windows\libtersafe.son
+ del /s /f /q C:\ProgramData\Microsoft\Windows\libUE4.sot
+ del /s /f /q C:\ProgramData\Microsoft\Windows\libgcloud.sox
+ del /s /f /q C:\ProgramData\Microsoft\Windows\libcubehawk.so|
+ del /s /f /q C:\ProgramData\Microsoft\Windows\libgamemaster.sor
+ del /s /f /q C:\ProgramData\Microsoft\Windows\libIMSDK.soz
+ del /s /f /q C:\ProgramData\Microsoft\Windows\libst-engine.so~
+ del /s /f /q C:\ProgramData\Microsoft\Windows\libTDataMaster.sov
+ del /s /f /q C:\ProgramData\Microsoft\Windows\libTGPALib.so&
+del /q/f/s %TEMP%\*.
+del /s /f /q %temp%\*.**
+cmd /ccd /d C:\Users\&
+\AppData\Local\Temp
+Safe Exit Donel
+ adb shell rm -rf /data/data/com.tencent.ig/databases/*j
+ adb shell rm -rf /data/data/com.tencent.ig/databases/r
+ adb shell rm -rf /data/data/com.pubg.krmobile/databases/*p
+ adb shell rm -rf /data/data/com.pubg.krmobile/databases/n
+ adb shell rm -rf /data/data/com.rekoo.pubgm/databases/*l
+ adb shell rm -rf /data/data/com.rekoo.pubgm/databases/t
+ adb shell rm -rf /data/data/com.vng.pubgmobile/databases/*r
+ adb shell rm -rf /data/data/com.vng.pubgmobile/databases/
+: netsh advfirewall firewall add rule name="Legion" dir=out action=block protocol=TCP remoteport= 17000-17499,433,17501-18000,30000-35000,8000-8099,10000-10050,8080,8085,8086,8088,18081,10012,8081,11443,3013,8089,547,62448,14000,18018,7889,17500 > NUL 2>&1 & netsh advfirewall firewall delete rule name=Gameloop > NUL 2>&1 &netsh advfirewall firewall delete rule name=SmartGaGa > NUL 2>&1 & netsh advfirewall firewall add rule name=Legion dir=in protocol=TCP remoteport=49900-50202 action=block > NUL 2>&1 & netsh advfirewall firewall add rule name=Legion dir=out protocol=TCP remoteport=49900-50202 action=block > NUL 2>&1l
+ netsh  advfirewall firewall add rule name=Legion dir=out action=block enable=yes remoteip=20.37.82.8,20.37.82.23,20.44.37.121,40.120.0.199,40.120.0.202,49.51.33.48,52.219.73.212,101.32.205.20,119.28.163.52,129.226.37.254,150.109.183.231,150.109.231.191,159.138.214.85,162.62.65.206,162.62.67.17,239.255.255.250
+ netsh advfirewall firewall add rule name=Legion dir=in protocol=TCP remoteip=1.0.0.1-101.32.112.1,101.32.113.1-162.159.122.232,162.159.133.234-255.255.255.255 action=block enable=yes & netsh advfirewall firewall & add rule name=Legion protocol=TCP dir=out remoteport=0-79,2000-2050,8000,8011,8080-8083,8088-9000,9030,9031,10000-10050,10613,13000-13050,17000,18000-18500 action=block enable=yes p
+ netsh advfirewall firewall add rule name =Legion dir=out protocol=TCP remoteip=1.0.0.1-101.32.112.1,101.32.113.1-162.159.122.232,162.159.133.234-255.255.255.255 action=block enable=yes
+ netsh advfirewall firewall add rule name =Legion dir=out remoteip=210.0.0.0-225.255.255.255,2606:4700:3030::68a1:9d48,2606:4700:3032::68a1:9c48,58.251.106.185,203.205.255.79,203.205.255.191,203.205.239.243,203.205.239.168,203.205.235.38,203.205.235.145,203.205.219.54,58.0.0.0-58.255.255.255,150.110.0.0-150.255.255.255,150.0.0.0-150.108.255.255,210.0.0.0-225.255.255.255 action=block enable=yes
+ netsh advfirewall firewall add rule name =Legion dir=in remoteip=210.0.0.0-225.255.255.255,2606:4700:3030::68a1:9d48,2606:4700:3032::68a1:9c48,58.251.106.185,203.205.255.79,203.205.255.191,203.205.239.243,203.205.239.168,203.205.235.38,203.205.235.145,203.205.219.54,58.0.0.0-58.255.255.255,150.110.0.0-150.255.255.255,150.0.0.0-150.108.255.255,210.0.0.0-225.255.255.255 action=block enable=yes
+ netsh advfirewall firewall add rule name="Legion" dir=out action=block protocol=ICMPv4t
+ adb shell iptables -I OUTPUT -p tcp  --dport 17000 -j DROPt
+ adb shell iptables -I OUTPUT -p tcp  --dport 17500 -j DROPt
+ adb shell iptables -I OUTPUT -p tcp  --dport 35000 -j DROPt
+ adb shell iptables -I OUTPUT -p udp  --dport 65535 -j DROPn
+ adb shell iptables -I OUTPUT -p icmpv4  --dport -j DROPn
+ adb shell iptables -I OUTPUT -p icmpv6  --dport -j DROPz
+ adb shell iptables -I OUTPUT -p tcp  --dport 0-65535 -j DROP%J
+adb shell iptables -L -n -v dpt:17500
+ cmd /cnetsh advfirewall firewall delete rule name=Legion dir=out & netsh advfirewall firewall delete rule name=Legion dir=inz
+ adb shell iptables -I OUTPUT -p tcp  --dport 17000 -j ACCEPT<z
+ adb shell iptables -I OUTPUT -p tcp  --dport 17500 -j ACCEPT<z
+ adb shell iptables -I OUTPUT -p tcp  --dport 35000 -j ACCEPT<z
+ adb shell iptables -I OUTPUT -p udp  --dport 65535 -j ACCEPT<r
+ adb shell iptables -I OUTPUT -p icmpv4  --dport -j ACCEPTr
+ adb shell iptables -I OUTPUT -p icmpv6  --dport -j ACCEPT|
+ adb shell iptables -I OUTPUT -p tcp  --dport 0-65535 -j ACCEPT
+ adb -s shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/cache&
+ipconfig / flushdns&
+netsh winsock reset$
+netsh int ip reset$
+ipconfig / release 
+ipconfig / renew,
+netsh int ip reset all
+nbtstat - r
+nbtstat - rr.
+00 00 00 00 02 0E 02 00.
+00 00 00 00 01 03 00 04.
+00 00 00 00 02 0F 02 00.
+00 00 00 00 02 03 02 00.
+00 00 00 00 02 09 02 00
+
+00 00 B4 43 80 F7 5E 03 04 9F 41 03 30 48R
+00 00 82 43 80 F7 5E 03 04 9F 41 03 30 48
+ CD CC CC 3D 00 00 00 00 C0 F3 45 03 B4 F3 45 03 A8 F3 45 03 00 00
+ 00 00 20 42 00 00 00 00 C0 F3 45 03 B4 F3 45 03 A8 F3 45 03 00 00
+
+https://cdn.discordapp.com/attachments/728465631346819164/841544468415119390/SrcVersion.iniF
+C:\Windows\Resources\SrcVersion.ini
+https://cdn.discordapp.com/attachments/728465631346819164/841893164767772672/SrcVersion.ini
+Lucida Fax
+label5
+Georgia
+label1
+Status :
+MingLiU-ExtB
+radioButton2
+radioButton4
+radioButton1
+radioButton3
+Algerian
+checkBox1
+Island Tick
+checkBox2
+Lobby 
+label4
+groupBox1
+checkBox4
+0% Head
+checkBox3
+Ipad View
+Bahnschrift.
+siticoneGradientButton4
+Safe Exit.
+siticoneGradientButton5
+Open Game.
+siticoneGradientButton6
+Open Emu&
+siticoneControlBox1&
+siticoneControlBox2
+label2
+Expire :
+label3"
+pictureBox1.Image
+pictureBox1
+checkBox5
+SRC V1
+checkBox6
+SRC V2
+radioButton5
+$this.BackgroundImage
+$this.Icon
+
+Form1
+C:\Login.ini8
+cheatengine-x86_64-SSE4-AVX2$
+cheatengine-x86_64 
+cheatengine-i386<
+Logged In success 
+
+ We Can't Verify Your Credencials 
+ork Connection:
+pictureBox2.Image
+pictureBox20
+textBox1.BackgroundImage
+Segoe UI
+textBox1>
+siticoneButton1.BackgroundImage
+siticoneButton12
+siticonePictureBox1.Image&
+siticonePictureBox1(
+Microsoft Sans Serif
+label2.Image
+Login4
+/c taskkill /IM adb.exe /F8
+& taskkill /f /im conime.exe4
+& taskkill /f /im QQDL.EXE:
+& taskkill /f /im qqlogin.exe<
+& taskkill /f /im dnfchina.exeD
+& taskkill /f /im dnfchinatest.exe@
+& taskkill /f /im txplatform.exe<
+ & taskkill /f /im aow_exe.exeD
+ & taskkill /F /IM TitanServic.exeD
+ & taskkill /F /IM ProjectTita.exe@
+ & taskkill /F /IM Auxillary.exe@
+ & taskkill /F /IM TP3Helper.exe@
+ & taskkill /F /IM tp3helper.datL
+ & TaskKill /F /IM androidemulator.exe<
+ & TaskKill /F /IM aow_exe.exeP
+ & TaskKill /F /IM QMEmulatorService.exeH
+ & TaskKill /F /IM RuntimeBroker.exe4
+ & taskkill /F /im adb.exeB
+ & taskkill /F /im GameLoader.exeJ
+ & taskkill /F /im TBSWebRenderer.exe@
+ & taskkill /F /im AppMarket.exeL
+ & taskkill /F /im AndroidEmulator.exe:
+ & net stop QMEmulatorService&
+ & net stop aow_drv*
+ & del C:\aow_drv.logL
+ & del /s /f /q C:\ProgramData\Tencent
+ & del /s /f /qV
+ & C:\Users%USERNAME%\AppData\Local\TencentZ
+ & C:\Users%USERNAME%\AppData\Roaming\Tencent&
+ & net stop Tensafe,
+ & del /q/f/s %TEMP%\*4
+ & del /s /f /q %temp%\*.*B
+ hosts
+ libcubehawk
+ libgamemaster
+ libgcloud
+ libIMSDK
+ libst_engine
+ libTDataMaster
+ libtersafe
+ libTGPALib
+ libUE4
+ My Video
+VarJ
+ Security breach detected!, Closing...6
+ C:\Windows\System32\arp.exe
+ ({0} [\W]*) ([a-z0-9-]*)
+ win32_logicaldisk.deviceid="
+ VolumeSerialNumber
+ {0:X8}{1:X8}
+none
+43 00 6F 00 6E 00 6E 00 65 00 63 00 74 00 65 00 64 00 53 00 75 00 63 00 63 00 65 00 73 00 73 00 66 00 75 00 6C 00 6C 00 79 00 56
+\AntiLoginBypass.dll
+AndroidProcess
+C:\Users\(
+\AppData\Local\Temp\4
+abcdefghijklmnopqrstuvwxyz
+.sys
+/c sc create 
+binpath=V
+.sys start=demand type=filesys & net start *
+SmartGaGa Not Running
+F0 4F 2D E9 1C B0 8D E2 14 D0 4D E2 00 A0 A0 E1 0C 06 9F E5 01 80 A0 E1
+
+bytes
+00 00 A0 E3 1E FF 2F E1 14 D0 4D E2 00 A0 A0 E1 0C 06 9F E5 01 80 A0 E1 
+Bypass Sucessful
+cmd /csc stop  
+cmd /csc delete 
+cmd /cdel /f (
+Wait Bypassing Game "
+Failed, Try Again
+SELECT VERSION*
+Prepareing for Bypass\
+C:\ProgramData\Microsoft\Windows\libtersafe.soT
+C:\ProgramData\Microsoft\Windows\libUE4.soZ
+C:\ProgramData\Microsoft\Windows\libgcloud.so\
+C:\ProgramData\Microsoft\Windows\libTGPALib.so^
+C:\ProgramData\Microsoft\Windows\libcubehawk.sob
+ C:\ProgramData\Microsoft\Windows\libgamemaster.soX
+C:\ProgramData\Microsoft\Windows\libIMSDK.so`
+C:\ProgramData\Microsoft\Windows\libst-engine.sod
+ C:\ProgramData\Microsoft\Windows\libTDataMaster.so
+ https://cdn.discordapp.com/attachments/728465631346819164/841645341770252298/Updater.ini@
+C:\Windows\Resources\Updater.ini
+ https://cdn.discordapp.com/attachments/746253771767545856/836585034077044766/14920.pak<
+C:\Windows\Resources\14920.pak&
+adb.exe kill-server(
+adb.exe start-server2
+adb connect emulator-5554:
+adb.exe -s emulator-5554 root@
+adb.exe -s emulator-5554 remount
+ adb.exe -s emulator-5554 shell mkdir /data/data/com.tencent.tinput
+ adb.exe -s emulator-5554 shell mkdir /data/data/com.tencent.tinput/cachel
+ adb shell pm uninstall -k --user 0 com.android.vending
+ adb shell pm uninstall -k --user 0 com.google.android.play.gamesr
+ adb shell pm uninstall -k --user 0 com.google.android.gmsr
+ adb shell pm uninstall -k --user 0 com.google.android.gsfX
+adb shell rm -rf /storage/emulated/0/backupsZ
+adb shell rm -rf /storage/emulated/0/.backupsR
+adb shell rm -rf /storage/emulated/0/dataX
+adb shell rm -rf /storage/emulated/0/flywheeb
+ adb shell rm -rf /storage/emulated/0/MidasOverseaR
+adb shell rm -rf /storage/emulated/0/DCIMZ
+adb shell rm -rf /storage/emulated/0/DownloadV
+adb shell rm -rf /storage/emulated/0/AlarmsX
+adb shell rm -rf /storage/emulated/0/mfcachef
+ adb shell rm -rf /storage/emulated/0/Notifications-V
+adb shell rm -rf /storage/emulated/0/MoviesZ
+adb shell rm -rf /storage/emulated/0/PicturesZ
+adb shell rm -rf /storage/emulated/0/Podcastsf
+ adb shell rm -rf /storage/emulated/0/QTAudioEngine0^
+adb shell rm -rf /storage/emulated/0/Ringtones6h
+ adb shell rm -rf /storage/emulated/0/test_sdcard.txth
+ adb shell rm -rf /data/data/com.tencent.ig/app_bugly`
+adb shell rm -rf /data/data/com.tencent.ig/cachet
+ adb shell rm -rf /data/data/com.tencent.ig/app_crashrecordj
+ adb shell rm -rf /data/data/com.tencent.ig/code_cacheh
+ adb shell rm -rf /data/data/com.tencent.ig/no_backup`
+adb shell rm -rf /data/data/com.tencent.ig/files
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/cache
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDirl
+ adb shell rm -rf /data/data/com.tencent.ig/app_webviewn
+ adb shell rm -rf /data/data/com.tencent.ig/app_appcachep
+ adb shell rm -rf /data/data/com.tencent.ig/app_databasest
+ adb shell rm -rf /data/data/com.tencent.ig/app_geolocationr
+ adb shell rm -rf /data/data/com.tencent.ig/files/tss_tmp:l
+ adb shell rm -rf /data/data/com.tencent.ig/files/iMSDKf
+ adb shell rm -rf /data/user/0/com.tencent.ig/files/t
+ adb shell rm -rf /data/data/com.tencent.ig/files/tss_tmp/*r
+ adb shell rm -rf /data/data/com.tencent.ig/files/iMSDK/*7f
+ adb shell rm -rf /data/data/com.tencent.ig/database^
+adb shell touch /data/data/com.tencent.ig/filesr
+ adb shell touch /data/data/com.tencent.ig/app_crashrecord~
+ adb shell rm -rf /data/data/com.tencent.ig/lib/libgcloudarch.sox
+ adb shell rm -rf /data/data/com.tencent.ig/lib/libigshare.sot
+ adb shell rm -rf /data/data/com.tencent.ig/lib/libBugly.so
+ adb shell rm -rf /data/data/com.tencent.ig/lib/libhelpshiftlistener.sop
+ adb shell rm -rf /data/data/com.tencent.ig/lib/liblbs.so 
+ adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
+ adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords
+ adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload
+ adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+ adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+ adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/rawdata
+
+ adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+ adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo
+
+ adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo 
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb -s emulator-5554 shell touch /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell touch /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload
+ adb shell touch /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell touch /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+ adb shell touch /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+ adb shell touch /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/rawdata
+ adb shell touch /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+ adb shell touch /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo
+ adb shell touch /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo
+ adb shell touch /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords
+ adb shell touch /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
+ adb shell touch /storage/emulated/0/Android/data/com.tencent.ig/files/ProgramBinaryCache
+ adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData 
+ adb shell rm -rf /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_*.*.*.*.pak 
+ adb shell rm -rf /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_*.*.*.*.pakV
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_1.4.0.15152.pakV
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15150.pakV
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15151.pakV
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15153.pakV
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15154.pakV
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15155.pakV
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15156.pakV
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15157.pakV
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15163.pakV
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15164.pak:
+adb shell kill com.tencent.ig
+ adb shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.iniJ
+ adb push C:\Windows\Resources\SrcVersion.ini /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini\
+ adb push C:\Windows\Resources\Updater.ini /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+ adb shell chmod 555 /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.inid
+ adb shell rm -rf /data/data/com.tencent.ig/cache/*
+ adb shell rm -rf /data/data/com.tencent.ig/databases/__hs__db_issues
+ adb shell rm -rf /data/data/com.tencent.ig/databases/__hs__db_key_values
+ adb shell rm -rf /data/data/com.tencent.ig/databases/__hs__db_properties
+ adb shell rm -rf /data/data/com.tencent.ig/databases/__hs_db_helpshift_userz
+ adb shell rm -rf /data/data/com.tencent.ig/databases/becon_db|
+ adb shell rm -rf /data/data/com.tencent.ig/databases/bugly_db_|
+ adb shell rm -rf /data/data/com.tencent.ig/databases/config.dbz
+ adb shell rm -rf /data/data/com.tencent.ig/databases/iMSDK.db
+ adb shell am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity filter
+ adb shell chmod -R 555 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks$
+adb shell sleep 15
+ adb.exe push C:\ProgramData\Microsoft\Windows\libtersafe.so /data/data/com.tencent.ig/lib/libtersafe.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libUE4.so /data/data/com.tencent.ig/lib/libUE4.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libgcloud.so /data/data/com.tencent.ig/lib/libgcloud.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libcubehawk.so /data/data/com.tencent.ig/lib/libcubehawk.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libgamemaster.so /data/data/com.tencent.ig/lib/libgamemaster.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libIMSDK.so /data/data/com.tencent.ig/lib/libIMSDK.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libst-engine.so /data/data/com.tencent.ig/lib/libst-engine.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libTDataMaster.so /data/data/com.tencent.ig/lib/libTDataMaster.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libTGPALib.so /data/data/com.tencent.ig/lib/libTGPALib.so|
+ adb shell chmod 777 /data/data/com.tencent.ig/lib/libgcloud.so
+ adb shell chmod 777 /data/app/com.tencent.ig-1/lib/arm/libgcloud.sov
+ adb shell chmod 777 /data/data/com.tencent.ig/lib/libUE4.so
+ adb shell chmod 777 /data/app/com.tencent.ig-1/lib/arm/libUE4.so~
+ adb shell chmod 777 /data/data/com.tencent.ig/lib/libtersafe.so
+ adb shell chmod 777 /data/app/com.tencent.ig-1/lib/arm/libtersafe.so
+ adb shell chmod 777 /data/data/com.tencent.ig/lib/libcubehawk.so
+ adb shell chmod 777 /data/app/com.tencent.ig-1/lib/arm/libcubehawk.so
+ adb shell chmod 777 /data/data/com.tencent.ig/lib/libgamemaster.so
+ adb shell chmod 777 /data/app/com.tencent.ig-1/lib/arm/libgamemaster.soz
+ adb shell chmod 777 /data/data/com.tencent.ig/lib/libIMSDK.so
+ adb shell chmod 777 /data/app/com.tencent.ig-1/lib/arm/libIMSDK.so
+ adb shell chmod 777 /data/data/com.tencent.ig/lib/libst-engine.so
+ adb shell chmod 777 /data/app/com.tencent.ig-1/lib/arm/libst-engine.so
+ adb shell chmod 777 /data/data/com.tencent.ig/lib/libTDataMaster.so
+ adb shell chmod 777 /data/app/com.tencent.ig-1/lib/arm/libTDataMaster.so~
+ adb shell chmod 777 /data/data/com.tencent.ig/lib/libTGPALib.so
+ adb shell chmod 777 /data/app/com.tencent.ig-1/lib/arm/libTGPALib.soz
+ adb.exe shell rm -f /data/data/com.tencent.ig/files/ss_tmp/*=z
+ adb.exe shell rm -f /data/data/com.tencent.ig/files/tss_tmp/*t
+ adb.exe shell rm -f /data/data/com.tencent.ig/files/ss_tmpv
+ adb.exe shell rm -f /data/data/com.tencent.ig/files/tss_tmp8
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp.
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*flist,
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*json,
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*eifs
+ adb -s emulator-5554 shell am start -n com.tencent.ig/com.epicgames.ue4.SplashActivityj
+ adb shell rm -rf /data/data/com.rekoo.pubgm/app_buglyb
+ adb shell rm -rf /data/data/com.rekoo.pubgm/cachev
+ adb shell rm -rf /data/data/com.rekoo.pubgm/app_crashrecordl
+ adb shell rm -rf /data/data/com.rekoo.pubgm/code_cachej
+ adb shell rm -rf /data/data/com.rekoo.pubgm/no_backupb
+adb shell rm -rf /data/data/com.rekoo.pubgm/files
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/cache
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDirn
+ adb shell rm -rf /data/data/com.rekoo.pubgm/app_webviewp
+ adb shell rm -rf /data/data/com.rekoo.pubgm/app_appcacher
+ adb shell rm -rf /data/data/com.rekoo.pubgm/app_databasesv
+ adb shell rm -rf /data/data/com.rekoo.pubgm/app_geolocationt
+ adb shell rm -rf /data/data/com.rekoo.pubgm/files/tss_tmp:n
+ adb shell rm -rf /data/data/com.rekoo.pubgm/files/iMSDKh
+ adb shell rm -rf /data/user/0/com.rekoo.pubgm/files/v
+ adb shell rm -rf /data/data/com.rekoo.pubgm/files/tss_tmp/*t
+ adb shell rm -rf /data/data/com.rekoo.pubgm/files/iMSDK/*7h
+ adb shell rm -rf /data/data/com.rekoo.pubgm/database`
+adb shell touch /data/data/com.rekoo.pubgm/filest
+ adb shell touch /data/data/com.rekoo.pubgm/app_crashrecord
+ adb shell rm -rf /data/data/com.rekoo.pubgm/lib/libgcloudarch.soz
+ adb shell rm -rf /data/data/com.rekoo.pubgm/lib/libigshare.sov
+ adb shell rm -rf /data/data/com.rekoo.pubgm/lib/libBugly.so
+ adb shell rm -rf /data/data/com.rekoo.pubgm/lib/libhelpshiftlistener.sor
+ adb shell rm -rf /data/data/com.rekoo.pubgm/lib/liblbs.so"
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/rawdata
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo"
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs 
+ adb -s emulator-5554 shell touch /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell touch /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload
+ adb shell touch /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell touch /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+ adb shell touch /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+ adb shell touch /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/rawdata
+
+ adb shell touch /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+ adb shell touch /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo
+
+ adb shell touch /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo
+ adb shell touch /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords 
+ adb shell touch /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
+ adb shell touch /storage/emulated/0/Android/data/com.rekoo.pubgm/files/ProgramBinaryCache
+
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData"
+ adb shell rm -rf /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_*.*.*.*.pak"
+ adb shell rm -rf /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_*.*.*.*.pakX
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_1.4.0.15152.pakX
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15150.pakX
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15151.pakX
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15153.pakX
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15154.pakX
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15155.pakX
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15156.pakX
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15157.pakX
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15163.pakX
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15164.pak<
+adb shell kill com.rekoo.pubgm
+ adb shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.iniL
+ adb push C:\Windows\Resources\SrcVersion.ini /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini^
+ adb push C:\Windows\Resources\Updater.ini /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+ adb shell chmod 555 /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.inif
+ adb shell rm -rf /data/data/com.rekoo.pubgm/cache/*
+ adb shell rm -rf /data/data/com.rekoo.pubgm/databases/__hs__db_issues
+ adb shell rm -rf /data/data/com.rekoo.pubgm/databases/__hs__db_key_values
+ adb shell rm -rf /data/data/com.rekoo.pubgm/databases/__hs__db_properties
+ adb shell rm -rf /data/data/com.rekoo.pubgm/databases/__hs_db_helpshift_user|
+ adb shell rm -rf /data/data/com.rekoo.pubgm/databases/becon_db~
+ adb shell rm -rf /data/data/com.rekoo.pubgm/databases/bugly_db_~
+ adb shell rm -rf /data/data/com.rekoo.pubgm/databases/config.db|
+ adb shell rm -rf /data/data/com.rekoo.pubgm/databases/iMSDK.db
+ adb shell am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity filter
+ adb shell chmod -R 555 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
+ adb.exe push C:\ProgramData\Microsoft\Windows\libtersafe.so /data/data/com.rekoo.pubgm/lib/libtersafe.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libUE4.so /data/data/com.rekoo.pubgm/lib/libUE4.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libgcloud.so /data/data/com.rekoo.pubgm/lib/libgcloud.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libcubehawk.so /data/data/com.rekoo.pubgm/lib/libcubehawk.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libgamemaster.so /data/data/com.rekoo.pubgm/lib/libgamemaster.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libIMSDK.so /data/data/com.rekoo.pubgm/lib/libIMSDK.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libst-engine.so /data/data/com.rekoo.pubgm/lib/libst-engine.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libTDataMaster.so /data/data/com.rekoo.pubgm/lib/libTDataMaster.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libTGPALib.so /data/data/com.rekoo.pubgm/lib/libTGPALib.so~
+ adb shell chmod 777 /data/data/com.rekoo.pubgm/lib/libgcloud.so
+ adb shell chmod 777 /data/app/com.rekoo.pubgm-1/lib/arm/libgcloud.sox
+ adb shell chmod 777 /data/data/com.rekoo.pubgm/lib/libUE4.so
+ adb shell chmod 777 /data/app/com.rekoo.pubgm-1/lib/arm/libUE4.so
+ adb shell chmod 777 /data/data/com.rekoo.pubgm/lib/libtersafe.so
+ adb shell chmod 777 /data/app/com.rekoo.pubgm-1/lib/arm/libtersafe.so
+ adb shell chmod 777 /data/data/com.rekoo.pubgm/lib/libcubehawk.so
+ adb shell chmod 777 /data/app/com.rekoo.pubgm-1/lib/arm/libcubehawk.so
+ adb shell chmod 777 /data/data/com.rekoo.pubgm/lib/libgamemaster.so
+ adb shell chmod 777 /data/app/com.rekoo.pubgm-1/lib/arm/libgamemaster.so|
+ adb shell chmod 777 /data/data/com.rekoo.pubgm/lib/libIMSDK.so
+ adb shell chmod 777 /data/app/com.rekoo.pubgm-1/lib/arm/libIMSDK.so
+ adb shell chmod 777 /data/data/com.rekoo.pubgm/lib/libst-engine.so
+ adb shell chmod 777 /data/app/com.rekoo.pubgm-1/lib/arm/libst-engine.so
+ adb shell chmod 777 /data/data/com.rekoo.pubgm/lib/libTDataMaster.so
+ adb shell chmod 777 /data/app/com.rekoo.pubgm-1/lib/arm/libTDataMaster.so
+ adb shell chmod 777 /data/data/com.rekoo.pubgm/lib/libTGPALib.so
+ adb shell chmod 777 /data/app/com.rekoo.pubgm-1/lib/arm/libTGPALib.so|
+ adb.exe shell rm -f /data/data/com.rekoo.pubgm/files/ss_tmp/*=|
+ adb.exe shell rm -f /data/data/com.rekoo.pubgm/files/tss_tmp/*v
+ adb.exe shell rm -f /data/data/com.rekoo.pubgm/files/ss_tmpx
+ adb.exe shell rm -f /data/data/com.rekoo.pubgm/files/tss_tmp:
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp,
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*res0
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*flist.
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*json.
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*eifs
+ adb -s emulator-5554 shell am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivityn
+ adb shell rm -rf /data/data/com.pubg.krmobile/app_buglyf
+ adb shell rm -rf /data/data/com.pubg.krmobile/cachez
+ adb shell rm -rf /data/data/com.pubg.krmobile/app_crashrecordp
+ adb shell rm -rf /data/data/com.pubg.krmobile/code_cachen
+ adb shell rm -rf /data/data/com.pubg.krmobile/no_backupf
+ adb shell rm -rf /data/data/com.pubg.krmobile/files
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.krmobile/cache
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDirr
+ adb shell rm -rf /data/data/com.pubg.krmobile/app_webviewt
+ adb shell rm -rf /data/data/com.pubg.krmobile/app_appcachev
+ adb shell rm -rf /data/data/com.pubg.krmobile/app_databasesz
+ adb shell rm -rf /data/data/com.pubg.krmobile/app_geolocationx
+ adb shell rm -rf /data/data/com.pubg.krmobile/files/tss_tmp:r
+ adb shell rm -rf /data/data/com.pubg.krmobile/files/iMSDKl
+ adb shell rm -rf /data/user/0/com.pubg.krmobile/files/z
+ adb shell rm -rf /data/data/com.pubg.krmobile/files/tss_tmp/*x
+ adb shell rm -rf /data/data/com.pubg.krmobile/files/iMSDK/*7l
+ adb shell rm -rf /data/data/com.pubg.krmobile/databased
+ adb shell touch /data/data/com.pubg.krmobile/filesx
+ adb shell touch /data/data/com.pubg.krmobile/app_crashrecord
+ adb shell rm -rf /data/data/com.pubg.krmobile/lib/libgcloudarch.so~
+ adb shell rm -rf /data/data/com.pubg.krmobile/lib/libigshare.soz
+ adb shell rm -rf /data/data/com.pubg.krmobile/lib/libBugly.so
+ adb shell rm -rf /data/data/com.pubg.krmobile/lib/libhelpshiftlistener.sov
+ adb shell rm -rf /data/data/com.pubg.krmobile/lib/liblbs.so&
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag 
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload
+
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/rawdata
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo&
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs$
+ adb -s emulator-5554 shell touch /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/rawdata
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords$
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.krmobile/files/ProgramBinaryCache
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData&
+ adb shell rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_*.*.*.*.pak&
+ adb shell rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_*.*.*.*.pak\
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_1.4.0.15152.pak\
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15150.pak\
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15151.pak\
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15153.pak\
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15154.pak\
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15155.pak\
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15156.pak\
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15157.pak\
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15163.pak\
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15164.pak@
+adb shell kill com.pubg.krmobile
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.iniP
+ adb push C:\Windows\Resources\SrcVersion.ini /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.inib
+ adb push C:\Windows\Resources\Updater.ini /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+ adb shell chmod 555 /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.inij
+ adb shell rm -rf /data/data/com.pubg.krmobile/cache/*
+ adb shell rm -rf /data/data/com.pubg.krmobile/databases/__hs__db_issues
+ adb shell rm -rf /data/data/com.pubg.krmobile/databases/__hs__db_key_values
+ adb shell rm -rf /data/data/com.pubg.krmobile/databases/__hs__db_properties
+ adb shell rm -rf /data/data/com.pubg.krmobile/databases/__hs_db_helpshift_user
+ adb shell rm -rf /data/data/com.pubg.krmobile/databases/becon_db
+ adb shell rm -rf /data/data/com.pubg.krmobile/databases/bugly_db_
+ adb shell rm -rf /data/data/com.pubg.krmobile/databases/config.db
+ adb shell rm -rf /data/data/com.pubg.krmobile/databases/iMSDK.db
+ adb shell am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity filter
+ adb shell chmod -R 555 /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
+ adb.exe push C:\ProgramData\Microsoft\Windows\libtersafe.so /data/data/com.pubg.krmobile/lib/libtersafe.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libUE4.so /data/data/com.pubg.krmobile/lib/libUE4.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libgcloud.so /data/data/com.pubg.krmobile/lib/libgcloud.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libcubehawk.so /data/data/com.pubg.krmobile/lib/libcubehawk.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libgamemaster.so /data/data/com.pubg.krmobile/lib/libgamemaster.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libIMSDK.so /data/data/com.pubg.krmobile/lib/libIMSDK.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libst-engine.so /data/data/com.pubg.krmobile/lib/libst-engine.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libTDataMaster.so /data/data/com.pubg.krmobile/lib/libTDataMaster.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libTGPALib.so /data/data/com.pubg.krmobile/lib/libTGPALib.so
+ adb shell chmod 777 /data/data/com.pubg.krmobile/lib/libgcloud.so
+ adb shell chmod 777 /data/app/com.pubg.krmobile-1/lib/arm/libgcloud.so|
+ adb shell chmod 777 /data/data/com.pubg.krmobile/lib/libUE4.so
+ adb shell chmod 777 /data/app/com.pubg.krmobile-1/lib/arm/libUE4.so
+ adb shell chmod 777 /data/data/com.pubg.krmobile/lib/libtersafe.so
+ adb shell chmod 777 /data/app/com.pubg.krmobile-1/lib/arm/libtersafe.so
+ adb shell chmod 777 /data/data/com.pubg.krmobile/lib/libcubehawk.so
+ adb shell chmod 777 /data/app/com.pubg.krmobile-1/lib/arm/libcubehawk.so
+ adb shell chmod 777 /data/data/com.pubg.krmobile/lib/libgamemaster.so
+ adb shell chmod 777 /data/app/com.pubg.krmobile-1/lib/arm/libgamemaster.so
+ adb shell chmod 777 /data/data/com.pubg.krmobile/lib/libIMSDK.so
+ adb shell chmod 777 /data/app/com.pubg.krmobile-1/lib/arm/libIMSDK.so
+ adb shell chmod 777 /data/data/com.pubg.krmobile/lib/libst-engine.so
+ adb shell chmod 777 /data/app/com.pubg.krmobile-1/lib/arm/libst-engine.so
+ adb shell chmod 777 /data/data/com.pubg.krmobile/lib/libTDataMaster.so
+ adb shell chmod 777 /data/app/com.pubg.krmobile-1/lib/arm/libTDataMaster.so
+ adb shell chmod 777 /data/data/com.pubg.krmobile/lib/libTGPALib.so
+ adb shell chmod 777 /data/app/com.pubg.krmobile-1/lib/arm/libTGPALib.so
+ adb.exe shell rm -f /data/data/com.pubg.krmobile/files/ss_tmp/*=
+ adb.exe shell rm -f /data/data/com.pubg.krmobile/files/tss_tmp/*z
+ adb.exe shell rm -f /data/data/com.pubg.krmobile/files/ss_tmp|
+ adb.exe shell rm -f /data/data/com.pubg.krmobile/files/tss_tmp>
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp0
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*res4
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*flist2
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*json2
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*eifs
+ adb -s emulator-5554 shell am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivityp
+ adb shell rm -rf /data/data/com.vng.pubgmobile/app_buglyh
+ adb shell rm -rf /data/data/com.vng.pubgmobile/cache|
+ adb shell rm -rf /data/data/com.vng.pubgmobile/app_crashrecordr
+ adb shell rm -rf /data/data/com.vng.pubgmobile/code_cachep
+ adb shell rm -rf /data/data/com.vng.pubgmobile/no_backuph
+ adb shell rm -rf /data/data/com.vng.pubgmobile/files
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.vng.pubgmobile/cache
+
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDirt
+ adb shell rm -rf /data/data/com.vng.pubgmobile/app_webviewv
+ adb shell rm -rf /data/data/com.vng.pubgmobile/app_appcachex
+ adb shell rm -rf /data/data/com.vng.pubgmobile/app_databases|
+ adb shell rm -rf /data/data/com.vng.pubgmobile/app_geolocationz
+ adb shell rm -rf /data/data/com.vng.pubgmobile/files/tss_tmp:t
+ adb shell rm -rf /data/data/com.vng.pubgmobile/files/iMSDKn
+ adb shell rm -rf /data/user/0/com.vng.pubgmobile/files/|
+ adb shell rm -rf /data/data/com.vng.pubgmobile/files/tss_tmp/*z
+ adb shell rm -rf /data/data/com.vng.pubgmobile/files/iMSDK/*7n
+ adb shell rm -rf /data/data/com.vng.pubgmobile/databasef
+ adb shell touch /data/data/com.vng.pubgmobile/filesz
+ adb shell touch /data/data/com.vng.pubgmobile/app_crashrecord
+ adb shell rm -rf /data/data/com.vng.pubgmobile/lib/libgcloudarch.so
+ adb shell rm -rf /data/data/com.vng.pubgmobile/lib/libigshare.so|
+ adb shell rm -rf /data/data/com.vng.pubgmobile/lib/libBugly.so
+ adb shell rm -rf /data/data/com.vng.pubgmobile/lib/libhelpshiftlistener.sox
+ adb shell rm -rf /data/data/com.vng.pubgmobile/lib/liblbs.so(
+ adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag"
+ adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords
+ adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload
+ adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+ adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+ adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/rawdata
+ adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+ adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo
+ adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo(
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs&
+ adb -s emulator-5554 shell touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload
+ adb shell touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+
+ adb shell touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+ adb shell touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+
+ adb shell touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/rawdata
+ adb shell touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+ adb shell touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo
+ adb shell touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo 
+ adb shell touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords&
+ adb shell touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
+ adb shell touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/ProgramBinaryCache
+ adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData(
+ adb shell rm -rf /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_*.*.*.*.pak(
+ adb shell rm -rf /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_*.*.*.*.pak^
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_1.4.0.15152.pak^
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15150.pak^
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15151.pak^
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15153.pak^
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15154.pak^
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15155.pak^
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15156.pak^
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.3.0.15157.pak^
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15163.pak^
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15164.pakB
+adb shell kill com.vng.pubgmobile
+ adb shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.iniR
+ adb push C:\Windows\Resources\SrcVersion.ini /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.inid
+ adb push C:\Windows\Resources\Updater.ini /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini 
+ adb shell chmod 555 /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.inil
+ adb shell rm -rf /data/data/com.vng.pubgmobile/cache/*
+ adb shell rm -rf /data/data/com.vng.pubgmobile/databases/__hs__db_issues
+ adb shell rm -rf /data/data/com.vng.pubgmobile/databases/__hs__db_key_values
+ adb shell rm -rf /data/data/com.vng.pubgmobile/databases/__hs__db_properties
+ adb shell rm -rf /data/data/com.vng.pubgmobile/databases/__hs_db_helpshift_user
+ adb shell rm -rf /data/data/com.vng.pubgmobile/databases/becon_db
+ adb shell rm -rf /data/data/com.vng.pubgmobile/databases/bugly_db_
+ adb shell rm -rf /data/data/com.vng.pubgmobile/databases/config.db
+ adb shell rm -rf /data/data/com.vng.pubgmobile/databases/iMSDK.db
+ adb shell am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity filter
+ adb shell chmod -R 555 /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
+ adb.exe push C:\ProgramData\Microsoft\Windows\libtersafe.so /data/data/com.vng.pubgmobile/lib/libtersafe.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libUE4.so /data/data/com.vng.pubgmobile/lib/libUE4.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libgcloud.so /data/data/com.vng.pubgmobile/lib/libgcloud.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libcubehawk.so /data/data/com.vng.pubgmobile/lib/libcubehawk.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libgamemaster.so /data/data/com.vng.pubgmobile/lib/libgamemaster.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libIMSDK.so /data/data/com.vng.pubgmobile/lib/libIMSDK.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libst-engine.so /data/data/com.vng.pubgmobile/lib/libst-engine.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libTDataMaster.so /data/data/com.vng.pubgmobile/lib/libTDataMaster.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libTGPALib.so /data/data/com.vng.pubgmobile/lib/libTGPALib.so
+ adb shell chmod 777 /data/data/com.vng.pubgmobile/lib/libgcloud.so
+ adb shell chmod 777 /data/app/com.vng.pubgmobile-1/lib/arm/libgcloud.so~
+ adb shell chmod 777 /data/data/com.vng.pubgmobile/lib/libUE4.so
+ adb shell chmod 777 /data/app/com.vng.pubgmobile-1/lib/arm/libUE4.so
+ adb shell chmod 777 /data/data/com.vng.pubgmobile/lib/libtersafe.so
+ adb shell chmod 777 /data/app/com.vng.pubgmobile-1/lib/arm/libtersafe.so
+ adb shell chmod 777 /data/data/com.vng.pubgmobile/lib/libcubehawk.so
+ adb shell chmod 777 /data/app/com.vng.pubgmobile-1/lib/arm/libcubehawk.so
+ adb shell chmod 777 /data/data/com.vng.pubgmobile/lib/libgamemaster.so
+ adb shell chmod 777 /data/app/com.vng.pubgmobile-1/lib/arm/libgamemaster.so
+ adb shell chmod 777 /data/data/com.vng.pubgmobile/lib/libIMSDK.so
+ adb shell chmod 777 /data/app/com.vng.pubgmobile-1/lib/arm/libIMSDK.so
+ adb shell chmod 777 /data/data/com.vng.pubgmobile/lib/libst-engine.so
+ adb shell chmod 777 /data/app/com.vng.pubgmobile-1/lib/arm/libst-engine.so
+ adb shell chmod 777 /data/data/com.vng.pubgmobile/lib/libTDataMaster.so
+ adb shell chmod 777 /data/app/com.vng.pubgmobile-1/lib/arm/libTDataMaster.so
+ adb shell chmod 777 /data/data/com.vng.pubgmobile/lib/libTGPALib.so
+ adb shell chmod 777 /data/app/com.vng.pubgmobile-1/lib/arm/libTGPALib.so
+ adb.exe shell rm -f /data/data/com.vng.pubgmobile/files/ss_tmp/*=
+ adb.exe shell rm -f /data/data/com.vng.pubgmobile/files/tss_tmp/*|
+ adb.exe shell rm -f /data/data/com.vng.pubgmobile/files/ss_tmp~
+ adb.exe shell rm -f /data/data/com.vng.pubgmobile/files/tss_tmp@
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp2
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*res6
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*flist4
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*json4
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*eifs
+ adb -s emulator-5554 shell am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivityl
+ adb shell rm -rf /data/data/com.pubg.imobile/app_buglyd
+ adb shell rm -rf /data/data/com.pubg.imobile/cachex
+ adb shell rm -rf /data/data/com.pubg.imobile/app_crashrecordn
+ adb shell rm -rf /data/data/com.pubg.imobile/code_cachel
+ adb shell rm -rf /data/data/com.pubg.imobile/no_backupd
+ adb shell rm -rf /data/data/com.pubg.imobile/files
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.imobile/cache
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell rm -rf /mnt/shell/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDirp
+ adb shell rm -rf /data/data/com.pubg.imobile/app_webviewr
+ adb shell rm -rf /data/data/com.pubg.imobile/app_appcachet
+ adb shell rm -rf /data/data/com.pubg.imobile/app_databasesx
+ adb shell rm -rf /data/data/com.pubg.imobile/app_geolocationv
+ adb shell rm -rf /data/data/com.pubg.imobile/files/tss_tmp:p
+ adb shell rm -rf /data/data/com.pubg.imobile/files/iMSDKj
+ adb shell rm -rf /data/user/0/com.pubg.imobile/files/x
+ adb shell rm -rf /data/data/com.pubg.imobile/files/tss_tmp/*v
+ adb shell rm -rf /data/data/com.pubg.imobile/files/iMSDK/*7j
+ adb shell rm -rf /data/data/com.pubg.imobile/databaseb
+ adb shell touch /data/data/com.pubg.imobile/filesv
+ adb shell touch /data/data/com.pubg.imobile/app_crashrecord
+ adb shell rm -rf /data/data/com.pubg.imobile/lib/libgcloudarch.so|
+ adb shell rm -rf /data/data/com.pubg.imobile/lib/libigshare.sox
+ adb shell rm -rf /data/data/com.pubg.imobile/lib/libBugly.so
+ adb shell rm -rf /data/data/com.pubg.imobile/lib/libhelpshiftlistener.sot
+ adb shell rm -rf /data/data/com.pubg.imobile/lib/liblbs.so$
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/rawdata
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo$
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs"
+ adb -s emulator-5554 shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ImageDownload
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/rawdata
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords"
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
+ adb shell touch /storage/emulated/0/Android/data/com.pubg.imobile/files/ProgramBinaryCache
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData$
+ adb shell rm -rf /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_*.*.*.*.pak$
+ adb shell rm -rf /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_*.*.*.*.pakZ
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_1.4.0.15256.pakZ
+ adb push C:\Windows\Resources\14920.pak /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_1.4.0.15257.pak>
+adb shell kill com.pubg.imobile
+ adb shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini`
+ adb push C:\Windows\Resources\Updater.ini /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+ adb shell chmod 555 /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.inih
+ adb shell rm -rf /data/data/com.pubg.imobile/cache/*
+ adb shell rm -rf /data/data/com.pubg.imobile/databases/__hs__db_issues
+ adb shell rm -rf /data/data/com.pubg.imobile/databases/__hs__db_key_values
+ adb shell rm -rf /data/data/com.pubg.imobile/databases/__hs__db_properties
+ adb shell rm -rf /data/data/com.pubg.imobile/databases/__hs_db_helpshift_user~
+ adb shell rm -rf /data/data/com.pubg.imobile/databases/becon_db
+ adb shell rm -rf /data/data/com.pubg.imobile/databases/bugly_db_
+ adb shell rm -rf /data/data/com.pubg.imobile/databases/config.db~
+ adb shell rm -rf /data/data/com.pubg.imobile/databases/iMSDK.dbn
+ adb shell rm -rf /data/data/com.pubg.imobile/databases/
+ adb shell am start -n com.pubg.imobile/com.epicgames.ue4.SplashActivity filter
+ adb shell chmod -R 555 /data/media/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
+ adb.exe push C:\ProgramData\Microsoft\Windows\libtersafe.so /data/data/com.pubg.imobile/lib/libtersafe.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libUE4.so /data/data/com.pubg.imobile/lib/libUE4.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libgcloud.so /data/data/com.pubg.imobile/lib/libgcloud.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libcubehawk.so /data/data/com.pubg.imobile/lib/libcubehawk.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libgamemaster.so /data/data/com.pubg.imobile/lib/libgamemaster.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libIMSDK.so /data/data/com.pubg.imobile/lib/libIMSDK.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libst-engine.so /data/data/com.pubg.imobile/lib/libst-engine.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libTDataMaster.so /data/data/com.pubg.imobile/lib/libTDataMaster.so
+ adb.exe push C:\ProgramData\Microsoft\Windows\libTGPALib.so /data/data/com.pubg.imobile/lib/libTGPALib.so
+ adb shell chmod 777 /data/data/com.pubg.imobile/lib/libgcloud.so
+ adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libgcloud.soz
+ adb shell chmod 777 /data/data/com.pubg.imobile/lib/libUE4.so
+ adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libUE4.so
+ adb shell chmod 777 /data/data/com.pubg.imobile/lib/libtersafe.so
+ adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libtersafe.so
+ adb shell chmod 777 /data/data/com.pubg.imobile/lib/libcubehawk.so
+ adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libcubehawk.so
+ adb shell chmod 777 /data/data/com.pubg.imobile/lib/libgamemaster.so
+ adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libgamemaster.so~
+ adb shell chmod 777 /data/data/com.pubg.imobile/lib/libIMSDK.so
+ adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libIMSDK.so
+ adb shell chmod 777 /data/data/com.pubg.imobile/lib/libst-engine.so
+ adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libst-engine.so
+ adb shell chmod 777 /data/data/com.pubg.imobile/lib/libTDataMaster.so
+ adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libTDataMaster.so
+ adb shell chmod 777 /data/data/com.pubg.imobile/lib/libTGPALib.so
+ adb shell chmod 777 /data/app/com.pubg.imobile-1/lib/arm/libTGPALib.so~
+ adb.exe shell rm -f /data/data/com.pubg.imobile/files/ss_tmp/*=~
+ adb.exe shell rm -f /data/data/com.pubg.imobile/files/tss_tmp/*x
+ adb.exe shell rm -f /data/data/com.pubg.imobile/files/ss_tmpz
+ adb.exe shell rm -f /data/data/com.pubg.imobile/files/tss_tmp<
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp2
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*flist0
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*json0
+ adb -s emulator-5554 shell rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*eifs
+ adb -s emulator-5554 shell am start -n com.pubg.imobile/com.epicgames.ue4.SplashActivity
+ netsh advfirewall firewall add rule name="Lxx" dir=out action=block protocol=TCP remoteport=0-79,5555,18081, 23946, 27042, 27043, 10012, 13004, 13003, 35000, 10009, 20000, 10061, 10446, 10447, 11443, 20002, 10013, 10242,24296,5038,,50000-65535

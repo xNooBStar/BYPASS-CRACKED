@@ -1,0 +1,879 @@
+
+adb.exe
+AdbWinApi.dll6
+/system32/drivers/etc/hostsp
+ netsh advfirewall firewall add rule name=SHBD2 protocol=TCP program= "C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\Titan.exe" remoteport=443,80 dir=out  action=block enable=yes
+ netsh advfirewall firewall add rule name=SHBD2 protocol=TCP program= "C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\Titan.exe" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes
+ netsh advfirewall firewall add rule name=SHBD2 protocol=TCP program= "C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yesp
+ netsh advfirewall firewall add rule name=SHBD2 protocol=TCP program= "D:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\Titan.exe" remoteport=443,80 dir=out  action=block enable=yes
+ netsh advfirewall firewall add rule name=SHBD2 protocol=TCP program= "D:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\Titan.exe" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes
+ netsh advfirewall firewall add rule name=SHBD2 protocol=TCP program= "D:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yesp
+ netsh advfirewall firewall add rule name=SHBD2 protocol=TCP program= "E:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\Titan.exe" remoteport=443,80 dir=out  action=block enable=yes
+ netsh advfirewall firewall add rule name=SHBD2 protocol=TCP program= "E:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\Titan.exe" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes
+ netsh advfirewall firewall add rule name=SHBD2 protocol=TCP program= "E:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yesp
+ netsh advfirewall firewall add rule name=SHBD2 protocol=TCP program= "F:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\Titan.exe" remoteport=443,80 dir=out  action=block enable=yes
+ netsh advfirewall firewall add rule name=SHBD2 protocol=TCP program= "F:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\Titan.exe" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes
+ netsh advfirewall firewall add rule name=SHBD2 protocol=TCP program= "F:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yesp
+ netsh advfirewall firewall add rule name=SHBD2 protocol=TCP program= "G:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\Titan.exe" remoteport=443,80 dir=out  action=block enable=yes
+ netsh advfirewall firewall add rule name=SHBD2 protocol=TCP program= "G:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\Titan.exe" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yes
+ netsh advfirewall firewall add rule name=SHBD2 protocol=TCP program= "G:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe" remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,17500,17000-17499,17501-18000,10013,30000,10000-10050,18018,8000-8099 dir=out  action=block enable=yesf
+ netsh advfirewall firewall delete rule name = SHBD1f
+ netsh advfirewall firewall delete rule name = SHBD2.
+taskkill /f /im adb.exe0
+taskkill /f /im SHBD.exe<
+taskkill /f /im SHBD-Sojib.exeF
+taskkill /f /im SHBDVIPEmulator.exeD
+taskkill /f /im AndroidProcess.exeT
+taskkill /f /im AndroidTunnelInstaller.exeZ
+taskkill /f /im AndroidTunnelInstallerX64.exe8
+taskkill /f /im Launcher.exe@
+taskkill /f /im ProjectTitan.exe@
+taskkill /f /im TitanService.exev
+Are you sure you want to update Bypass Drivers? / Yes or NOL
+C:\Windows\Help\mui\0409\shbd-sojib\gl
+Your bypass driver not updated. Please update the driver! Thank you!4
+Checking the Online Driverz
+The driver will update automatically, please wait! Thank you!^
+Are you sure you want to safe exit? / Yes or NO^
+/SmartGaGa/ProjectTitan/Engine/ProjectTitan.exeD
+https://vipsmartgaga.blogspot.com/T
+Maybe you don't have the emulator installed, Please install ! SHBD VIP Emulator ! You can download the new version if you want ! Please checking your browser ! Thank you!D
+Please install ! SHBD VIP Emulator&
+Wait 10 second...&
+adb.exe kill-server(
+adb.exe start-server,
+adb fork-server server
+adb.exe devices
+adb root
+adb remount>
+/SmartGaGa/ProjectTitan/Engine/&
+Downloading        h
+C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine:
+C:\ProgramData\Microsoft\WPD\
+https://drive.google.com/drive/folders/1csKHmsPX6b_606D1QPfEH4vMsnIp_jiU
+EAD
+Content-Length
+ Please checking your web browser, Once the download is complete, install it&
+Driver Update......"
+AndroidHWIDBYSHBDz
+adb.exe -s emulator-5554 shell settings get secure android_idL
+adb.exe -s emulator-5554 shell sleep 3|
+adb.exe -s emulator-5554 shell settings put secure android_id 
+adb.exe push C:\Windows\System32\drivers\etc\hosts /system/etc/hosts"`
+adb shell "rm -rf /data/data/com.tencent.ig/lib"\
+adb shell mkdir /data/data/com.tencent.ig/lib"b
+adb shell "rm -rf /data/app/com.tencent.ig-1/lib"^
+adb shell mkdir /data/app/com.tencent.ig-1/lib"f
+ adb shell mkdir /data/app/com.tencent.ig-1/lib/arm"p
+ adb shell "rm -rf /data/data/com.tencent.ig/app_webview"r
+ adb shell "rm -rf /data/data/com.tencent.ig/app_appcache"t
+ adb shell "rm -rf /data/data/com.tencent.ig/app_databases"x
+ adb shell "rm -rf /data/data/com.tencent.ig/app_geolocation"f
+ adb shell "rm -rf /data/data/com.pubg.krmobile/lib"b
+ adb shell mkdir /data/data/com.pubg.krmobile/lib"h
+ adb shell "rm -rf /data/app/com.pubg.krmobile-1/lib"d
+ adb shell mkdir /data/app/com.pubg.krmobile-1/lib"l
+ adb shell mkdir /data/app/com.pubg.krmobile-1/lib/arm"v
+ adb shell "rm -rf /data/data/com.pubg.krmobile/app_webview"x
+ adb shell "rm -rf /data/data/com.pubg.krmobile/app_appcache"z
+ adb shell "rm -rf /data/data/com.pubg.krmobile/app_databases"~
+ adb shell "rm -rf /data/data/com.pubg.krmobile/app_geolocation"b
+ adb shell "rm -rf /data/data/com.rekoo.pubgm/lib"^
+adb shell mkdir /data/data/com.rekoo.pubgm/lib"d
+ adb shell "rm -rf /data/app/com.rekoo.pubgm-1/lib"`
+adb shell mkdir /data/app/com.rekoo.pubgm-1/lib"h
+ adb shell mkdir /data/app/com.rekoo.pubgm-1/lib/arm"r
+ adb shell "rm -rf /data/data/com.rekoo.pubgm/app_webview"t
+ adb shell "rm -rf /data/data/com.rekoo.pubgm/app_appcache"v
+ adb shell "rm -rf /data/data/com.rekoo.pubgm/app_databases"z
+ adb shell "rm -rf /data/data/com.rekoo.pubgm/app_geolocation"h
+ adb shell "rm -rf /data/data/com.vng.pubgmobile/lib"d
+ adb shell mkdir /data/data/com.vng.pubgmobile/lib"j
+ adb shell "rm -rf /data/app/com.vng.pubgmobile-1/lib"f
+ adb shell mkdir /data/app/com.vng.pubgmobile-1/lib"n
+ adb shell mkdir /data/app/com.vng.pubgmobile-1/lib/arm"x
+ adb shell "rm -rf /data/data/com.vng.pubgmobile/app_webview"z
+ adb shell "rm -rf /data/data/com.vng.pubgmobile/app_appcache"|
+ adb shell "rm -rf /data/data/com.vng.pubgmobile/app_databases"
+ adb shell "rm -rf /data/data/com.vng.pubgmobile/app_geolocation"0
+taskkill /f /im shbd.exe6
+taskkill /f /im SHBD_QP.exe6
+taskkill /f /im AUpdate.exe<
+taskkill /f /im AutoUpdate.exe:
+taskkill /f /im CrRestore.exe2
+taskkill /f /im DSPut.exe8
+taskkill /f /im Feedback.exeF
+taskkill /f /im IObitDownloader.exeF
+taskkill /f /im IObitUninstaler.exe8
+taskkill /f /im IUProtip.exe:
+taskkill /f /im IUService.exe0
+taskkill /f /im iush.exe<
+taskkill /f /im library_ca.exe8
+taskkill /f /im NoteIcon.exeB
+taskkill /f /im PPUninstaller.exe<
+taskkill /f /im ScreenShot.exeT
+taskkill /f /im SecurityNotification_3.exeH
+taskkill /f /im SendBugReportNew.exe:
+taskkill /f /im SpecUTool.exe8
+taskkill /f /im unins000.exeH
+taskkill /f /im UninstallMonitor.exeH
+taskkill /f /im UninstallPromote.exe:
+taskkill /f /im ICONPIN32.exe:
+taskkill /f /im ICONPIN64.exeD
+taskkill /f /im Process Hacker.exe6
+taskkill /f /im Taskmgr.exe6
+taskkill /f /im notepad.exe>
+taskkill /f /im VnQP_BySHBD.exe6
+taskkill /f /im Paradox.exe<
+taskkill /f /im ParadoxQP3.exe<
+taskkill /f /im Downloader.exeF
+taskkill /f /im AndroidEmulator.exe6
+taskkill /f /im aow_exe.exe<
+taskkill /f /im GameLoader.exe:
+taskkill /f /im AppMarket.exeJ
+taskkill /f /im QMEmulatorService.exe:
+taskkill /f /im tensafe_1.exe:
+taskkill /f /im tensafe_2.exe:
+taskkill /f /im tencentdl.exe4
+taskkill /f /im conime.exe0
+taskkill /f /im QQDL.EXE6
+taskkill /f /im qqlogin.exe8
+taskkill /f /im dnfchina.exe@
+taskkill /f /im dnfchinatest.exe<
+taskkill /f /im txplatform.exe:
+taskkill /f /im Auxillary.exe:
+taskkill /f /im TP3Helper.exe:
+taskkill /f /im tp3helper.dat:
+taskkill /f /im Updater32.exeF
+taskkill /f /im androidemulator.exeB
+taskkill /f /im RuntimeBroker.exeD
+taskkill /f /im TBSWebRenderer.exe:
+taskkill /f /im Synaptics.exe.
+taskkill /f /im dnf.exe4
+net stop QMEmulatorService 
+net stop aow_drv$
+del C:\aow_drv.log8
+del /s /f /q C:\Windows\Temp0
+del /s /f /q C:\PerfLogs6
+del /s /f /q C:\Windows\adb@
+del /s /f /q C:\Windows\PrefetchF
+del /s /f /q C:\ProgramData\Tencent 
+net stop Tensafe"
+del C:\SrcVersion
+del adb.exe"
+del AdbWinApi.dll
+del Memory.dll.
+taskkill /f /im cmd.exe6
+taskkill /f /im conhost.exe
+/adb/cc.exeL
+C:/PerfLogs/Thanks for Supporting SHBD\
+C:/PerfLogs/Thanks for Supporting SHBD/BPD.exeP
+/SmartGaGa/ProjectTitan/Engine/titan.pakZ
+/SmartGaGa/ProjectTitan/Engine/lang/en_US.ini
+C:/PerfLogs&
+C:\PerfLogs\shbdsrcX
+/SystemPropertiesDataExecutionPrevention.exe(
+ Are you sure you want to create a guest account for PUBG Global Version ? Once the guest account is created, the emulator will be closed / Yes or NOZ
+C:/PerfLogs/Thanks for Supporting SHBD/gl.exe(
+ Are you sure you want to create a guest account for PUBG Korean Version ? Once the guest account is created, the emulator will be closed / Yes or NOZ
+C:/PerfLogs/Thanks for Supporting SHBD/kr.exe(
+ Are you sure you want to create a guest account for PUBG Taiwan Version ? Once the guest account is created, the emulator will be closed / Yes or NOZ
+C:/PerfLogs/Thanks for Supporting SHBD/tw.exe*
+ Are you sure you want to create a guest account for PUBG Vietnam Version ? Once the guest account is created, the emulator will be closed / Yes or NOZ
+C:/PerfLogs/Thanks for Supporting SHBD/vn.exe
+ You are sure you want to use this option This option will only work in 1080p resolution PUBG All Version / Yes or NO
+adb
+/adb/adb.exe
+ adb shell "rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config"
+ adb shell "rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames"
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config"
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\Config\Android /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android"
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Active.sav /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Active.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\AwardCollectData_73619662369588520.json /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/AwardCollectData_73619662369588520.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\BP_WeakGuidSave.sav /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/BP_WeakGuidSave.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Cached.sav /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Cached.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\loginInfoFile.json /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/loginInfoFile.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\MailPhoneLogin.json /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/MailPhoneLogin.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\personalprefs_73619662369588520.json /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/personalprefs_73619662369588520.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\playerprefs.json /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/playerprefs.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\playerprefs.sav /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/playerprefs.sav" 
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\RecruitFilterSetting_73619662369588520.json /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RecruitFilterSetting_73619662369588520.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\SettingConfig_Slot.sav /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SettingConfig_Slot.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\SyncMatchAndChatLanguage.json /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SyncMatchAndChatLanguage.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\UIElemLayout_Download.sav /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Download.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\UIElemLayout_Slot.sav /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\UIElemLayout_Slot06.sav /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot06.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\UIElemLayout_Slot08.sav /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot08.sav"
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Activity"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Activity /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Activity"
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Arena"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Arena /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Arena"
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Commercial"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Commercial /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Commercial"
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Download"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Download /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Download"
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/GEM"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\GEM /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/GEM"
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Loading"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Loading /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Loading"
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Lobby"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Lobby /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Lobby" 
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LobbyBubble"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\LobbyBubble /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LobbyBubble"
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Login"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Login /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Login" 
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LoginBackUp"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\LoginBackUp /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LoginBackUp"
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Match"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Match /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Match"&
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/PufferDownload"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\PufferDownload /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/PufferDownload"
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RoleInfo"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\RoleInfo /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RoleInfo"
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Setting"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Setting /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Setting""
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SocialIsland"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\SocialIsland /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SocialIsland"
+ adb shell mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Tables"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Tables /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Tables"
+ adb shell "rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config"
+ adb shell "rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames"
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config"
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\Config\Android /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android"
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Active.sav /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Active.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\AwardCollectData_73619662369588520.json /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/AwardCollectData_73619662369588520.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\BP_WeakGuidSave.sav /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/BP_WeakGuidSave.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Cached.sav /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Cached.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\loginInfoFile.json /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/loginInfoFile.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\MailPhoneLogin.json /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/MailPhoneLogin.json"
+
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\personalprefs_73619662369588520.json /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/personalprefs_73619662369588520.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\playerprefs.json /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/playerprefs.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\playerprefs.sav /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/playerprefs.sav"&
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\RecruitFilterSetting_73619662369588520.json /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RecruitFilterSetting_73619662369588520.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\SettingConfig_Slot.sav /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SettingConfig_Slot.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\SyncMatchAndChatLanguage.json /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SyncMatchAndChatLanguage.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\UIElemLayout_Download.sav /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Download.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\UIElemLayout_Slot.sav /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\UIElemLayout_Slot06.sav /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot06.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\UIElemLayout_Slot08.sav /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot08.sav" 
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Activity"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Activity /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Activity"
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Arena"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Arena /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Arena"$
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Commercial"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Commercial /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Commercial" 
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Download"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Download /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Download"
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/GEM"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\GEM /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/GEM"
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Loading"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Loading /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Loading"
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Lobby"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Lobby /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Lobby"&
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LobbyBubble"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\LobbyBubble /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LobbyBubble"
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Login"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Login /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Login"&
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LoginBackUp"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\LoginBackUp /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LoginBackUp"
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Match"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Match /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Match",
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/PufferDownload"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\PufferDownload /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/PufferDownload" 
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RoleInfo"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\RoleInfo /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RoleInfo"
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Setting"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Setting /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Setting"(
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SocialIsland"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\SocialIsland /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SocialIsland"
+ adb shell mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Tables"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Tables /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Tables"
+ adb shell "rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config"
+ adb shell "rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames"
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config"
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\Config\Android /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android"
+
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Active.sav /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Active.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\AwardCollectData_73619662369588520.json /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/AwardCollectData_73619662369588520.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\BP_WeakGuidSave.sav /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/BP_WeakGuidSave.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Cached.sav /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Cached.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\loginInfoFile.json /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/loginInfoFile.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\MailPhoneLogin.json /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/MailPhoneLogin.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\personalprefs_73619662369588520.json /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/personalprefs_73619662369588520.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\playerprefs.json /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/playerprefs.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\playerprefs.sav /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/playerprefs.sav""
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\RecruitFilterSetting_73619662369588520.json /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RecruitFilterSetting_73619662369588520.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\SettingConfig_Slot.sav /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SettingConfig_Slot.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\SyncMatchAndChatLanguage.json /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SyncMatchAndChatLanguage.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\UIElemLayout_Download.sav /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Download.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\UIElemLayout_Slot.sav /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\UIElemLayout_Slot06.sav /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot06.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\UIElemLayout_Slot08.sav /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot08.sav"
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Activity"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Activity /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Activity"
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Arena"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Arena /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Arena" 
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Commercial"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Commercial /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Commercial"
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Download"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Download /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Download"
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/GEM"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\GEM /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/GEM"
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Loading"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Loading /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Loading"
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Lobby"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Lobby /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Lobby""
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LobbyBubble"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\LobbyBubble /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LobbyBubble"
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Login"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Login /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Login""
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LoginBackUp"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\LoginBackUp /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LoginBackUp"
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Match"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Match /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Match"(
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/PufferDownload"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\PufferDownload /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/PufferDownload"
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RoleInfo"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\RoleInfo /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RoleInfo"
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Setting"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Setting /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Setting"$
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SocialIsland"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\SocialIsland /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SocialIsland"
+ adb shell mkdir /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Tables"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Tables /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Tables"
+ adb shell "rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config"
+ adb shell "rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames"
+
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config"
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\Config\Android /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android"
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Active.sav /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Active.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\AwardCollectData_73619662369588520.json /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/AwardCollectData_73619662369588520.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\BP_WeakGuidSave.sav /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/BP_WeakGuidSave.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Cached.sav /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Cached.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\loginInfoFile.json /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/loginInfoFile.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\MailPhoneLogin.json /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/MailPhoneLogin.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\personalprefs_73619662369588520.json /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/personalprefs_73619662369588520.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\playerprefs.json /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/playerprefs.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\playerprefs.sav /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/playerprefs.sav"(
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\RecruitFilterSetting_73619662369588520.json /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RecruitFilterSetting_73619662369588520.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\SettingConfig_Slot.sav /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SettingConfig_Slot.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\SyncMatchAndChatLanguage.json /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SyncMatchAndChatLanguage.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\UIElemLayout_Download.sav /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Download.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\UIElemLayout_Slot.sav /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\UIElemLayout_Slot06.sav /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot06.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\UIElemLayout_Slot08.sav /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot08.sav""
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Activity"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Activity /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Activity"
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Arena"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Arena /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Arena"&
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Commercial"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Commercial /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Commercial""
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Download"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Download /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Download"
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/GEM"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\GEM /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/GEM" 
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Loading"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Loading /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Loading"
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Lobby"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Lobby /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Lobby"(
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LobbyBubble"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\LobbyBubble /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LobbyBubble"
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Login"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Login /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Login"(
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LoginBackUp"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\LoginBackUp /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LoginBackUp"
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Match"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Match /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Match".
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/PufferDownload"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\PufferDownload /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/PufferDownload""
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RoleInfo"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\RoleInfo /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RoleInfo" 
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Setting"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Setting /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Setting"*
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SocialIsland"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\SocialIsland /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SocialIsland"
+ adb shell mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Tables"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%1080pBySHBD\SaveGames\Tables /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Tables",
+1080p 60FPS Setup Done
+ You are sure you want to use this option This option work in PUBG All Version / Yes or NO
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\Config\Android /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Active.sav /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Active.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\AwardCollectData_73249434578060584.json /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/AwardCollectData_73249434578060584.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Cached.sav /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Cached.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\loginInfoFile.json /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/loginInfoFile.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\MailPhoneLogin.json /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/MailPhoneLogin.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\personalprefs_73249434578060584.json /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/personalprefs_73249434578060584.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\playerprefs.json /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/playerprefs.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\playerprefs.sav /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/playerprefs.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\RecruitFilterSetting_73249434578060584.json /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RecruitFilterSetting_73249434578060584.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\SettingConfig_Slot.sav /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SettingConfig_Slot.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\SyncMatchAndChatLanguage.json /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SyncMatchAndChatLanguage.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\UIElemLayout_Download.sav /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Download.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\UIElemLayout_Slot.sav /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\UIElemLayout_Slot06.sav /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot06.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\UIElemLayout_Slot08.sav /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot08.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Activity /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Activity"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Arena /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Arena"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Commercial /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Commercial"~
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\GEM /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/GEM"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Loading /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Loading"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Lobby /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Lobby"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\LobbyBubble /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LobbyBubble"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Login /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Login"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\LoginBackUp /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LoginBackUp"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\PufferDownload /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/PufferDownload"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\RoleInfo /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RoleInfo"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Setting /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Setting"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Tables /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Tables"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\Config\Android /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Active.sav /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Active.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\AwardCollectData_73249434578060584.json /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/AwardCollectData_73249434578060584.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Cached.sav /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Cached.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\loginInfoFile.json /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/loginInfoFile.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\MailPhoneLogin.json /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/MailPhoneLogin.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\personalprefs_73249434578060584.json /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/personalprefs_73249434578060584.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\playerprefs.json /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/playerprefs.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\playerprefs.sav /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/playerprefs.sav"$
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\RecruitFilterSetting_73249434578060584.json /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RecruitFilterSetting_73249434578060584.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\SettingConfig_Slot.sav /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SettingConfig_Slot.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\SyncMatchAndChatLanguage.json /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SyncMatchAndChatLanguage.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\UIElemLayout_Download.sav /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Download.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\UIElemLayout_Slot.sav /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\UIElemLayout_Slot06.sav /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot06.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\UIElemLayout_Slot08.sav /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot08.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Activity /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Activity"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Arena /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Arena"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Commercial /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Commercial"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\GEM /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/GEM"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Loading /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Loading"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Lobby /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Lobby"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\LobbyBubble /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LobbyBubble"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Login /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Login"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\LoginBackUp /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LoginBackUp"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\PufferDownload /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/PufferDownload"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\RoleInfo /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RoleInfo"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Setting /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Setting"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Tables /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Tables"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\Config\Android /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Active.sav /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Active.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\AwardCollectData_73249434578060584.json /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/AwardCollectData_73249434578060584.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Cached.sav /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Cached.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\loginInfoFile.json /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/loginInfoFile.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\MailPhoneLogin.json /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/MailPhoneLogin.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\personalprefs_73249434578060584.json /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/personalprefs_73249434578060584.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\playerprefs.json /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/playerprefs.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\playerprefs.sav /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/playerprefs.sav" 
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\RecruitFilterSetting_73249434578060584.json /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RecruitFilterSetting_73249434578060584.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\SettingConfig_Slot.sav /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SettingConfig_Slot.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\SyncMatchAndChatLanguage.json /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SyncMatchAndChatLanguage.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\UIElemLayout_Download.sav /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Download.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\UIElemLayout_Slot.sav /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\UIElemLayout_Slot06.sav /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot06.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\UIElemLayout_Slot08.sav /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot08.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Activity /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Activity"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Arena /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Arena"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Commercial /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Commercial"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\GEM /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/GEM"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Loading /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Loading"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Lobby /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Lobby"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\LobbyBubble /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LobbyBubble"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Login /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Login"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\LoginBackUp /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LoginBackUp"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\PufferDownload /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/PufferDownload"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\RoleInfo /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RoleInfo"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Setting /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Setting"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Tables /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Tables"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\Config\Android /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Active.sav /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Active.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\AwardCollectData_73249434578060584.json /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/AwardCollectData_73249434578060584.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Cached.sav /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Cached.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\loginInfoFile.json /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/loginInfoFile.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\MailPhoneLogin.json /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/MailPhoneLogin.json"
+
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\personalprefs_73249434578060584.json /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/personalprefs_73249434578060584.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\playerprefs.json /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/playerprefs.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\playerprefs.sav /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/playerprefs.sav"&
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\RecruitFilterSetting_73249434578060584.json /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RecruitFilterSetting_73249434578060584.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\SettingConfig_Slot.sav /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SettingConfig_Slot.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\SyncMatchAndChatLanguage.json /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/SyncMatchAndChatLanguage.json"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\UIElemLayout_Download.sav /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Download.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\UIElemLayout_Slot.sav /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\UIElemLayout_Slot06.sav /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot06.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\UIElemLayout_Slot08.sav /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/UIElemLayout_Slot08.sav"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Activity /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Activity"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Arena /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Arena"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Commercial /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Commercial"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\GEM /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/GEM"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Loading /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Loading"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Lobby /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Lobby"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\LobbyBubble /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LobbyBubble"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Login /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Login"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\LoginBackUp /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/LoginBackUp"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\PufferDownload /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/PufferDownload"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\RoleInfo /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/RoleInfo"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Setting /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Setting"
+ adb.exe push C:\Windows\Prefetch\KeyMapping50%720pBySHBD\SaveGames\Tables /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Tables"&
+720p Setup Complete(
+1080p Setup Complete(
+KeyMapping Setup&
+GameLoop KeyMapping
+https://drive.google.com/drive/folders/1x_O6AXonXe_OuH6gtBHiyaL_I7yTmAZ0?usp=sharing2
+Checking your Web browser(
+Download and install&
+ 32Bit Apk Download
+ Your emulator will restart automatically when the process is complete? / Yes or NO
+ https://drive.google.com/drive/folders/1PoaUKBvwMS5p3AO-9PrNWUT4bMInvnr9
+ https://drive.google.com/drive/folders/1pNlBloJZy3Ke2Mqo28CogV7fISnZ2jaB
+ https://drive.google.com/drive/folders/1nR5W_lSNmY3ml9w-hLA_02qJHTc16ga1?usp=sharing
+ https://drive.google.com/drive/folders/17yZh9tLdDOLlTVqVWXHMU7Tw1ZoZBtcg?usp=sharing
+ https://drive.google.com/drive/folders/1bDwqb8Qqq3het7Wi4klR4KLvet_4rvDe?usp=sharing
+ https://drive.google.com/drive/folders/16ybAcA3m2MoFwEyUjpUq9YbJ0dX4cKtu?usp=sharing
+ adb shell "rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate"(
+ adb shell "rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/iTOPPrefs.sav"
+ adb shell "rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate".
+ adb shell "rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/iTOPPrefs.sav"
+ adb shell "rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate"*
+ adb shell "rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/iTOPPrefs.sav"
+ adb shell "rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Intermediate"0
+ adb shell "rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/iTOPPrefs.sav"J
+You want to use the hack? / Yes or NOD
+taskkill /f /im VnHaxQP_BySHBD.exeb
+/SmartGaGa/ProjectTitan/Engine/VnHaxQP_BySHBD.exeV
+First download the file then try to open it
+VnHax QP Mode BySHBDZ
+/SmartGaGa/ProjectTitan/Engine/ParadoxQP3.exe6
+Paradox Hack QP Mode BySHBD"
+Start Game Bypass
+. : Hours
+. : Minutes
+. : SecondsB
+BypassMainUiPanel.BackgroundImage"
+BypassMainUiPanel
+btnVnHack
+Open ESP Hack
+AccountLink
+Account Link !
+btnResetGuestID
+Reset Guest ID
+labelProgress
+000
+txt_Seconds
+59 : Seconds
+txt_Minutes
+59 : Minutes
+txt_Hours
+59 : Hours"
+txtBypassMain_tit
+GS Success
+txtMyAdd
+Created By SHBD-SOJIB  /  Contact me if you want to create a VIP Bypass 100% Safe"
+txtBypassCode_tit
+3153
+btnOpenEmulator
+Open Emulator
+btnDriverUpdate$
+btnStartGameBypass
+label90
+Select Your Game Version
+btnSafeExit
+Safe Exit
+radioPUBG_KR&
+PUBG Korean Version
+radioPUBG_GL&
+PUBG Global Version
+radioPUBG_VN(
+PUBG Vietnam Version
+radioPUBG_TW&
+PUBG Taiwan Version"
+pictureBox5.Image
+pictureBox5"
+pictureBox6.Image
+pictureBox6$
+pictureBox14.Image
+pictureBox14
+TickinGame
+Tick in Game !"
+pictureBox7.Image
+pictureBox7"
+pictureBox8.Image
+pictureBox8$
+pictureBox15.Image
+pictureBox15"
+pictureBox3.Image
+pictureBox3
+txtKeyBypass1&
+2021-01-01 11:59:59
+txtKeyBypass2*
+/ 2021-02-01 11:59:59"
+pictureBox2.Image
+pictureBox2
+SrcChangeYes_NO"
+SRC Version 99999
+Km1800p
+Km720p
+btnFixNetwork"
+Fix Network Error"
+btn32Bit_Download
+btn60FPS"
+60FPS 1080p Setup
+txtKmAdd
+btnX
+btn_
+btnOpenDEP 
+Quickly Open DEP
+btnBypassManu
+Bypass
+btnHackManu
+Hack
+btnAioToolsManu
+Aio Tools$
+pictureBox16.Image
+pictureBox16$
+pictureBox17.Image
+pictureBox17$
+pictureBox18.Image
+pictureBox18B
+tableLayoutPanel2.BackgroundImage"
+tableLayoutPanel2
+panel3
+panel2
+panel1>
+HackMainUiPanel.BackgroundImage
+HackMainUiPanel"
+VnHack Vip + Free
+More to come...
+btnSinkiHack
+Sinki Hack VIP
+btnJokerHack
+Joker Hack VIP
+btnSpiderHack
+Spider Hack VIP
+btnHadesHack
+Hades Hack VIP
+btnParadoxHack
+Dog Hack VIP
+btnDragonHack
+Dragon Hack VIP
+label16$
+pictureBox20.Image
+pictureBox20$
+pictureBox22.Image
+pictureBox22$
+pictureBox23.Image
+pictureBox23$
+pictureBox25.Image
+pictureBox25$
+pictureBox27.Image
+pictureBox27$
+pictureBox29.Image
+pictureBox29$
+pictureBox30.Image
+pictureBox30$
+pictureBox31.Image
+pictureBox31
+txtKeyHack1
+txtKeyHack2F
+AioToolsMainUiPanel.BackgroundImage&
+AioToolsMainUiPanel
+label33$
+pictureBox35.Image
+pictureBox35$
+pictureBox38.Image
+pictureBox38$
+pictureBox42.Image
+pictureBox42$
+pictureBox46.Image
+pictureBox46
+txtKeyAio1
+txtKeyAio2$
+pictureBox48.Image
+pictureBox48$
+pictureBox39.Image
+pictureBox39
+MainUI8
+C:\ProgramData\Microsoft\WPD
+Memory.dll$
+/adb/AdbWinApi.dll$
+/adb/By SHBD-SOJIBn
+/SmartGaGa/ProjectTitan/Engine/vnhax-network-helper.exe
+https://dl.dropboxusercontent.com/s/r8iwj0x01ryoq3o/SHBDDragonBypassForSmartGaGaUPD.txt
+1.0.0.0
+Your version is old new version is available Please download update version ! Thank you! 
+Checking Updates
+https://dl.dropboxusercontent.com/s/88u457qg73kzwsb/DRAGON%20VIP%20BYPASS.rar
+https://dl.dropboxusercontent.com/s/lrsgzm9y1k9p91c/LoginPageONOFF-DragonBypass.txt
+852200F
+OW4WxJg3ygFb8cQMWn4veY3K3nzttq3jHi6
+2.62
+Processing Please Wait...
+SafeExit
+adb shell "rm -rf /storage/emulated/0/Android/data/com.tencent.ig/cache"
+adb shell "rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/TGPA"
+adb shell "rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Content"
+adb shell "rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData"
+adb shell "rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/cache"
+adb shell "rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/TGPA"
+adb shell "rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Content"
+adb shell "rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData"
+adb shell "rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/cache"
+adb shell "rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/TGPA"
+adb shell "rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Content"
+adb shell "rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData"
+adb shell "rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/cache"
+adb shell "rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/TGPA"
+adb shell "rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Content"
+adb shell "rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData"6
+Thanks for Supporting SHBD
+txt_copyPaste
+BY-SHBD-SOJIB&
+shbd_network_helperJ
+Un tick if you win or die ! Thank You
+TickinGameOK 
+289F40FA17EA51F4@
+3012985851D394734D35A21687DC831E@
+9D690E72F6B52F1AE2A4BA7E02224B7B
+AdbWinApi
+D6323EC8B51D57C3F1CE6924BA4220D4 
+EE7639C644BE0F71
+en_US_ini 
+F076314AEE6D2B7F@
+FF1CAD2A98C8D988258FA4E3676E932E 
+FF28A78CC8819E3B
+
+hosts
+hostsSHBD0
+KeyMapping50_1080pBySHBD.
+KeyMapping50_720pBySHBD
+Memory$
+ProjectTitanNormal
+shbd_sojib
+SQL_SHBDVIP$
+Src_GL_Version_ini$
+Src_KR_Version_ini$
+Src_TW_Version_ini$
+Src_VN_Version_ini
+Thank_You(
+vnhax_network_helper
+CheckBox
+
+Label
+LicenseKey
+
+Title
+User is not logged in, possible breach detected!
+N/A|
+ ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234567896
+https://api.auth.gg/csharp/
+
+token
+timestamp
+session_id
+api_id
+api_key
+session_key
+secret
+type
+
+start
+success
+binderror
+banned
+Enabled2
+Download the New Version `
+, Click OK then check your web browser !!! (222)
+ The software has been turned Off for a while for security updates, The new update will come shortly! (230)(
+SHBD Dragon Bypass !
+pcuser
+data
+hwid
+
+login
+invalid_details
+time_expired
+hwid_updated
+invalid_hwid:
+Your licence key has expired!4
+SHBD Dragon Bypass ! (402)
+register
+
+email
+license
+
+error
+ Your licence key has expired ! Contact the seller of this software
+ You Cannot Use this License key, You can use another license key if you wish ! Thank You !
+invalid_license
+email_used 
+invalid_username
+extend
+invalid_token
+ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz
+gd8JQ57nxXzLLMPrLylVhxoGnWGCFjO4knKTfRE6mVvdjug2NF/4aptAsZcdIGbAPmcx0O+ftU/KvMIjcfUnH3j+IMdhAW5OpoX3MrjQdf5AAP97tTB5g1wdDSAqKpq9gw06t3VaqMWZHKtPSuAXy0kkZRsc+DicpcY8E9+vWMHXa3jMdbPx4YES0p66GzhqLd/heA2zMvX8iWv4wK7S3QKIW/a9dD4ALZJpmcr9OOE=D
+Windows\System32\drivers\etc\hosts
+api.auth.gg
+046EECD33E469E9E1958D6BEEDE0A71843202724A5758BD1723F6C340C5E98EDE06FF5C21B35F359C65B850744729B3AA999B0B6392DA69EDB278EB31DBCE85774
+Windows\System32\arp.exe
+({0} [\W]*) ([a-z0-9-]*)
+AndroidProcess
+C:\Users\(
+\AppData\Local\Temp\R
+/Thanks for Supporting SHBD/Thank You.txtH
+/Thanks for Supporting SHBD/shbd.sys
+shbdsojib
+sys
+/c sc create 
+ binpath=V
+.sys start=demand type=filesys & net start 0
+Please open the Emulator
+ F0 4F 2D E9 1C B0 8D E2 14 D0 4D E2 00 A0 A0 E1 0C 06 9F E5 01 80 A0 E1
+bytes
+ 00 00 A0 E3 1E FF 2F E1 14 D0 4D E2 00 A0 A0 E1 0C 06 9F E5 01 80 A0 E1
+Bypass Success
+cmd /csc stop  
+cmd /csc delete *
+cmd /ccd /d C:\Users\&
+\AppData\Local\Temp
+cmd /cdel /f "
+Game Bypassing..."
+Failed, Try Again<
+ adb.exe push C:\PerfLogs\shbdsrc /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini"*
+ adb shell "rm -rf /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_*.*.*.*.pak*
+ adb shell "rm -rf /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_*.*.*.*.pakb
+ adb shell "rm -rf /data/app/com.vng.pubgmobile-2"b
+ adb shell "rm -rf /data/app/com.vng.pubgmobile-3"b
+ adb shell "rm -rf /data/app/com.vng.pubgmobile-4"b
+adb shell "rm -rf /data/app/com.vng.pubgmobile-5"
+ adb shell am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity6
+ adb.exe push C:\PerfLogs\shbdsrc /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini"$
+ adb shell "rm -rf /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_*.*.*.*.pak$
+ adb shell "rm -rf /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_*.*.*.*.pak\
+adb shell "rm -rf /data/app/com.rekoo.pubgm-2"\
+adb shell "rm -rf /data/app/com.rekoo.pubgm-3"\
+adb shell "rm -rf /data/app/com.rekoo.pubgm-4"\
+adb shell "rm -rf /data/app/com.rekoo.pubgm-5"
+ adb shell am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity:
+ adb.exe push C:\PerfLogs\shbdsrc /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini"(
+ adb shell "rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_*.*.*.*.pak(
+ adb shell "rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_*.*.*.*.pak`
+adb shell "rm -rf /data/app/com.pubg.krmobile-2"`
+adb shell "rm -rf /data/app/com.pubg.krmobile-3"`
+adb shell "rm -rf /data/app/com.pubg.krmobile-4"`
+adb shell "rm -rf /data/app/com.pubg.krmobile-5"
+ adb shell am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity4
+ adb.exe push C:\PerfLogs\shbdsrc /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini""
+ adb shell "rm -rf /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_*.*.*.*.pak"
+ adb shell "rm -rf /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_*.*.*.*.pakZ
+adb shell "rm -rf /data/app/com.tencent.ig-2"Z
+adb shell "rm -rf /data/app/com.tencent.ig-3"Z
+adb shell "rm -rf /data/app/com.tencent.ig-4"Z
+adb shell "rm -rf /data/app/com.tencent.ig-5"
+ adb shell am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity

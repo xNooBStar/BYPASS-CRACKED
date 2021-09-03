@@ -1,0 +1,136 @@
+XX AntiBan Fucked By Power Team & Army Team
+
+Join Us :
+https://discord.gg/TJkRrpsr
+https://discord.gg/3Pn88h57JT
+
+Start EMUL
+
+ label16.Text = "Emulator Is Starting...!";
+netsh advfirewall firewall add rule name=XX interface=any dir=out action=block remoteip=203.205.0.0-203.205.255.255,123.151.0.0-123.151.255.255,58.250.0.0-58.250.255.255,113.105.0.0-113.105.255.255
+\"" + str + "\\AndroidEmulator.exe\" -engine aow -vm 100 -sequenceid 7EC04E22-E8B6-49C4-AACF-24C39AA95D0E -from TipUnknown
+
+
+Start Game
+
+netsh advfirewall firewall add rule name=XXAntibanV.3Pro offline protocol=UDP remoteport=5038,5555,6044,10085,10086,24296,54817,50887,50877,50904,50906,50926,51915,51962,51965,54652,54655,54675,54740,54825,54840,54841,57448,55817,57447,57448,57459,57460,57756,57823,57460,58048,58140,58141,58235,58236,58238,58242,58243,58244,58245,58246,58247,58259,58262,58273,54856,54861,54841,54840,15692,20371,17500,13003,8081,50324,51703,54384, dir=out  action=block
+netsh advfirewall firewall add rule name=XXAntibanV.3Pro protocol=TCP dir=out remoteport=17000-17499,17501-18000,30000-35000,547,3013,10000-10050,35000,62448,14000,18018,7889,8000-8099,5555,3120,5038,5037,55443,55867,55902,55908,55916,5945,55984 action=block enable=yes
+adb.exe kill-server
+adb.exe start-server
+adb.exe connect 5554
+adb shell monkey -p com.tencent.ig -c android.intent.category.LAUNCHER 1
+adb.exe -s 127.0.0.1:5555 shell chmod 755 /data/app-lib/com.tencent.ig-1/libBugly.so
+adb.exe -s 127.0.0.1:5555 shell chmod 755 /data/app-lib/com.tencent.ig-1/libcubehawk.so
+adb.exe -s 127.0.0.1:5555 shell chmod 755 /data/app-lib/com.tencent.ig-1/libgamemaster.so
+adb.exe -s 127.0.0.1:5555 shell chmod 755 /data/app-lib/com.tencent.ig-1/libgcloud.so
+adb.exe -s 127.0.0.1:5555 shell chmod 755 /data/app-lib/com.tencent.ig-1/libGCloudVoice.so
+adb.exe -s 127.0.0.1:5555 shell chmod 755 /data/app-lib/com.tencent.ig-1/libIMSDK.so
+adb.exe -s 127.0.0.1:5555 shell chmod 755 /data/app-lib/com.tencent.ig-1/liblbs.so
+adb.exe -s 127.0.0.1:5555 shell chmod 755 /data/app-lib/com.tencent.ig-1/libst-engine.so
+adb.exe -s 127.0.0.1:5555 shell chmod 755 /data/app-lib/com.tencent.ig-1/libTDataMaster.so
+adb.exe -s 127.0.0.1:5555 shell chmod 755 /data/app-lib/com.tencent.ig-1/libtprt.so
+adb.exe -s 127.0.0.1:5555 shell chmod 755 /data/app-lib/com.tencent.ig-1/libtersafe.so
+adb.exe -s 127.0.0.1:5555 shell chmod 755 /data/app-lib/com.tencent.ig-1/libUE4.so
+adb.exe -s 127.0.0.1:5555 shell mv /system/lib/libdvm.txt/system/lib/libdvm.so
+adb.exe -s 127.0.0.1:5555 shell mv /system/lib/libhoudini.txt/system/lib/libhoudini.so
+adb.exe -s 127.0.0.1:5555 shell mv /system/lib/libdrm.txt/system/lib/libdrm.so
+adb.exe -s 127.0.0.1:5555 shell mv /system/lib/libft2.txt/system/lib/libft2.so
+adb.exe -s 127.0.0.1:5555 shell mv /system/lib/libhardware.txt/system/lib/libhardware.so
+adb.exe -s 127.0.0.1:5555 shell mv /system/lib/libhardware_legacy.txt/system/lib/libhardware_legacy.so
+adb.exe -s 127.0.0.1:5555 shell mv /system/lib/libhoudini.txt/system/lib/libhoudini.so
+adb.exe -s 127.0.0.1:5555 shell mv /system/lib/libinputservice.txt/system/lib/libinputservice.so
+adb.exe -s 127.0.0.1:5555 shell mv /system/lib/libpower.txt/system/lib/libpower.so
+adb.exe -s 127.0.0.1:5555 shell mv /system/lib/libprotobuf-cpp-full.txt/system/lib/libprotobuf-cpp-full.so
+adb.exe -s 127.0.0.1:5555 shell mv /system/lib/libsurfaceflinger.txt/system/lib/libsurfaceflinger.so
+adb.exe -s 127.0.0.1:5555 shell mv /system/lib/libz.txt/system/lib/libz.so
+adb.exe -s 127.0.0.1:5555 shell mv /system/lib/libreference-ril.txt/system/lib/libreference-ril.so
+adb.exe -s 127.0.0.1:5555 shell mv /system/lib/libdrmframework_jni.txt/system/lib/libdrmframework_jni.so
+adb.exe -s 127.0.0.1:5555 shell chmod -R 644 /system/priv-app/Settings.apk
+adb.exe -s 127.0.0.1:5555 shell chmod -R 644 /system/priv-app/SettingsProvider.apk
+adb.exe -s 127.0.0.1:5555 shell chmod -R 644 /system/priv-app/Superuser.apk
+adb.exe -s 127.0.0.1:5555 shell chmod -R 644 /system/priv-app/SystemUI.apk
+adb.exe -s 127.0.0.1:5555 shell chmod -R 644 /system/app/tinput.apk
+adb.exe -s 127.0.0.1:5555 shell chmod -R 644 /system/priv-app/
+adb.exe -s 127.0.0.1:5555 shell chmod -R 644 /default.prop
+adb.exe -s 127.0.0.1:5555 shell chmod -R 750 /init.rc
+adb.exe -s 127.0.0.1:5555 shell chmod -R 750 /init.environ.rc
+adb.exe -s 127.0.0.1:5555 shell chmod -R 750 /init.superuser.rc
+adb.exe -s 127.0.0.1:5555 shell chmod -R 750 /init.trace.rc
+adb.exe -s 127.0.0.1:5555 shell chmod -R 750 /ueventd.vbox86.rc
+adb.exe -s 127.0.0.1:5555 shell chmod -R 750 /fstab.vbox86
+adb.exe -s 127.0.0.1:5555 shell chmod -R 755 /system/bin/androVM_setprop
+adb.exe -s 127.0.0.1:5555 shell chmod -R 644 /system/lib/libhardware.so
+adb.exe -s 127.0.0.1:5555 shell chmod -R 644 /system/lib/libbcinfo.so
+adb.exe -s 127.0.0.1:5555 shell chmod -R 644 /system/lib/libandroid.so
+adb.exe -s 127.0.0.1:5555 shell chmod -R 644 /system/lib/hw/gralloc.vbox86.so
+adb.exe -s 127.0.0.1:5555 shell chmod -R 644 /system/lib/hw/gralloc.emulation.so
+adb.exe -s emulator-5554 shell sleep 2
+adb.exe -s emulator-5554 shell rm -rf /data/data/stdin
+adb.exe -s emulator-5554 shell mv /system/build.prop /system/build.prop1
+adb.exe -s emulator-5554 shell chmod -R 000 /system/priv-app/Superuser.apk
+adb.exe -s emulator-5554 shell chmod -R 000 /system/priv-app/Settings.apk
+adb.exe -s emulator-5554 shell chmod -R 000 /system/priv-app/SystemUI.apk
+adb.exe -s emulator-5554 shell chmod -R 000 /system/app/tinput.apk
+adb.exe -s emulator-5554 shell chmod -R 000 /system/bin/androVM_setprop
+adb.exe -s emulator-5554 shell chmod -R 000 /system/priv-app/
+adb.exe -s emulator-5554 shell chmod -R 000 /init.superuser.rc
+adb.exe -s emulator-5554 shell chmod -R 000 /system/lib/libbcinfo.so
+adb.exe -s emulator-5554 shell chmod -R 444 /system/lib/hw/gralloc.vbox86.so
+adb.exe -s emulator-5554 shell chmod -R 000 /ueventd.vbox86.rc
+adb.exe -s emulator-5554 shell chmod -R 000 /system/lib/libhardware.so
+adb.exe -s emulator-5554 shell chmod -R 000 /default.prop
+adb.exe -s emulator-5554 shell chmod -R 000 /fstab.vbox86
+adb.exe -s emulator-5554 shell chmod -R 000 /system/priv-app/Settings/Settings.apk
+adb.exe -s emulator-5554 shell chmod -R 000 /system/priv-app/SettingsProvider/SettingsProvider.apk
+adb.exe -s emulator-5554 shell chmod -R 000 /system/priv-app/InputDevices/InputDevices.apk
+adb.exe kill-server
+adb.exe start-server
+adb.exe connect-5554
+adb.exe -s emulator-5554 shell chmod -R 750 /fstab.vbox86
+adb.exe -s emulator-5554 shell chmod -R 755 /system/bin/androVM_setprop
+adb.exe -s emulator-5554 shell chmod -R 644 /system/lib/libhardware.so
+adb.exe -s emulator-5554 shell chmod -R 644 /system/lib/libbcinfo.so
+adb.exe -s emulator-5554 shell chmod -R 644 /system/lib/libandroid.so
+adb.exe -s emulator-5554 shell chmod -R 644 /system/lib/hw/gralloc.vbox86.so
+adb.exe -s emulator-5554 shell chmod -R 644 /system/lib/hw/gralloc.emulation.so
+adb.exe -s emulator-5554 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+adb.exe -s emulator-5554 shell mkdir /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+adb.exe -s emulator-5554 shell chmod 444 /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+adb.exe -s emulator-5554 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+adb.exe -s emulator-5554 shell mkdir /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+adb.exe -s emulator-5554 shell chmod 444 /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+adb.exe -s emulator-5554 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifsTmpDir
+adb.exe -s emulator-5554 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+adb.exe -s emulator-5554 shell mkdir /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+adb.exe -s emulator-5554 shell chmod 444 /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+adb.exe -s emulator-5554 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+adb.exe -s emulator-5554 shell rm -rf /system/bin/houdini
+adb.exe -s emulator-5554 shell rm -rf /system/bin/disable_houdini
+adb.exe -s emulator-5554 shell rm -rf /system/libs/libutils.so
+adb.exe -s emulator-5554 shell chmod -R 644 /data/data/com.tencent.ig/files/tss_tmp
+adb.exe -s emulator-5554 shell chmod -R 444 /data/data/com.tencent.ig/files/iMSDK
+adb.exe -s emulator-5554 shell chmod -R 644 /data/data/com.tencent.ig/app_bugly
+adb.exe -s emulator-5554 shell cp /stdin /data/data/
+adb.exe -s emulator-5554 shell sleep 2
+adb.exe -s emulator-5554 shell mv /system/lib/libhoudini.so/system/lib/libhoudini.txt
+adb.exe -s emulator-5554 shell mv /system/lib/libdrm.so/system/lib/libdrm.txt
+adb.exe -s emulator-5554 shell mv /system/lib/libft2.so/system/lib/libft2.txt
+adb.exe -s emulator-5554 shell mv /system/lib/libhardware.so/system/lib/libhardware.txt
+adb.exe -s emulator-5554 shell mv /system/lib/libhardware_legacy.so/system/lib/libhardware_legacy.txt
+adb.exe -s emulator-5554 shell mv /system/lib/libhoudini.so/system/lib/libhoudini.txt
+adb.exe -s emulator-5554 shell mv /system/lib/libinputservice.so/system/lib/libinputservice.txt
+adb.exe -s emulator-5554 shell mv /system/lib/libpower.so/system/lib/libpower.txt
+adb.exe -s emulator-5554 shell mv /system/lib/libprotobuf-cpp-full.so/system/lib/libprotobuf-cpp-full.txt
+adb.exe -s emulator-5554 shell mv /system/lib/libsurfaceflinger.so/system/lib/libsurfaceflinger.txt
+adb.exe -s emulator-5554 shell mv /system/lib/libz.so/system/lib/libz.txt
+adb.exe -s emulator-5554 shell mv /system/lib/libreference-ril.so/system/lib/libreference-ril.txt
+adb.exe -s emulator-5554 shell mv /system/lib/libdrmframework_jni.so/system/lib/libdrmframework_jni.txt
+netsh advfirewall firewall add rule name=LOBBY1 protocol=TCP dir=out remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,3013,18018,10012,20371,15692,8085,8080,8088,8086,11443,35000 action=block
+netsh advfirewall firewall add rule name=LOBBY2 protocol=TCP dir=out remoteport=5555,24296,5038,51070,51125,51156,51162,51209,51210,51211,51212,51213,51214,51218,58281,58287,58534,58542,58548,58586,58587,58588,58589,58607,58608,58613,68,55597,58952,61971 action=block
+netsh advfirewall firewall add rule name=LOBBY3 protocol=UDP dir=out remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,3013,18018,10012,20371,15692,8085,8080,8088,8086,11443,35000 action=block
+netsh advfirewall firewall add rule name=LOBBY4 protocol=UDP dir=out remoteport=5555,24296,5038,51070,51125,51156,51162,51209,51210,51211,51212,51213,51214,51218,58281,58287,58534,58542,58548,58586,58587,58588,58589,58607,58608,58613,68,55597,58952,61971 action=block
+netsh advfirewall firewall add rule name=LOBBY1 protocol=TCP dir=in remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,3013,18018,10012,20371,15692,8085,8080,8088,8086,11443,35000 action=block
+netsh advfirewall firewall add rule name=LOBBY2 protocol=TCP dir=in remoteport=5555,24296,5038,51070,51125,51156,51162,51209,51210,51211,51212,51213,51214,51218,58281,58287,58534,58542,58548,58586,58587,58588,58589,58607,58608,58613,68,55597,58952,61971 action=block
+netsh advfirewall firewall add rule name=LOBBY3 protocol=UDP dir=in remoteport=18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242,3013,18018,10012,20371,15692,8085,8080,8088,8086,11443,35000 action=block
+netsh advfirewall firewall add rule name=LOBBY4 protocol=UDP dir=in remoteport=5555,24296,5038,51070,51125,51156,51162,51209,51210,51211,51212,51213,51214,51218,58281,58287,58534,58542,58548,58586,58587,58588,58589,58607,58608,58613,68,55597,58952,61971 action=block
+Antiban Done", "XX", MessageBoxButtons.OK, MessageBoxIcon.Information

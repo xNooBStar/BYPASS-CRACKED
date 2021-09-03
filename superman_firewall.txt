@@ -1,0 +1,178 @@
+﻿
+netsh advfirewall firewall delete rule name=poku/
+netsh advfirewall firewall delete rule name=lol
+netsh advfirewall firewall add rule name=modui protocol=ANY dir=out remoteip=123.151.71.34 action=block enable=yes
+netsh advfirewall firewall add rule name=modui protocol=ANY dir=in remoteip=123.151.71.34 action=block enable=yes
+netsh advfirewall firewall add rule name=modui protocol=ANY dir=out remoteip=203.205.239.243 action=block enable=yess
+netsh advfirewall firewall add rule name=modui protocol=ANY dir=in remoteip=203.205.239.243 action=block enable=yes
+netsh firewall reset1
+netsh advfirewall firewall delete rule name=Oasis
+netsh advfirewall firewall delete rule name=modui
+netsh advfirewall firewall add rule name=poku program="C:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=out remoteport=0-10000,11500-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="C:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=in remoteport=0-10000,11500-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="C:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=out remoteport=0-17499,17501-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="C:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=in remoteport=0-17499,17501-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="D:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=out remoteport=0-10000,11500-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="D:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=in remoteport=0-10000,11500-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="D:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=out remoteport=0-17499,17501-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="D:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=in remoteport=0-17499,17501-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="E:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=out remoteport=0-10000,11500-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="E:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=in remoteport=0-10000,11500-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="E:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=out remoteport=0-17499,17501-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="E:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=in remoteport=0-17499,17501-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="F:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=out remoteport=0-10000,11500-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="F:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=in remoteport=0-10000,11500-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="F:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=out remoteport=0-17499,17501-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="F:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=in remoteport=0-17499,17501-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="G:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=out remoteport=0-10000,11500-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="G:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=UDP dir=in remoteport=0-10000,11500-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="G:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=out remoteport=0-17499,17501-65535 action=block enable=yes
+netsh advfirewall firewall add rule name=poku program="G:\Program Files\txgameassistant\ui\AndroidEmulator.exe" protocol=TCP dir=in remoteport=0-17499,17501-65535 action=block enable=yes
+netsh advfirewall reset 
+netsh advfirewall firewall delete rule name=lobby
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=50475,50481,50477,50125,50128,50184,50470,50468,50277,50385,50386
+netsh advfirewall firewall add rule name=Superman dir=out action=allow enable=yes remoteip=170.106.159.3g
+netsh advfirewall firewall add rule name=Superman dir=out action=allow enable=yes remoteip=49.51.177.92
+netsh advfirewall firewall add rule name=Superman dir=out action=allow enable=yes remoteip=49.51.66.91
+netsh advfirewall firewall add rule name=Superman dir=out action=allow enable=yes remoteip=93.186.227.142
+netsh advfirewall firewall add rule name=Superman dir=out action=block enable=yes remoteip=150.109.27.214 remoteport=3013
+netsh advfirewall firewall add rule name=Superman dir=out action=block enable=yes remoteip=49.51.66.225 remoteport=15692r
+netsh advfirewall firewall add rule name=Superman dir=out action=block enable=yes remoteip=58.0.0.0-79.255.255.255
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=10012
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=10054
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=11443
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=15692
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=17000-18000,30000-35000,547,3013,10000-10050,17500,35000,62448,14000,18018,7889,8000-8099
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=17500
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=18081
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=20000
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=20001
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=3013
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37391
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37441
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37920
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37921
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37928
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37930
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37934
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37944
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37948
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37952
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37954
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37960
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37964
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37970
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37972
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37984
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37988
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37996
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=37998
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38000
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38002
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38004
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38256
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38546
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38650
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38730
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38796
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=38855
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=39066
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=39189
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=39346
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=39495
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=39565
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=39696
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=40072
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=40480
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=40499
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=40520
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=40645
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=40833
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=40849
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=40985
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=41233
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=41380
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=41605
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=41633
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=41655
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=41803
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=41931
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=41982
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=42052
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=42295
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=42338
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=42583
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=43097
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=43135
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=43480
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=43905
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=44092
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=44397
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=44585
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=45389
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=45566
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=45614
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=45690
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=45708
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=45906
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46278
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46527
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46740
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46768
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46801
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46806
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46808
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46810
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46812
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46816
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46820
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46830
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46832
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=46986
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=47357
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=47383
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=47456
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=47666
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=47722
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=47849
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=47940
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=49228
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=49349
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=49436
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=49444
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=49863
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=60000-65000
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=8080
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=8081
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=8085
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=8086
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=8088
+netsh advfirewall firewall add rule name=Superman dir=out action=block protocol=TCP enable=yes remoteport=8089
+netsh advfirewall firewall add rule name=Superman dir=out interface=any action=block remoteip="203.0.0.0-224.255.255.255" enable=yes program="C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe" 
+netsh advfirewall firewall add rule name=Superman dir=out interface=any action=block remoteip="58.0.0.0-79.255.255.255" enable=yes program="C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe" 
+netsh advfirewall firewall add rule name=Superman dir=out interface=any action=block remoteip="203.0.0.0-224.255.255.255" enable=yes program="C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\TitanService.exe" 
+netsh advfirewall firewall add rule name=Superman dir=out interface=any action=block remoteip="58.0.0.0-79.255.255.255" enable=yes program="C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\TitanService.exe" 
+netsh advfirewall firewall add rule name=Ind dir=out action=block protocol=TCP enable=yes remoteport=2222
+etsh winsock reset 
+etsh int ip reset 
+etsh advfirewall firewall delete rule name=SupermanG
+netsh advfirewall firewall add rule name=LOBBY protocol=TCP dir=in remoteport=14500,18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=TCP dir=in remoteport=5038,5228,5555,10085,10086,18081,20371,23946,27042,27043,17000,10012,13004,13003,35000,59881,59906,59907,59920,60136,60156,60158,60159,60160,60164,60165,60166,60168,60169,60171,60172,60180,60215,60482,60859,60860,60861,60978,10009,20000,10061,10446,10447,20002,10013,10242 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=TCP dir=in remoteport=1500-17499,17501-36500 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=TCP dir=in remoteport=15692,20371,23946,27042,27043,5403,5646,7312,7311,2384,2383,3013,18081,8085,8086,13003,10012,8081,8088,13004,5006,5012,5046,5045,8080,11042,11041,2979,2986,17000,13004,13003,35000,10013,10012,15692,20371 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=TCP dir=out remoteport=14500,18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=TCP dir=out remoteport=5038,5228,5555,10085,10086,18081,20371,23946,27042,27043,17000,10012,13004,13003,35000,59881,59906,59907,59920,60136,60156,60158,60159,60160,60164,60165,60166,60168,60169,60171,60172,60180,60215,60482,60859,60860,60861,60978,10009,20000,10061,10446,10447,20002,10013,10242 action=blockr
+netsh advfirewall firewall add rule name=LOBBY protocol=TCP dir=out remoteport=1500-17499,17501-36500 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=TCP dir=out remoteport=15692,20371,23946,27042,27043,5403,5646,7312,7311,2384,2383,3013,18081,8085,8086,13003,10012,8081,8088,13004,5006,5012,5046,5045,8080,11042,11041,2979,2986,17000,13004,13003,35000,10013,10012,15692,20371 action=block
+netsh advfirewall firewall add rule name="LOBBY" dir=out action=block program="C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe" protocol=TCP enable=yes remoteport=80,443 
+netsh advfirewall firewall add rule name=LOBBY protocol=UDP dir=in remoteport=14500,18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=UDP dir=in remoteport=5038,5228,5555,10085,10086,18081,20371,23946,27042,27043,17000,10012,13004,13003,35000,59881,59906,59907,59920,60136,60156,60158,60159,60160,60164,60165,60166,60168,60169,60171,60172,60180,60215,60482,60859,60860,60861,60978,10009,20000,10061,10446,10447,20002,10013,10242 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=UDP dir=in remoteport=1500-17499,17501-36500 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=UDP dir=in remoteport=15692,20371,23946,27042,27043,5403,5646,7312,7311,2384,2383,3013,18081,8085,8086,13003,10012,8081,8088,13004,5006,5012,5046,5045,8080,11042,11041,2979,2986,17000,13004,13003,35000,10013,10012,15692,20371 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=UDP dir=out remoteport=14500,18081,23946,27042,27043,10012,13004,13003,35000,10009,20000,10061,10446,10447,11443,20002,10013,10242 action=block
+netsh advfirewall firewall add rule name=LOBBY protocol=UDP dir=out remoteport=5038,5228,5555,10085,10086,18081,20371,23946,27042,27043,17000,10012,13004,13003,35000,59881,59906,59907,59920,60136,60156,60158,60159,60160,60164,60165,60166,60168,60169,60171,60172,60180,60215,60482,60859,60860,60861,60978,10009,20000,10061,10446,10447,20002,10013,10242 action=block'
+netsh advfirewall firewall add rule name=LOBBY protocol=UDP dir=out remoteport=15692,20371,23946,27042,27043,5403,5646,7312,7311,2384,2383,3013,18081,8085,8086,13003,10012,8081,8088,13004,5006,5012,5046,5045,8080,11042,11041,2979,2986,17000,13004,13003,35000,10013,10012,15692,20371 action=block
+netsh advfirewall firewall add rule name="LOBBY" dir=out action=block program="C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe" protocol=UDP enable=yes remoteport=80,443 
+netsh advfirewall firewall delete rule name=LOBBY
+ netsh advfirewall firewall add rule name="Superman" dir=out action=block program="C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe" protocol=TCP enable=yes remoteport=17500 
+ netsh advfirewall firewall add rule name="Superman" dir=out action=block program="C:\Program Files (x86)\SmartGaGa\ProjectTitan\Engine\ProjectTitan.exe" protocol=TCP enable=yes remoteport=0-8084,8087-17499,17501-65535 
